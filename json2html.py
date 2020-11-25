@@ -81,7 +81,8 @@ class Standards():
     </style>
   </head>
 
-  <body>'''
+  <body>
+  <h1>XAFS Standards at BMM</h1>'''
         else:
             page = f'''
 <html>
@@ -210,8 +211,8 @@ class Standards():
 def main():
     m=Standards()
     m.spreadsheet = 'Standards.xlsx'
-    m.html        = 'test.html'
-    m.singlepage  = False
+    m.html        = 'BMM-standards.html'
+    m.singlepage  = True
     #m.read_spreadsheet()
     #m.to_json()
     m.make_html()
