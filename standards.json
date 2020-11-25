@@ -622,8 +622,8 @@
 	    "refwheel" : false
         },
         {
-            "material": "Pt(NH3)4Cl2*xH20",
-            "name": "TAPC (tetraamineplatinum chloride)",
+            "material": "Pt(NH3)4Cl2 (H2O)x",
+            "name": "TAPC (tetraamine platinum chloride)",
             "location": "Pt",
 	    "refwheel" : false
         },

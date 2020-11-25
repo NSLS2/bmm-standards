@@ -40,7 +40,8 @@ table {
     font-size: 13px;
 }
 .major {
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: bold;
 }
 .name {
     font-size: 18px;
@@ -51,7 +52,7 @@ table {
 }
 .znum {
     color: #600;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: bold;
 }
 .symbol {
