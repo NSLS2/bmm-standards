@@ -1,0 +1,62 @@
+body {
+    margin: 40px;
+}
+
+.box {
+    background-color: #aad;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    width: 210px;
+}
+
+.box:nth-child(even) {
+    background-color: #cac;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 250px);
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+h2 {
+    font-size: 40px;
+    text-align: left;
+}
+
+table {
+    width: 190px
+}
+
+.minor {
+    font-size: 13px;
+}
+.major {
+    font-size: 26px;
+}
+.name {
+    font-size: 18px;
+}
+.loc {
+    font-size: 18px;
+    color: #777;
+}
+.znum {
+    color: #600;
+    font-size: 45px;
+    font-weight: bold;
+}
+.symbol {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #600;
+}

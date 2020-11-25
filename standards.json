@@ -1,0 +1,733 @@
+{
+    "Ca": [
+        {
+            "material": "CaO",
+            "name": "",
+            "location": "Ca",
+	    "refwheel" : false
+        },
+        {
+            "material": "CaTiO3",
+            "name": "Perovskite",
+            "location": "Ti",
+	    "refwheel" : false
+        }
+    ],
+    "Sc": [
+        {
+            "material": "DyScO3",
+            "name": "Dysprosium scandate",
+            "location": "Dy",
+	    "refwheel" : false
+        }
+    ],
+    "Ti": [
+        {
+            "material": "Ti",
+            "name": "Ti foil",
+            "location": "Ti",
+	    "refwheel" : true
+        },
+        {
+            "material": "TiCN",
+            "name": "Titanium carbonitride",
+            "location": "Ti",
+	    "refwheel" : false
+        },
+        {
+            "material": "TiN",
+            "name": "Titanium nitride",
+            "location": "Ti",
+	    "refwheel" : false
+        },
+        {
+            "material": "CaTiO3",
+            "name": "Perovskite",
+            "location": "Ti",
+	    "refwheel" : false
+        },
+        {
+            "material": "LiTiO3",
+            "name": "Lithium titanate",
+            "location": "Ti",
+	    "refwheel" : false
+        },
+        {
+            "material": "SrTiO3",
+            "name": "Tausonite",
+            "location": "Ti",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeTiO3",
+            "name": "Ilmenite",
+            "location": "Fe",
+	    "refwheel" : false
+        }
+    ],
+    "V": [
+        {
+            "material": "V",
+            "name": "V foil",
+            "location": "V",
+	    "refwheel" : true
+        }
+    ],
+    "Cr": [
+        {
+            "material": "Cr",
+            "name": "Cr foil",
+            "location": "Cr",
+	    "refwheel" : true
+        },
+        {
+            "material": "ErCrO3",
+            "name": "Erbium Chromate",
+            "location": "Er",
+	    "refwheel" : false
+        }
+    ],
+    "Mn": [
+        {
+            "material": "Mn",
+            "name": "Mn foil",
+            "location": "Mn",
+	    "refwheel" : true
+        },
+        {
+            "material": "MnO",
+            "name": "",
+            "location": "Mn",
+	    "refwheel" : false
+        },
+        {
+            "material": "Mn2O3",
+            "name": "",
+            "location": "Mn",
+	    "refwheel" : false
+        },
+        {
+            "material": "MnO2",
+            "name": "Pyrolucite",
+            "location": "Mn",
+	    "refwheel" : false
+        },
+        {
+            "material": "MnCO3",
+            "name": "Rhodochrosite",
+            "location": "Mn",
+	    "refwheel" : false
+        }
+    ],
+    "Fe": [
+        {
+            "material": "Fe",
+            "name": "Fe foil",
+            "location": "Fe",
+	    "refwheel" : true
+        },
+        {
+            "material": "FeO",
+            "name": "Wüstite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "ZnFe2O4",
+            "name": "Zinc ferrite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeTiO3",
+            "name": "Ilmenite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "NiFe2O4",
+            "name": "Nickel ferrite",
+            "location": "Ni",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeS2",
+            "name": "Pyrite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "\u03b1-Fe2O3",
+            "name": "Hematite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeS",
+            "name": "Pyrrhotite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "\u03b1-FeOOH",
+            "name": "Goethite",
+            "location": "Fe",
+	    "refwheel" : false
+        },
+        {
+            "material": "\u03b3-FeOOH",
+            "name": "Lepidocrocite",
+            "location": "Fe",
+	    "refwheel" : false
+        }
+    ],
+    "Co": [
+        {
+            "material": "Co",
+            "name": "Co foil",
+            "location": "Co",
+	    "refwheel" : true
+        },
+        {
+            "material": "CoO",
+            "name": "",
+            "location": "Co",
+	    "refwheel" : false
+        },
+        {
+            "material": "Co2O3",
+            "name": "",
+            "location": "Co",
+	    "refwheel" : false
+        },
+        {
+            "material": "Co3O4",
+            "name": "",
+            "location": "Co",
+	    "refwheel" : false
+        },
+        {
+            "material": "CoAlO3",
+            "name": "Cobalt aluminate",
+            "location": "Co",
+	    "refwheel" : false
+        }
+    ],
+    "Ni": [
+        {
+            "material": "Ni",
+            "name": "Ni foil",
+            "location": "Ni",
+	    "refwheel" : true
+        },
+        {
+            "material": "NiO",
+            "name": "",
+            "location": "Ni",
+	    "refwheel" : false
+        },
+        {
+            "material": "NiFe2O4",
+            "name": "Nickel ferrite",
+            "location": "Ni",
+	    "refwheel" : false
+        },
+        {
+            "material": "NiAl2O4",
+            "name": "Ni aluminate",
+            "location": "Ni",
+	    "refwheel" : false
+        },
+        {
+            "material": "LaNiO3",
+            "name": "Lanthanum nickelate",
+            "location": "Ni",
+	    "refwheel" : false
+        }
+    ],
+    "Cu": [
+        {
+            "material": "Cu",
+            "name": "Cu foil",
+            "location": "Cu",
+	    "refwheel" : true
+        },
+        {
+            "material": "CuO",
+            "name": "",
+            "location": "Cu",
+	    "refwheel" : false
+        },
+        {
+            "material": "Cu2O",
+            "name": "Cuprite",
+            "location": "Cu",
+	    "refwheel" : false
+        },
+        {
+            "material": "CuS",
+            "name": "Covellite",
+            "location": "Cu",
+	    "refwheel" : false
+        }
+    ],
+    "Zn": [
+        {
+            "material": "Zn",
+            "name": "Zn foil",
+            "location": "Zn",
+	    "refwheel" : true
+        },
+        {
+            "material": "ZnFe2O4",
+            "name": "Zinc ferrite",
+            "location": "Fe",
+	    "refwheel" : false
+        }
+    ],
+    "Ga": [
+        {
+            "material": "GaO2",
+            "name": "",
+            "location": "Ga",
+	    "refwheel" : true
+        }
+    ],
+    "Ge": [
+        {
+            "material": "GeO2",
+            "name": "",
+            "location": "Ge",
+	    "refwheel" : true
+        }
+    ],
+    "As": [
+        {
+            "material": "As2O3",
+            "name": "",
+            "location": "As2O3",
+	    "refwheel" : true
+        }
+    ],
+    "Se": [
+        {
+            "material": "Se",
+            "name": "Selenium",
+            "location": "Se",
+	    "refwheel" : true
+        },
+        {
+            "material": "SeO2",
+            "name": "",
+            "location": "Se",
+	    "refwheel" : false
+        }
+    ],
+    "Br": [
+        {
+            "material": "C19H10Br4O5S",
+            "name": "Bromophenol blue",
+            "location": "Br",
+	    "refwheel" : true
+        }
+    ],
+    "Rb": [],
+    "Sr": [],
+    "Y": [
+        {
+            "material": "Y2O3",
+            "name": "Yttria",
+            "location": "Y",
+	    "refwheel" : false
+        }
+    ],
+    "Zr": [
+        {
+            "material": "Zr",
+            "name": "Zr foil",
+            "location": "Zr",
+	    "refwheel" : true
+        },
+        {
+            "material": "ZrO2",
+            "name": "Zirconia",
+            "location": "Zr",
+	    "refwheel" : false
+        },
+        {
+            "material": "Li2ZrO3",
+            "name": "Lithium zirconate",
+            "location": "Zr",
+	    "refwheel" : false
+        }
+    ],
+    "Nb": [
+        {
+            "material": "Nb",
+            "name": "Nb foil",
+            "location": "Nb",
+	    "refwheel" : true
+        },
+        {
+            "material": "NbO",
+            "name": "",
+            "location": "Nb",
+	    "refwheel" : false
+        },
+        {
+            "material": "NbC",
+            "name": "",
+            "location": "Nb",
+	    "refwheel" : false
+        },
+        {
+            "material": "NbN",
+            "name": "",
+            "location": "Nb",
+	    "refwheel" : false
+        }
+    ],
+    "Mo": [
+        {
+            "material": "Mo",
+            "name": "Mo foil",
+            "location": "Mo",
+	    "refwheel" : true
+        },
+        {
+            "material": "MoS2",
+            "name": "",
+            "location": "Mo",
+	    "refwheel" : false
+        },
+        {
+            "material": "MoO2",
+            "name": "Tugarinovite",
+            "location": "Mo",
+	    "refwheel" : false
+        },
+        {
+            "material": "MoO3",
+            "name": "Molybdite",
+            "location": "Mo",
+	    "refwheel" : false
+        }
+    ],
+    "Tc": [],
+    "Ru": [
+        {
+            "material": "RuO2",
+            "name": "",
+            "location": "Ru",
+	    "refwheel" : false
+        },
+        {
+            "material": "PtRu",
+            "name": "",
+            "location": "Ru",
+	    "refwheel" : false
+        },
+        {
+            "material": "RuNO4",
+            "name": "",
+            "location": "Ru",
+	    "refwheel" : false
+        }
+    ],
+    "Rh": [],
+    "Pd": [],
+    "Ag": [
+        {
+            "material": "Ag3PO4",
+            "name": "Silver orthophosphate",
+            "location": "Ag",
+	    "refwheel" : false
+        },
+        {
+            "material": "Ag2O",
+            "name": "",
+            "location": "Ag",
+	    "refwheel" : false
+        },
+        {
+            "material": "AgK(CN)2",
+            "name": "Silver potassium cyanide",
+            "location": "Ag",
+	    "refwheel" : false
+        },
+        {
+            "material": "AgCN",
+            "name": "Sliver cyanide",
+            "location": "Ag",
+	    "refwheel" : false
+        },
+        {
+            "material": "AgCl2",
+            "name": "Silver chloride",
+            "location": "Ag",
+	    "refwheel" : false
+        },
+        {
+            "material": "AgSCN",
+            "name": "Silver thiocyanate",
+            "location": "Ag",
+	    "refwheel" : false
+        }
+    ],
+    "Cd": [
+        {
+            "material": "CdSO4",
+            "name": "Cadmium sulphate",
+            "location": "Cd",
+	    "refwheel" : false
+        },
+        {
+            "material": "Cd(OH)2",
+            "name": "Cadmiun hydroxide",
+            "location": "Cd",
+	    "refwheel" : false
+        },
+        {
+            "material": "CdNO3",
+            "name": "Cadmium nitride",
+            "location": "Cd",
+	    "refwheel" : false
+        },
+        {
+            "material": "CdCl2",
+            "name": "Cadmium chloride",
+            "location": "Cd",
+	    "refwheel" : false
+        }
+    ],
+    "In": [],
+    "Sn": [],
+    "Sb": [],
+    "Te": [
+        {
+            "material": "Te",
+            "name": "",
+            "location": "Te",
+	    "refwheel" : false
+        }
+    ],
+    "I": [],
+    "Cs": [],
+    "Ba": [],
+    "La": [
+        {
+            "material": "LaNiO3",
+            "name": "Lanthanum nickelate",
+            "location": "Ni",
+	    "refwheel" : false
+        }
+    ],
+    "Ce": [
+        {
+            "material": "CeO2",
+            "name": "Cerium dioxide",
+            "location": "Ce",
+	    "refwheel" : false
+        }
+    ],
+    "Pr": [],
+    "Nd": [],
+    "Pm": [],
+    "Sm": [],
+    "Eu": [],
+    "Gd": [
+        {
+            "material": "Gd(SO4)3",
+            "name": "Gadolinium sulphate",
+            "location": "Gd",
+	    "refwheel" : false
+        }
+    ],
+    "Tb": [],
+    "Dy": [
+        {
+            "material": "DyScO3",
+            "name": "Dysprosium scandate",
+            "location": "Dy",
+	    "refwheel" : false
+        }
+    ],
+    "Ho": [],
+    "Er": [
+        {
+            "material": "ErCrO3",
+            "name": "Erbium chromate",
+            "location": "Er",
+	    "refwheel" : false
+        },
+        {
+            "material": "Er2O3",
+            "name": "Erbium oxide",
+            "location": "Er",
+	    "refwheel" : false
+        }
+    ],
+    "Tm": [],
+    "Yb": [
+        {
+            "material": "Yb2O3",
+            "name": "Ytterbium oxide",
+            "location": "Yb",
+	    "refwheel" : false
+        }
+    ],
+    "Lu": [],
+    "Hf": [],
+    "Ta": [],
+    "W": [],
+    "Re": [
+        {
+            "material": "ReO2",
+            "name": "",
+            "location": "Re",
+	    "refwheel" : false
+        },
+        {
+            "material": "ReO3",
+            "name": "Rhenia",
+            "location": "Re",
+	    "refwheel" : false
+        },
+        {
+            "material": "Re",
+            "name": "",
+            "location": "Re",
+	    "refwheel" : false
+        },
+        {
+            "material": "NH4ReO4",
+            "name": "Ammonium perrhenate",
+            "location": "Re",
+	    "refwheel" : false
+        }
+    ],
+    "Os": [],
+    "Ir": [],
+    "Pt": [
+        {
+            "material": "Pt",
+            "name": "Pt foil",
+            "location": "Pt",
+	    "refwheel" : true
+        },
+        {
+            "material": "PtRu",
+            "name": "",
+            "location": "Ru",
+	    "refwheel" : false
+        },
+        {
+            "material": "Pt(NH3)4Cl2*xH20",
+            "name": "TAPC (tetraamineplatinum chloride)",
+            "location": "Pt",
+	    "refwheel" : false
+        },
+        {
+            "material": "PtCl2",
+            "name": "Platinum chloride",
+            "location": "Pt",
+	    "refwheel" : false
+        }
+    ],
+    "Au": [
+        {
+            "material": "Au",
+            "name": "Au foil",
+            "location": "Au",
+	    "refwheel" : true
+        },
+        {
+            "material": "Au",
+            "name": "Gold foil",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "AuS",
+            "name": "Sold sulfide",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "AuCl",
+            "name": "Gold(I) chloride",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "AuCl3",
+            "name": "Gold(III) chloride",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "AuCN",
+            "name": "Gold cyanide",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "AuH4Na3O8S4",
+            "name": "Gold thiosulfate",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "C4H4AuNaO4S",
+            "name": "Gold thiomalate",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": "C4AuKN4S4",
+            "name": "Gold potassium thiocyanate",
+            "location": "Au",
+	    "refwheel" : false
+        },
+        {
+            "material": " [H3O]2[PtCl6](H2O)x",
+            "name": "chloroplatinic acid, hexachloroplatinate",
+            "location": "Au",
+	    "refwheel" : false
+        }
+    ],
+    "Hg": [],
+    "Tl": [],
+    "Pb": [
+            {
+            "material": "Pb",
+            "name": "Pb foil",
+            "location": "Pb",
+	    "refwheel" : true
+        }
+    ],
+    "Bi": [
+        {
+            "material": "Bi2O3",
+            "name": "Bismuth oxide",
+            "location": "Bi",
+	    "refwheel" : true
+        },
+        {
+            "material": "BiF3",
+            "name": "Bismuth fluoride",
+            "location": "Bi",
+	    "refwheel" : false
+        }
+    ],
+    "Po": [],
+    "At": [],
+    "Fr": [],
+    "Ra": [],
+    "Ac": [],
+    "Th": [],
+    "Pa": [],
+    "U": [],
+    "Np": [],
+    "Pu": []
+}
