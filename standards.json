@@ -2,7 +2,7 @@
     "Ca": [
         {
             "material": "CaO",
-            "name": "",
+            "name": "Calcia, quicklime",
             "location": "Ca",
 	    "refwheel" : false
         },
@@ -63,6 +63,20 @@
             "name": "Ilmenite",
             "location": "Fe",
 	    "refwheel" : false
+        },
+        {
+            "material": "Eu2Ti2O7",
+            "name": "",
+            "location": "Eu",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        },
+        {
+            "material": "EuTiO3",
+            "name": "",
+            "location": "Eu",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
         }
     ],
     "V": [
@@ -222,7 +236,7 @@
         },
         {
             "material": "NiO",
-            "name": "",
+            "name": "Bunsenite",
             "location": "Ni",
 	    "refwheel" : false
         },
@@ -287,7 +301,7 @@
     ],
     "Ga": [
         {
-            "material": "GaO2",
+            "material": "Ga2O3",
             "name": "",
             "location": "Ga",
 	    "refwheel" : true
@@ -296,7 +310,7 @@
     "Ge": [
         {
             "material": "GeO2",
-            "name": "",
+            "name": "Germania",
             "location": "Ge",
 	    "refwheel" : true
         }
@@ -305,8 +319,68 @@
         {
             "material": "As2O3",
             "name": "",
-            "location": "As2O3",
+            "location": "As",
 	    "refwheel" : true
+        },
+	{
+            "material": "As2O5",
+            "name": "",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "AsS",
+            "name": "Realgar",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "As2S3",
+            "name": "Orpiment",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "C5H11AsO2",
+            "name": "Arsenobetaine",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "C3H9AsO",
+            "name": "Trimethylarsine oxide",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "KH2AsO4",
+            "name": "Potassium arsenate",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "C4H12AsI",
+            "name": "Tetramethyl arsonium iodide",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "NaAsO2",
+            "name": "sodium meta arsenite",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "CH3AsO3Na2",
+            "name": "Disodium methyl aresenate",
+            "location": "As",
+	    "refwheel" : false
+        },
+	{
+            "material": "(CH3)2AsO2H",
+            "name": "Cacodylic acid",
+            "location": "As",
+	    "refwheel" : false
         }
     ],
     "Se": [
@@ -520,30 +594,98 @@
             "name": "Lanthanum nickelate",
             "location": "Ni",
 	    "refwheel" : false
+        },
+        {
+            "material": "La(OH)3",
+            "name": "Lanthanum hydroxide",
+            "location": "Ni",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
         }
     ],
     "Ce": [
         {
             "material": "CeO2",
-            "name": "Cerium dioxide",
+            "name": "Ceria",
             "location": "Ce",
 	    "refwheel" : false
         }
     ],
-    "Pr": [],
-    "Nd": [],
+    "Pr": [
+        {
+            "material": "Pr6O11",
+            "name": "",
+            "location": "Pr",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
+    "Nd": [
+        {
+            "material": "Nd2O3",
+            "name": "",
+            "location": "Nd",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
     "Pm": [],
-    "Sm": [],
-    "Eu": [],
+    "Sm": [
+        {
+            "material": "Sm2O3",
+            "name": "",
+            "location": "Sm",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
+    "Eu": [
+        {
+            "material": "Eu2O3",
+            "name": "",
+            "location": "Eu",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        },
+        {
+            "material": "Eu2Ti2O7",
+            "name": "",
+            "location": "Eu",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        },
+        {
+            "material": "EuTiO3",
+            "name": "",
+            "location": "Eu",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
     "Gd": [
         {
             "material": "Gd(SO4)3",
             "name": "Gadolinium sulphate",
             "location": "Gd",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        },
+        {
+            "material": "Gd2O3",
+            "name": "Gadolinium oxide",
+            "location": "Gd",
+	    "refwheel" : true
         }
     ],
-    "Tb": [],
+    "Tb": [
+        {
+            "material": "Tb4O7",
+            "name": "",
+            "location": "Tb",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
     "Dy": [
         {
             "material": "DyScO3",
@@ -552,7 +694,15 @@
 	    "refwheel" : false
         }
     ],
-    "Ho": [],
+    "Ho": [
+        {
+            "material": "Ho2O3",
+            "name": "",
+            "location": "Ho",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
     "Er": [
         {
             "material": "ErCrO3",
@@ -576,7 +726,15 @@
 	    "refwheel" : false
         }
     ],
-    "Lu": [],
+    "Lu": [
+        {
+            "material": "Lu2O3",
+            "name": "",
+            "location": "Lu",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
     "Hf": [],
     "Ta": [],
     "W": [],

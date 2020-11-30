@@ -106,6 +106,8 @@ class Standards():
                     location = 'location: '+this['location']
                 if this['refwheel'] is True:
                     location = 'on reference wheel'
+                if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
+                    location = 'on lanthanide wheel'
             ## generate a div for the table explaining each port
                 if i == 0:
                     text = '        <div class="box box1">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
@@ -151,7 +153,7 @@ class Standards():
             boxedword = boxedword + character
         return(boxedword)
     
-    def oneitem(self, znum=26, symbol='Fe', name='iron', material='FeTiO3', commonname='ilmenite', location='Fe'):
+    def oneitem(self, znum=26, symbol='Fe', name='Iron', material='FeTiO3', commonname='ilmenite', location='Fe'):
         '''Generate a table that will occupy one div of the output html file.
         This table contains the data from a single standard material.
         The div looks something like this:
