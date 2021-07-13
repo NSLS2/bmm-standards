@@ -69,14 +69,14 @@
             "name": "",
             "location": "Eu",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : false
         },
         {
             "material": "EuTiO3",
             "name": "",
             "location": "Eu",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : false
         }
     ],
     "V": [
@@ -443,7 +443,7 @@
 	    "refwheel" : true
         },
         {
-            "material": "NbO",
+            "material": "NbO2",
             "name": "",
             "location": "Nb",
 	    "refwheel" : false
@@ -652,14 +652,14 @@
             "name": "",
             "location": "Eu",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : false
         },
         {
             "material": "EuTiO3",
             "name": "",
             "location": "Eu",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : false
         }
     ],
     "Gd": [
@@ -668,13 +668,14 @@
             "name": "Gadolinium sulphate",
             "location": "Gd",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : false
         },
         {
             "material": "Gd2O3",
             "name": "Gadolinium oxide",
             "location": "Gd",
-	    "refwheel" : true
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
         }
     ],
     "Tb": [
@@ -714,10 +715,19 @@
             "material": "Er2O3",
             "name": "Erbium oxide",
             "location": "Er",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
         }
     ],
-    "Tm": [],
+    "Tm": [
+        {
+            "material": "Tm2O3",
+            "name": "Thullium oxide",
+            "location": "Tm",
+	    "refwheel" : false,
+	    "lanthanidewheel" : true
+        }
+    ],
     "Yb": [
         {
             "material": "Yb2O3",
