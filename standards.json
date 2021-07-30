@@ -485,6 +485,12 @@
             "name": "Molybdite",
             "location": "Mo",
 	    "refwheel" : false
+        },
+        {
+            "material": "CaMoO4",
+            "name": "calcium molybdate",
+            "location": "Mo",
+	    "refwheel" : false
         }
     ],
     "Tc": [],
@@ -862,7 +868,20 @@
             "name": "chloroplatinic acid, hexachloroplatinate",
             "location": "Au",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "Au2O3",
+            "name": "gold oxide",
+            "location": "Au",
+	    "refwheel" : false
+	},
+	{
+	    "material": "Au(ac)3",
+            "name": "gold acetate",
+            "location": "Au",
+	    "refwheel" : false
+	}
+
     ],
     "Hg": [],
     "Tl": [],

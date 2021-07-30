@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 from openpyxl import load_workbook
 import json, datetime, pprint, re
 from mendeleev import element
