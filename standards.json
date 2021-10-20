@@ -891,7 +891,37 @@
             "name": "Pb foil",
             "location": "Pb",
 	    "refwheel" : true
-        }
+            },
+            {
+            "material": "PbO",
+            "name": "Pb (II) oxide, massicot",
+            "location": "Pb",
+	    "refwheel" : false
+            },
+            {
+            "material": "PbO2",
+            "name": "Pb (IV) dioxide",
+            "location": "Pb",
+	    "refwheel" : false
+            },
+            {
+            "material": "PbS",
+            "name": "Pb (II) sulfide, galena",
+            "location": "Pb",
+	    "refwheel" : false
+            },
+            {
+            "material": "PbSO4",
+            "name": "Pb sulfate, angelsite",
+            "location": "Pb",
+	    "refwheel" : false
+            },
+            {
+            "material": "PbCO3",
+            "name": "Pb carbonate, cerrusite",
+            "location": "Pb",
+	    "refwheel" : false
+            }
     ],
     "Bi": [
         {
