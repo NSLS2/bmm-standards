@@ -61,7 +61,7 @@
         {
             "material": "FeTiO3",
             "name": "Ilmenite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
@@ -143,55 +143,115 @@
         {
             "material": "FeO",
             "name": "Wüstite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "ZnFe2O4",
             "name": "Zinc ferrite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "FeTiO3",
             "name": "Ilmenite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "NiFe2O4",
             "name": "Nickel ferrite",
-            "location": "Ni",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "FeS2",
-            "name": "Pyrite",
+            "name": "Pyrite (oxidized?)",
             "location": "Fe",
 	    "refwheel" : false
         },
         {
             "material": "\u03b1-Fe2O3",
             "name": "Hematite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "FeS",
-            "name": "Pyrrhotite",
+            "name": "Pyrrhotite (oxidized?)",
             "location": "Fe",
 	    "refwheel" : false
         },
         {
             "material": "\u03b1-FeOOH",
             "name": "Goethite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "\u03b3-FeOOH",
             "name": "Lepidocrocite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "FePO4",
+            "name": "iron phosphate",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "Fe2(PO4)2",
+            "name": "Vivianite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeOOH",
+            "name": "ferrihydrite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "Fe3O4",
+            "name": "magnetite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "Fe2SiO4",
+            "name": "fayalite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "NaFaSi2O6",
+            "name": "aegerine",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "Fe2Al9O6(SiO2)4(O,OH)2",
+            "name": "staurolite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeCO3",
+            "name": "siderite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "FeC2O4(H2O)2",
+            "name": "Fe(II) oxalate",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "Fe2(C2O4)3(H2O)6",
+            "name": "Fe(III) oxalate",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         }
     ],
@@ -243,7 +303,7 @@
         {
             "material": "NiFe2O4",
             "name": "Nickel ferrite",
-            "location": "Ni",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         },
         {
@@ -295,7 +355,7 @@
         {
             "material": "ZnFe2O4",
             "name": "Zinc ferrite",
-            "location": "Fe",
+            "location": "Fe standards wheel",
 	    "refwheel" : false
         }
     ],

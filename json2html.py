@@ -175,7 +175,7 @@ class Standards():
             </tr>
             <tr><td></td></tr>
             <tr>
-              <td colspan=3 align=center><span class="major">{material}</span></td>
+              <td colspan=3 align=center><span class="{major}">{material}</span></td>
             </tr>
             <tr>
               <td colspan=3 align=center><span class="name">{commonname}</span></td>
@@ -186,11 +186,18 @@ class Standards():
           </table>
 '''
 
+        if len(material) < 12:
+            major = 'major'
+        elif len(material) < 20:
+            major = 'longmajor'
+        else:
+            major = 'verylongmajor'
         material = re.sub('(\d)', r'<sub>\g<1></sub>', material)
         return(form.format(znum       = znum,
                            name       = name,
                            symbol     = symbol,
                            material   = material,
+                           major      = major,
                            commonname = commonname,
                            location   = location,
         ))
@@ -203,8 +210,8 @@ class Standards():
 def main():
     m=Standards()
     #m.spreadsheet = 'Standards.xlsx'
-    #m.html        = 'BMM-standards.html'
-    m.html        = 'test.html'
+    m.html        = 'BMM-standards.html'
+    #m.html        = 'test.html'
     m.singlepage  = False
     #m.read_spreadsheet()
     #m.to_json()
