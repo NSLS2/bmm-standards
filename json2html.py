@@ -103,7 +103,7 @@ class Standards():
             for i, this in enumerate(data[el.symbol]):
                 location = ''
                 if this['location'] != el.symbol:
-                    location = 'location: '+this['location']
+                    location = this['location'] # 'location: '+
                 if this['refwheel'] is True:
                     location = 'on reference wheel'
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:

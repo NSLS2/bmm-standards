@@ -85,7 +85,13 @@
             "name": "V foil",
             "location": "V",
 	    "refwheel" : true
-        }
+        },
+	{
+            "material": "V2O5",
+            "name": "Vanadium pentoxide",
+            "location": "V",
+	    "refwheel" : false
+	}
     ],
     "Cr": [
         {
@@ -253,7 +259,97 @@
             "name": "Fe(III) oxalate",
             "location": "Fe standards wheel",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "(Fe,Mg)Al2 (OH,PO4)2",
+            "name": "Scorzalite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "(Mn,Fe,Mg) SiO3.H2O",
+            "name": "Neotocite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Mg2FeBO5",
+            "name": "Ludwigite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Fe2(PO4)(SO4)OH.5H20",
+            "name": "Diadochite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "(Mg,Fe)2Al3(Si5AlO18)",
+            "name": "Cordierite, Iolite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "(Mg,Fe)5(SiO)2(F,OH,O)2",
+            "name": "Chondrodite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "(Ca,Na)(Mg,Fe,Ti,Al)(Si,Al)O6",
+            "name": "Augite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ca2FeAl2B Si4O15(OH)",
+            "name": "ferro-Axinite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Fe3Al2Si3O12",
+            "name": "Almandine",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ca2Fe4Al0.75 (Si7AlO22)(OH)",
+            "name": "Hornblende",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ca2Al2Fe(SiO4)(Si2O7)O(OH)",
+            "name": "Epidote",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "CaFe(2+)2(Fe(3+)(Si2O7)O(OH)",
+            "name": "Ilvaite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ca3Fe2Si3O12",
+            "name": "Andradite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "CaFeSi2O6",
+            "name": "Hedenbergite",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ca10(Mg,Fe)2Al4(Si2O7)2 (SiO4)5(OH)4",
+            "name": "Vesuvianite, Idocrase",
+            "location": "Fe standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Co": [
         {
@@ -329,13 +425,13 @@
         {
             "material": "CuO",
             "name": "",
-            "location": "Cu",
+            "location": "Cu standards wheel",
 	    "refwheel" : false
         },
         {
             "material": "Cu2O",
             "name": "Cuprite",
-            "location": "Cu",
+            "location": "Cu standards wheel",
 	    "refwheel" : false
         },
         {
@@ -343,7 +439,13 @@
             "name": "Covellite",
             "location": "Cu",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "CuSiO3.H₂O",
+            "name": "Dioptase",
+            "location": "Cu standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Zn": [
         {
@@ -355,7 +457,7 @@
         {
             "material": "ZnFe2O4",
             "name": "Zinc ferrite",
-            "location": "Fe standards wheel",
+            "location": "Zn",
 	    "refwheel" : false
         }
     ],
@@ -493,7 +595,13 @@
             "name": "Lithium zirconate",
             "location": "Zr",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "K2ZrSi3O9",
+            "name": "Wadeite",
+            "location": "Zr",
+	    "refwheel" : false
+	}
     ],
     "Nb": [
         {
@@ -768,13 +876,19 @@
             "location": "Ho",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Ho2Sn2O7",
+            "name": "Holmium stannate",
+            "location": "Ho",
+	    "refwheel" : false
+	}
     ],
     "Er": [
         {
             "material": "ErCrO3",
             "name": "Erbium chromate",
-            "location": "Er",
+            "location": "Cr",
 	    "refwheel" : false
         },
         {
