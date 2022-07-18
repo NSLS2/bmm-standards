@@ -780,10 +780,58 @@
     "Ce": [
         {
             "material": "CeO2",
-            "name": "Ceria",
+            "name": "Ceria (C 4+)",
             "location": "Ce",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "CePO4",
+            "name": "Cerium phosphate (Ce 3+)",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ce2Ti2O7",
+            "name": "pyrohlore cerium titanate",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ce2Ti2O6",
+            "name": "rhombic cerium titanate",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ce0.67TiO3",
+            "name": "cerium titante",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "CaCe2Ti4O12",
+            "name": "calcium ceriusm titanate",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "SrCe2Ti4O12",
+            "name": "strontium ceriusm titanate",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Bi2Ce2Ti4O12",
+            "name": "bismuth ceriusm titanate",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ce2SiO7",
+            "name": "serium silicate",
+            "location": "Ce standards half-wheel",
+	    "refwheel" : false
+	}
     ],
     "Pr": [
         {
@@ -792,7 +840,25 @@
             "location": "Pr",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Pr(OH)3",
+            "name": "praseodymium hydroxide",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Pr2Ti2O7",
+            "name": "pyrochlore praseodymium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Pr2TiO5",
+            "name": "stuffed pyrochlore praseodymium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Nd": [
         {
@@ -801,7 +867,31 @@
             "location": "Nd",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Nd(OH)3",
+            "name": "neodymium hydroxide",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Nd2Ti2O7",
+            "name": "pyrochlore neodymium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Nd2Zr2O7",
+            "name": "pyrochlore zirconium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Nd2TiO5",
+            "name": "stuffed pyrochlore neodymium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Pm": [],
     "Sm": [
@@ -811,27 +901,46 @@
             "location": "Sm",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Sm2Ti2O7",
+            "name": "pyrochlore samarium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Sm2TiO5",
+            "name": "stuffed pyrochlore samarium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Eu": [
         {
             "material": "Eu2O3",
-            "name": "",
+            "name": "cubic europium oxide",
             "location": "Eu",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
         },
+	{
+            "material": "Eu2O3",
+            "name": "monoclinic europium oxide",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false,
+	    "lanthanidewheel" : false
+        },
         {
             "material": "Eu2Ti2O7",
             "name": "",
-            "location": "Eu",
+            "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
         },
         {
             "material": "EuTiO3",
             "name": "",
-            "location": "Eu",
+            "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
         }
@@ -840,7 +949,7 @@
         {
             "material": "Gd(SO4)3",
             "name": "Gadolinium sulphate",
-            "location": "Gd",
+            "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
         },
@@ -850,7 +959,19 @@
             "location": "Gd",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Gd2Ti2O7",
+            "name": "pyrochlore gadolinium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Gd2TiO5",
+            "name": "stuffed pyrochlore gadolinium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Tb": [
         {
@@ -859,7 +980,13 @@
             "location": "Tb",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Tb2TiO5",
+            "name": "stuffed pyrochlore terbium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Dy": [
         {
@@ -867,7 +994,19 @@
             "name": "Dysprosium scandate",
             "location": "Dy",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "Dy2Ti2O7",
+            "name": "pyrochlore dysprosium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "Dy2TiO5",
+            "name": "stuffed pyrochlore dysprosium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Ho": [
         {
@@ -881,6 +1020,12 @@
             "material": "Ho2Sn2O7",
             "name": "Holmium stannate",
             "location": "Ho",
+	    "refwheel" : false
+	},
+	{
+            "material": "Ho2TiO5",
+            "name": "stuffed pyrochlore holmium titanate",
+            "location": "Lanthanide standards wheel",
 	    "refwheel" : false
 	}
     ],
@@ -897,7 +1042,13 @@
             "location": "Er",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Er2TiO5",
+            "name": "stuffed pyrochlore erbium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Tm": [
         {
@@ -906,7 +1057,13 @@
             "location": "Tm",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Tm2TiO5",
+            "name": "stuffed pyrochlore thullium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Yb": [
         {
@@ -914,16 +1071,28 @@
             "name": "Ytterbium oxide",
             "location": "Yb",
 	    "refwheel" : false
-        }
+        },
+	{
+            "material": "Yb2TiO5",
+            "name": "stuffed pyrochlore ytterbium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Lu": [
         {
             "material": "Lu2O3",
-            "name": "",
+            "name": "lutetium oxide",
             "location": "Lu",
 	    "refwheel" : false,
 	    "lanthanidewheel" : true
-        }
+        },
+	{
+            "material": "Lu2TiO5",
+            "name": "stuffed pyrochlore lutetium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false
+	}
     ],
     "Hf": [],
     "Ta": [],
