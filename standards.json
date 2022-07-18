@@ -327,7 +327,7 @@
 	    "refwheel" : false
 	},
 	{
-            "material": "CaFe(2+)2(Fe(3+)(Si2O7)O(OH)",
+            "material": "CaFe(2+)2Fe(3+)(Si2O7)O(OH)",
             "name": "Ilvaite",
             "location": "Fe standards wheel",
 	    "refwheel" : false
