@@ -186,7 +186,7 @@ class Standards():
           </table>
 '''
 
-        if len(material) < 12:
+        if len(material) < 11:
             major = 'major'
         elif len(material) < 20:
             major = 'longmajor'

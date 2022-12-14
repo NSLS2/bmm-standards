@@ -87,9 +87,27 @@
 	    "refwheel" : true
         },
 	{
+            "material": "VO2",
+            "name": "Vanadium oxide",
+            "location": "V standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "V2O3",
+            "name": "Vanadium trioxide",
+            "location": "V standards wheel",
+	    "refwheel" : false
+	},
+	{
             "material": "V2O5",
             "name": "Vanadium pentoxide",
-            "location": "V",
+            "location": "V standards wheel",
+	    "refwheel" : false
+	},
+	{
+            "material": "VOSO4",
+            "name": "Vanadyl sulfate",
+            "location": "V standards wheel",
 	    "refwheel" : false
 	}
     ],
@@ -237,7 +255,7 @@
 	    "refwheel" : false
         },
         {
-            "material": "Fe2Al9O6(SiO2)4(O,OH)2",
+            "material": "Fe2Al9O6(SiO2)4 (O,OH)2",
             "name": "staurolite",
             "location": "Fe standards wheel",
 	    "refwheel" : false
@@ -255,7 +273,7 @@
 	    "refwheel" : false
         },
         {
-            "material": "Fe2(C2O4)3(H2O)6",
+            "material": "Fe2(C2O4)3 (H2O)6",
             "name": "Fe(III) oxalate",
             "location": "Fe standards wheel",
 	    "refwheel" : false
@@ -291,7 +309,7 @@
 	    "refwheel" : false
 	},
 	{
-            "material": "(Mg,Fe)5(SiO)2(F,OH,O)2",
+            "material": "(Mg,Fe)5(SiO)2 (F,OH,O)2",
             "name": "Chondrodite",
             "location": "Fe standards wheel",
 	    "refwheel" : false
@@ -345,7 +363,7 @@
 	    "refwheel" : false
 	},
 	{
-            "material": "Ca10(Mg,Fe)2Al4(Si2O7)2 (SiO4)5(OH)4",
+            "material": "Ca10(Mg,Fe)2Al4 (Si2O7)2 (SiO4)5(OH)4",
             "name": "Vesuvianite, Idocrase",
             "location": "Fe standards wheel",
 	    "refwheel" : false
@@ -567,12 +585,44 @@
 	    "refwheel" : true
         }
     ],
-    "Rb": [],
-    "Sr": [],
+    "Rb": [
+        {
+            "material": "RbCO3",
+            "name": "Rubidium carbonate",
+            "location": "Rb",
+	    "refwheel" : true
+        }
+    ],
+    "Sr": [
+        {
+            "material": "SrSO4",
+            "name": "Strontium sulfate",
+            "location": "Sr standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "SrMoO4",
+            "name": "Strontium molybdate",
+            "location": "Sr standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "Sr(OH)2.8H2O",
+            "name": "Strontium hydroxide",
+            "location": "Sr standards wheel",
+	    "refwheel" : false
+        },
+        {
+            "material": "SrTiO3",
+            "name": "Strontium titanate",
+            "location": "Sr standards wheel",
+	    "refwheel" : true
+        }	
+    ],
     "Y": [
         {
             "material": "Y2O3",
-            "name": "Yttria",
+            "name": "Yttria, yttrium oxide",
             "location": "Y",
 	    "refwheel" : false
         }
@@ -658,6 +708,12 @@
             "material": "CaMoO4",
             "name": "calcium molybdate",
             "location": "Mo",
+	    "refwheel" : false
+        },
+        {
+            "material": "SrMoO4",
+            "name": "Strontium molybdate",
+            "location": "Sr standards wheel",
 	    "refwheel" : false
         }
     ],
@@ -760,7 +816,14 @@
         }
     ],
     "I": [],
-    "Cs": [],
+    "Cs": [
+        {
+            "material": "CsNO3",
+            "name": "Cesium nitrate",
+            "location": "Ni",
+	    "refwheel" : true
+        }
+    ],
     "Ba": [],
     "La": [
         {
@@ -773,8 +836,8 @@
             "material": "La(OH)3",
             "name": "Lanthanum hydroxide",
             "location": "Ni",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         }
     ],
     "Ce": [
@@ -782,7 +845,7 @@
             "material": "CeO2",
             "name": "Ceria (C 4+)",
             "location": "Ce",
-	    "refwheel" : false
+	    "refwheel" : true
         },
 	{
             "material": "CePO4",
@@ -837,15 +900,15 @@
         {
             "material": "Pr6O11",
             "name": "",
-            "location": "Pr",
+            "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Pr(OH)3",
             "name": "praseodymium hydroxide",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : true
 	},
 	{
             "material": "Pr2Ti2O7",
@@ -865,8 +928,8 @@
             "material": "Nd2O3",
             "name": "",
             "location": "Nd",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Nd(OH)3",
@@ -899,8 +962,8 @@
             "material": "Sm2O3",
             "name": "",
             "location": "Sm",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Sm2Ti2O7",
@@ -920,8 +983,8 @@
             "material": "Eu2O3",
             "name": "cubic europium oxide",
             "location": "Eu",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Eu2O3",
@@ -957,8 +1020,8 @@
             "material": "Gd2O3",
             "name": "Gadolinium oxide",
             "location": "Gd",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Gd2Ti2O7",
@@ -978,8 +1041,8 @@
             "material": "Tb4O7",
             "name": "",
             "location": "Tb",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Tb2TiO5",
@@ -989,6 +1052,12 @@
 	}
     ],
     "Dy": [
+        {
+            "material": "Dy2O3",
+            "name": "Dysprosium oxide",
+            "location": "Dy",
+	    "refwheel" : true
+        },
         {
             "material": "DyScO3",
             "name": "Dysprosium scandate",
@@ -1013,8 +1082,8 @@
             "material": "Ho2O3",
             "name": "",
             "location": "Ho",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Ho2Sn2O7",
@@ -1040,8 +1109,8 @@
             "material": "Er2O3",
             "name": "Erbium oxide",
             "location": "Er",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Er2TiO5",
@@ -1070,7 +1139,7 @@
             "material": "Yb2O3",
             "name": "Ytterbium oxide",
             "location": "Yb",
-	    "refwheel" : false
+	    "refwheel" : true
         },
 	{
             "material": "Yb2TiO5",
@@ -1084,8 +1153,8 @@
             "material": "Lu2O3",
             "name": "lutetium oxide",
             "location": "Lu",
-	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "refwheel" : true,
+	    "lanthanidewheel" : false
         },
 	{
             "material": "Lu2TiO5",
@@ -1094,8 +1163,22 @@
 	    "refwheel" : false
 	}
     ],
-    "Hf": [],
-    "Ta": [],
+    "Hf": [
+        {
+            "material": "HfO2",
+            "name": "Halfnium oxide",
+            "location": "Hf",
+	    "refwheel" : true
+        }
+    ],
+    "Ta": [
+        {
+            "material": "Ta2O5",
+            "name": "Tantalum oxide",
+            "location": "Ta",
+	    "refwheel" : true
+        }
+    ],
     "W": [],
     "Re": [
         {
