@@ -624,7 +624,7 @@
             "material": "Y2O3",
             "name": "Yttria, yttrium oxide",
             "location": "Y",
-	    "refwheel" : false
+	    "refwheel" : true
         }
     ],
     "Zr": [
