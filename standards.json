@@ -19,6 +19,12 @@
             "name": "Dysprosium scandate",
             "location": "Dy",
 	    "refwheel" : false
+        },
+        {
+            "material": "Sc2O3",
+            "name": "Scandium oxide",
+            "location": "Sc",
+	    "refwheel" : false
         }
     ],
     "Ti": [
@@ -77,6 +83,31 @@
             "location": "Eu",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
+        },
+        {
+            "material": "Nd2TiO5",
+            "name": "stuffed pyrochlore Neodymium titanium oxide",
+            "location": "Ti",
+	    "refwheel" : false,
+	    "lanthanidewheel" : false
+        },
+        {
+            "material": "Er2TiO5",
+            "name": "stuffed pyrochlore Erbium titanium oxide",
+            "location": "Er",
+	    "refwheel" : false
+        },
+        {
+            "material": "Yb2TiO5",
+            "name": "stuffed pyrochlore Ytterbium titanium oxide",
+            "location": "Yb",
+	    "refwheel" : false
+        },
+        {
+            "material": "Y2TiO5",
+            "name": "stuffed pyrochlore Yttrium titanium oxide",
+            "location": "Y",
+	    "refwheel" : false
         }
     ],
     "V": [
@@ -121,6 +152,12 @@
         {
             "material": "ErCrO3",
             "name": "Erbium Chromate",
+            "location": "Er",
+	    "refwheel" : false
+        },
+        {
+            "material": "Er2TiO5",
+            "name": "stuffed pyrochlore Erbium titanium oxide",
             "location": "Er",
 	    "refwheel" : false
         }
@@ -477,6 +514,12 @@
             "name": "Zinc ferrite",
             "location": "Zn",
 	    "refwheel" : false
+        },
+        {
+            "material": "Ca2ZnSi2O7",
+            "name": "Hardystonite",
+            "location": "Zn",
+	    "refwheel" : false
         }
     ],
     "Ga": [
@@ -625,6 +668,12 @@
             "name": "Yttria, yttrium oxide",
             "location": "Y",
 	    "refwheel" : true
+        },
+        {
+            "material": "Y2TiO5",
+            "name": "stuffed pyrochlore Yttrium titanium oxide",
+            "location": "Y",
+	    "refwheel" : false
         }
     ],
     "Zr": [
@@ -637,6 +686,12 @@
         {
             "material": "ZrO2",
             "name": "Zirconia",
+            "location": "Zr",
+	    "refwheel" : false
+        },
+        {
+            "material": "CaZrTi2O7",
+            "name": "Zirconalite",
             "location": "Zr",
 	    "refwheel" : false
         },
@@ -662,7 +717,13 @@
         },
         {
             "material": "NbO2",
-            "name": "",
+            "name": "Niobium IV Oxide",
+            "location": "Nb",
+	    "refwheel" : false
+        },
+        {
+            "material": "Nb2O5",
+            "name": "Niobium V Oxide",
             "location": "Nb",
 	    "refwheel" : false
         },
@@ -873,25 +934,25 @@
 	},
 	{
             "material": "CaCe2Ti4O12",
-            "name": "calcium ceriusm titanate",
+            "name": "calcium cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false
 	},
 	{
             "material": "SrCe2Ti4O12",
-            "name": "strontium ceriusm titanate",
+            "name": "strontium cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false
 	},
 	{
             "material": "Bi2Ce2Ti4O12",
-            "name": "bismuth ceriusm titanate",
+            "name": "bismuth cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false
 	},
 	{
             "material": "Ce2SiO7",
-            "name": "serium silicate",
+            "name": "cerium silicate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false
 	}
@@ -960,7 +1021,7 @@
     "Sm": [
         {
             "material": "Sm2O3",
-            "name": "",
+            "name": "Samarium oxide",
             "location": "Sm",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false
@@ -995,7 +1056,7 @@
         },
         {
             "material": "Eu2Ti2O7",
-            "name": "",
+            "name": "pyrochlore Europium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
@@ -1179,7 +1240,14 @@
 	    "refwheel" : true
         }
     ],
-    "W": [],
+    "W": [
+        {
+            "material": "WO3",
+            "name": "Tungsten oxide",
+            "location": "W",
+	    "refwheel" : true
+        }
+    ],
     "Re": [
         {
             "material": "ReO2",
@@ -1304,6 +1372,12 @@
 	{
 	    "material": "Au(ac)3",
             "name": "gold acetate",
+            "location": "Au",
+	    "refwheel" : false
+	},
+	{
+	    "material": "La4LiAuO8",
+            "name": "lanthanum lithium gold oxide",
             "location": "Au",
 	    "refwheel" : false
 	}
