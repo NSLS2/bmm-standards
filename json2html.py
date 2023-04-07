@@ -87,20 +87,44 @@ class Standards():
 <html>
   <head>
     <title>XAFS Standards at BMM</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="{self.cssfile}" />
+    <link rel="stylesheet" href="pt.css" />
   </head>
 
   <body>
-  <h1>XAFS Standards at BMM</h1>'''
+  <h1>XAFS Standards at BMM</h1>
+  <main>'''
+            
 
+        with open('pt.html') as pt:
+            ptable = pt.read()
+        page = page + ptable + '</main>\n'
+        page = page +'''
+        <script type="text/javascript">
+            <!--
+            function goToAnchor(anchor) {
+               var loc = document.location.toString().split("#")[0];
+               document.location = loc + "#" + anchor;
+               return false;
+            }
+            //-->
+        </script>
+        '''    
         for z in range(20, 95):
             el = element(z)
             if el.symbol not in data:
                 continue
-            ## h1 for this switch + grid wrapper div
-            page = page + f'\n\n    <h2>{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
+            cls = ''
+            if z == 20: cls = 'class="first" '
+            if len(data[el.symbol]) > 0:
+                ## h1 for this switch + grid wrapper div
+                page = page + f'\n\n    <h2 {cls}id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
+                page = page + '            <table>\n'
+                page = page + '              <tr><th width=50%>Material</th><th width=30%>Common/mineral name</th><th width=20%>Location</th></tr>\n'
             
             for i, this in enumerate(data[el.symbol]):
+                formula = re.sub(r'(\d+)', r'<sub>\g<1></sub>', this['material'])
                 location = ''
                 if this['location'] != el.symbol:
                     location = this['location'] # 'location: '+
@@ -108,28 +132,36 @@ class Standards():
                     location = 'on reference wheel'
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'on lanthanide wheel'
-            ## generate a div for the table explaining each port
-                if i == 0:
-                    text = '        <div class="box box1">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
-                                                                           material=this['material'],
-                                                                           commonname=this['name'],
-                                                                           location=location) + '        </div>\n'
-                    #print(text, '\n')
-                elif i == 1:
-                    text = '        <div class="box box2">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
-                                                                           material=this['material'],
-                                                                           commonname=this['name'],
-                                                                           location=location) + '        </div>\n'
-                    #print(text, '\n')
-                else:
-                    text = '        <div class="box">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
-                                                                      material=this['material'],
-                                                                      commonname=this['name'],
-                                                                      location=location) + '        </div>\n'
-                    #print(text, '\n')
-                page = page + text
+                ## generate a div for the table explaining each port
+                page = page + f'''
+               <tr>
+                  <td>{formula}</td>
+                  <td>{this['name']}</td>
+                  <td>{location}</td>
+               </tr>
+'''
+                # if i == 0:
+                #     text = '        <div class="box box1">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
+                #                                                            material=this['material'],
+                #                                                            commonname=this['name'],
+                #                                                            location=location) + '        </div>\n'
+                #     #print(text, '\n')
+                # elif i == 1:
+                #     text = '        <div class="box box2">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
+                #                                                            material=this['material'],
+                #                                                            commonname=this['name'],
+                #                                                            location=location) + '        </div>\n'
+                #     #print(text, '\n')
+                # else:
+                #     text = '        <div class="box">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
+                #                                                       material=this['material'],
+                #                                                       commonname=this['name'],
+                #                                                       location=location) + '        </div>\n'
+                #     #print(text, '\n')
+                # page = page + text
             ## close the wrapper div
-            page = page  + '      </div>'
+            page = page + '            <table>\n'
+            page = page + '      </div>'
 
         ##########
         # footer #
