@@ -161,7 +161,7 @@ class Standards():
                 #     #print(text, '\n')
                 # page = page + text
             ## close the wrapper div
-            page = page + '            <table>\n'
+            page = page + '            </table>\n'
             page = page + '      </div>'
 
         ##########
