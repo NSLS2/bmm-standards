@@ -81,7 +81,7 @@ table {
     
 }
 th {
-
+    background-color: #999;
 }
 th, td {
     border: 1px solid black;

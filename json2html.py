@@ -94,7 +94,8 @@ class Standards():
 
   <body>
   <h1>XAFS Standards at BMM</h1>
-  <main>'''
+  <main>
+'''
             
 
         with open('pt.html') as pt:
