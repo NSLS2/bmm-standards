@@ -112,7 +112,7 @@ main .color-table {
 	background: rgba(91, 0, 136, 0.25);
 }
 .element.nostandards {
-	background: rgba(101, 101, 101, 0.25);
+	background: rgba(121, 101, 81, 0.25);
 }
 #key {
 	grid-area: 1 / 7 / 3 / 10;
@@ -472,35 +472,35 @@ main .color-table {
 	grid-area: 10 / 17 / 10 / 17;
 }
 #cg-alkali {
-	grid-area: 1 / 1 / 1 / 1;
-}
-#cg-alkaline {
 	grid-area: 1 / 2 / 1 / 2;
 }
-#cg-transition {
+#cg-alkaline {
 	grid-area: 1 / 3 / 1 / 3;
 }
-#cg-basic {
+#cg-transition {
 	grid-area: 1 / 4 / 1 / 4;
 }
-#cg-semimetal {
+#cg-basic {
 	grid-area: 1 / 5 / 1 / 5;
 }
-#cg-nonmetal {
+#cg-semimetal {
 	grid-area: 1 / 6 / 1 / 6;
 }
-#cg-halogen {
+#cg-nonmetal {
 	grid-area: 1 / 7 / 1 / 7;
 }
-#cg-noble {
+#cg-halogen {
 	grid-area: 1 / 8 / 1 / 8;
 }
-#cg-lanthanide {
+#cg-noble {
 	grid-area: 1 / 9 / 1 / 9;
 }
-#cg-actinide {
+#cg-lanthanide {
 	grid-area: 1 / 10 / 1 / 10;
 }
-#cg-nostandards {
+#cg-actinide {
 	grid-area: 1 / 11 / 1 / 11;
+}
+#cg-nostandards {
+	grid-area: 1 / 1 / 1 / 1;
 }
