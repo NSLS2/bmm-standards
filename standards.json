@@ -108,6 +108,12 @@
             "name": "stuffed pyrochlore Yttrium titanium oxide",
             "location": "Y",
 	    "refwheel" : false
+        },
+        {
+            "material": "Er2TiO5",
+            "name": "stuffed pyrochlore Erbium titanium oxide",
+            "location": "Er",
+	    "refwheel" : false
         }
     ],
     "V": [
@@ -152,12 +158,6 @@
         {
             "material": "ErCrO3",
             "name": "Erbium Chromate",
-            "location": "Er",
-	    "refwheel" : false
-        },
-        {
-            "material": "Er2TiO5",
-            "name": "stuffed pyrochlore Erbium titanium oxide",
             "location": "Er",
 	    "refwheel" : false
         }

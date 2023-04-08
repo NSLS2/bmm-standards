@@ -111,16 +111,15 @@ class Standards():
             }
             //-->
         </script>
+        <hr>
         '''    
         for z in range(20, 95):
             el = element(z)
             if el.symbol not in data:
                 continue
-            cls = ''
-            if z == 20: cls = 'class="first" '
             if len(data[el.symbol]) > 0:
                 ## h1 for this switch + grid wrapper div
-                page = page + f'\n\n    <h2 {cls}id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
+                page = page + f'\n\n    <h2 id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
                 page = page + '            <table>\n'
                 page = page + '              <tr><th width=50%>Material</th><th width=30%>Common/mineral name</th><th width=20%>Location</th></tr>\n'
             
