@@ -87,13 +87,12 @@ class Standards():
 <html>
   <head>
     <title>XAFS Standards at BMM</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="{self.cssfile}" />
     <link rel="stylesheet" href="pt.css" />
   </head>
 
   <body>
-  <h1>XAFS Standards at BMM</h1>
+  <h1>&emsp;XAFS Standards at BMM</h1>
   <main>
 '''
             
@@ -101,7 +100,7 @@ class Standards():
         with open('pt.html') as pt:
             ptable = pt.read()
         page = page + ptable + '</main>\n'
-        page = page +'''
+        page = page + '''
         <script type="text/javascript">
             <!--
             function goToAnchor(anchor) {
@@ -115,16 +114,19 @@ class Standards():
         '''    
         for z in range(20, 95):
             el = element(z)
+            print(el.symbol, end=' ', flush=True)
             if el.symbol not in data:
                 continue
             if len(data[el.symbol]) > 0:
-                ## h1 for this switch + grid wrapper div
                 page = page + f'\n\n    <h2 id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
                 page = page + '            <table>\n'
-                page = page + '              <tr><th width=50%>Material</th><th width=30%>Common/mineral name</th><th width=20%>Location</th></tr>\n'
+                page = page + '              <tr><th width=45%>Material</th><th width=35%>Common/mineral name</th><th width=20%>Location</th></tr>\n'
             
             for i, this in enumerate(data[el.symbol]):
                 formula = re.sub(r'(\d+)', r'<sub>\g<1></sub>', this['material'])
+                name = this['name']
+                if len(name) > 0:
+                    name = name[0].upper() + name[1:]
                 location = ''
                 if this['location'] != el.symbol:
                     location = this['location'] # 'location: '+
@@ -136,7 +138,7 @@ class Standards():
                 page = page + f'''
                <tr>
                   <td>{formula}</td>
-                  <td>{this['name']}</td>
+                  <td>{name}</td>
                   <td>{location}</td>
                </tr>
 '''
@@ -153,7 +155,7 @@ class Standards():
 '''
         with open(self.html, 'w') as fh:
             fh.write(page)
-        print(f'Wrote html to {self.html}')
+        print(f'\nWrote html to {self.html}')
 
     def boxify(self, word):
         '''Convert a word to be spelled by unicode points in the Enclosed

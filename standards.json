@@ -72,14 +72,14 @@
         },
         {
             "material": "Eu2Ti2O7",
-            "name": "",
+            "name": "Pyrochlore europium titanate",
             "location": "Eu",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
         },
         {
             "material": "EuTiO3",
-            "name": "",
+            "name": "Europium titanate",
             "location": "Eu",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
@@ -171,13 +171,13 @@
         },
         {
             "material": "MnO",
-            "name": "",
+            "name": "Manganese oxide",
             "location": "Mn",
 	    "refwheel" : false
         },
         {
             "material": "Mn2O3",
-            "name": "",
+            "name": "Bixbyite",
             "location": "Mn",
 	    "refwheel" : false
         },
@@ -415,19 +415,19 @@
         },
         {
             "material": "CoO",
-            "name": "",
+            "name": "Cobalt oxide",
             "location": "Co",
 	    "refwheel" : false
         },
         {
             "material": "Co2O3",
-            "name": "",
+            "name": "Cobalt sequioxide",
             "location": "Co",
 	    "refwheel" : false
         },
         {
             "material": "Co3O4",
-            "name": "",
+            "name": "Cobalt (II,III) Oxide",
             "location": "Co",
 	    "refwheel" : false
         },
@@ -479,7 +479,7 @@
         },
         {
             "material": "CuO",
-            "name": "",
+            "name": "Cupric oxide",
             "location": "Cu standards wheel",
 	    "refwheel" : false
         },
@@ -525,7 +525,7 @@
     "Ga": [
         {
             "material": "Ga2O3",
-            "name": "",
+            "name": "Gallium trioxide",
             "location": "Ga",
 	    "refwheel" : true
         }
@@ -541,13 +541,13 @@
     "As": [
         {
             "material": "As2O3",
-            "name": "",
+            "name": "Arsenic trioxide",
             "location": "As",
 	    "refwheel" : true
         },
 	{
             "material": "As2O5",
-            "name": "",
+            "name": "Arsenic pentoxide",
             "location": "As",
 	    "refwheel" : false
         },
@@ -615,7 +615,7 @@
         },
         {
             "material": "SeO2",
-            "name": "",
+            "name": "Selenium dioxide",
             "location": "Se",
 	    "refwheel" : false
         }
@@ -749,7 +749,7 @@
         },
         {
             "material": "MoS2",
-            "name": "",
+            "name": "Molybdenum disulfide",
             "location": "Mo",
 	    "refwheel" : false
         },
@@ -782,19 +782,19 @@
     "Ru": [
         {
             "material": "RuO2",
-            "name": "",
+            "name": "Ruthenium dioxide",
             "location": "Ru",
 	    "refwheel" : false
         },
         {
             "material": "PtRu",
-            "name": "",
+            "name": "Platinum ruthenium",
             "location": "Ru",
 	    "refwheel" : false
         },
         {
             "material": "RuNO4",
-            "name": "",
+            "name": "Ruthenium nitrate",
             "location": "Ru",
 	    "refwheel" : false
         }
@@ -871,7 +871,7 @@
     "Te": [
         {
             "material": "Te",
-            "name": "",
+            "name": "Tellurium",
             "location": "Te",
 	    "refwheel" : false
         }
@@ -960,14 +960,14 @@
     "Pr": [
         {
             "material": "Pr6O11",
-            "name": "",
+            "name": "Praseodymium (III, IV) oxide",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
         },
 	{
             "material": "Pr(OH)3",
-            "name": "praseodymium hydroxide",
+            "name": "Praseodymium hydroxide",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : true
 	},
@@ -987,7 +987,7 @@
     "Nd": [
         {
             "material": "Nd2O3",
-            "name": "",
+            "name": "Neodymium trioxide",
             "location": "Nd",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false
@@ -1063,7 +1063,7 @@
         },
         {
             "material": "EuTiO3",
-            "name": "",
+            "name": "Europium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false
@@ -1100,7 +1100,7 @@
     "Tb": [
         {
             "material": "Tb4O7",
-            "name": "",
+            "name": "Terbium (III, IV) oxide",
             "location": "Tb",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false
@@ -1141,7 +1141,7 @@
     "Ho": [
         {
             "material": "Ho2O3",
-            "name": "",
+            "name": "Holmium trioxide",
             "location": "Ho",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false
@@ -1251,7 +1251,7 @@
     "Re": [
         {
             "material": "ReO2",
-            "name": "",
+            "name": "Rhenium dioxide",
             "location": "Re",
 	    "refwheel" : false
         },
@@ -1263,7 +1263,7 @@
         },
         {
             "material": "Re",
-            "name": "",
+            "name": "Rhenium metal",
             "location": "Re",
 	    "refwheel" : false
         },
@@ -1285,7 +1285,7 @@
         },
         {
             "material": "PtRu",
-            "name": "",
+            "name": "Platinum ruthenium",
             "location": "Ru",
 	    "refwheel" : false
         },
