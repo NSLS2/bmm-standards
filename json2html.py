@@ -140,26 +140,6 @@ class Standards():
                   <td>{location}</td>
                </tr>
 '''
-                # if i == 0:
-                #     text = '        <div class="box box1">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
-                #                                                            material=this['material'],
-                #                                                            commonname=this['name'],
-                #                                                            location=location) + '        </div>\n'
-                #     #print(text, '\n')
-                # elif i == 1:
-                #     text = '        <div class="box box2">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
-                #                                                            material=this['material'],
-                #                                                            commonname=this['name'],
-                #                                                            location=location) + '        </div>\n'
-                #     #print(text, '\n')
-                # else:
-                #     text = '        <div class="box">' + self.oneitem(znum=z, name=el.name, symbol=el.symbol,
-                #                                                       material=this['material'],
-                #                                                       commonname=this['name'],
-                #                                                       location=location) + '        </div>\n'
-                #     #print(text, '\n')
-                # page = page + text
-            ## close the wrapper div
             page = page + '            </table>\n'
             page = page + '      </div>'
 
