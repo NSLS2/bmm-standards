@@ -114,6 +114,18 @@
             "name": "stuffed pyrochlore Erbium titanium oxide",
             "location": "Er",
 	    "refwheel" : false
+        },
+        {
+            "material": "CeTiNbO6",
+            "name": "cerium titanoniobate",
+            "location": "Ti",
+	    "refwheel" : false
+        },
+        {
+            "material": "CeTi2O6",
+            "name": "cerium titanate",
+            "location": "Ti",
+	    "refwheel" : false
         }
     ],
     "V": [
@@ -738,6 +750,12 @@
             "name": "",
             "location": "Nb",
 	    "refwheel" : false
+        },
+        {
+            "material": "CeTiNbO6",
+            "name": "cerium titanoniobate",
+            "location": "Nb",
+	    "refwheel" : false
         }
     ],
     "Mo": [
@@ -767,7 +785,7 @@
         },
         {
             "material": "CaMoO4",
-            "name": "calcium molybdate",
+            "name": "Powellite",
             "location": "Mo",
 	    "refwheel" : false
         },
