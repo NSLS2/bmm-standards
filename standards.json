@@ -4,7 +4,8 @@
             "material": "CaO",
             "name": "Calcia, quicklime",
             "location": "Ca",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CaTiO3",
@@ -18,7 +19,8 @@
             "material": "DyScO3",
             "name": "Dysprosium scandate",
             "location": "Dy",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Sc2O3",
@@ -32,94 +34,109 @@
             "material": "Ti",
             "name": "Ti foil",
             "location": "Ti",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "TiCN",
             "name": "Titanium carbonitride",
             "location": "Ti",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "TiN",
             "name": "Titanium nitride",
             "location": "Ti",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CaTiO3",
             "name": "Perovskite",
             "location": "Ti",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "LiTiO3",
             "name": "Lithium titanate",
             "location": "Ti",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "SrTiO3",
             "name": "Tausonite",
             "location": "Ti",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "FeTiO3",
             "name": "Ilmenite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Eu2Ti2O7",
             "name": "Pyrochlore europium titanate",
             "location": "Eu",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
         {
             "material": "EuTiO3",
             "name": "Europium titanate",
             "location": "Eu",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Nd2TiO5",
             "name": "stuffed pyrochlore Neodymium titanium oxide",
             "location": "Ti",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Er2TiO5",
             "name": "stuffed pyrochlore Erbium titanium oxide",
             "location": "Er",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Yb2TiO5",
             "name": "stuffed pyrochlore Ytterbium titanium oxide",
             "location": "Yb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Y2TiO5",
             "name": "stuffed pyrochlore Yttrium titanium oxide",
             "location": "Y",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Er2TiO5",
             "name": "stuffed pyrochlore Erbium titanium oxide",
             "location": "Er",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CeTiNbO6",
             "name": "cerium titanoniobate",
             "location": "Ti",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CeTi2O6",
@@ -133,25 +150,29 @@
             "material": "V",
             "name": "V foil",
             "location": "V",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
 	{
             "material": "VO2",
             "name": "Vanadium oxide",
             "location": "V standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "V2O3",
             "name": "Vanadium trioxide",
             "location": "V standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "V2O5",
             "name": "Vanadium pentoxide",
             "location": "V standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "VOSO4",
@@ -165,7 +186,8 @@
             "material": "Cr",
             "name": "Cr foil",
             "location": "Cr",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "ErCrO3",
@@ -179,25 +201,29 @@
             "material": "Mn",
             "name": "Mn foil",
             "location": "Mn",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "MnO",
             "name": "Manganese oxide",
             "location": "Mn",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Mn2O3",
             "name": "Bixbyite",
             "location": "Mn",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "MnO2",
             "name": "Pyrolucite",
             "location": "Mn",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "MnCO3",
@@ -211,211 +237,246 @@
             "material": "Fe",
             "name": "Fe foil",
             "location": "Fe",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "FeO",
             "name": "Wüstite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Wustite.001"
         },
         {
             "material": "ZnFe2O4",
             "name": "Zinc ferrite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-ZnFerrite.001"
         },
         {
             "material": "FeTiO3",
             "name": "Ilmenite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Ilmenite.001"
         },
         {
             "material": "NiFe2O4",
             "name": "Nickel ferrite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-NiFerrite.001"
         },
         {
             "material": "FeS2",
             "name": "Pyrite (oxidized?)",
             "location": "Fe",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "\u03b1-Fe2O3",
             "name": "Hematite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Hematite.001"
         },
         {
             "material": "FeS",
             "name": "Pyrrhotite (oxidized?)",
             "location": "Fe",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "\u03b1-FeOOH",
             "name": "Goethite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Goethite.001"
         },
         {
             "material": "\u03b3-FeOOH",
             "name": "Lepidocrocite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Lepidocrocite.001"
         },
         {
             "material": "FePO4",
             "name": "iron phosphate",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-IronPhosphate.001"
         },
         {
             "material": "Fe2(PO4)2",
             "name": "Vivianite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Vivianite.001"
         },
         {
             "material": "FeOOH",
             "name": "ferrihydrite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Ferrihydrite.001"
         },
         {
             "material": "Fe3O4",
             "name": "magnetite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Magnetite.001"
         },
         {
             "material": "Fe2SiO4",
             "name": "fayalite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Wustite.001"
         },
         {
             "material": "NaFaSi2O6",
             "name": "aegerine",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Aegerine.001"
         },
         {
             "material": "Fe2Al9O6(SiO2)4 (O,OH)2",
             "name": "staurolite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Staurolite.001"
         },
         {
             "material": "FeCO3",
             "name": "siderite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Siderite.001"
         },
         {
             "material": "FeC2O4(H2O)2",
             "name": "Fe(II) oxalate",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Fe2Oxalate.001"
         },
         {
             "material": "Fe2(C2O4)3 (H2O)6",
             "name": "Fe(III) oxalate",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Fe3Oxalate.001"
         },
 	{
             "material": "(Fe,Mg)Al2 (OH,PO4)2",
             "name": "Scorzalite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Scorzalite.001"
 	},
 	{
             "material": "(Mn,Fe,Mg) SiO3.H2O",
             "name": "Neotocite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Neotocite.001"
 	},
 	{
             "material": "Mg2FeBO5",
             "name": "Ludwigite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Ludwigite.001"
 	},
 	{
             "material": "Fe2(PO4)(SO4)OH.5H20",
             "name": "Diadochite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Diadochite.001"
 	},
 	{
             "material": "(Mg,Fe)2Al3(Si5AlO18)",
             "name": "Cordierite, Iolite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Cordierite.001"
 	},
 	{
             "material": "(Mg,Fe)5(SiO)2 (F,OH,O)2",
             "name": "Chondrodite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Chondrite.001"
 	},
 	{
             "material": "(Ca,Na)(Mg,Fe,Ti,Al)(Si,Al)O6",
             "name": "Augite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Augite.001"
 	},
 	{
             "material": "Ca2FeAl2B Si4O15(OH)",
             "name": "ferro-Axinite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-ferro-Axinite.001"
 	},
 	{
             "material": "Fe3Al2Si3O12",
             "name": "Almandine",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Almandine.001"
 	},
 	{
             "material": "Ca2Fe4Al0.75 (Si7AlO22)(OH)",
             "name": "Hornblende",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Hornblende.001"
 	},
 	{
             "material": "Ca2Al2Fe(SiO4)(Si2O7)O(OH)",
             "name": "Epidote",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Epidote.001"
 	},
 	{
             "material": "CaFe(2+)2Fe(3+)(Si2O7)O(OH)",
             "name": "Ilvaite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Ilvaite.001"
 	},
 	{
             "material": "Ca3Fe2Si3O12",
             "name": "Andradite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Adndradite.001"
 	},
 	{
             "material": "CaFeSi2O6",
             "name": "Hedenbergite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Hedenbergite.001"
 	},
 	{
             "material": "Ca10(Mg,Fe)2Al4 (Si2O7)2 (SiO4)5(OH)4",
             "name": "Vesuvianite, Idocrase",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Fe-Vesuvianite.001"
 	}
     ],
     "Co": [
@@ -423,25 +484,29 @@
             "material": "Co",
             "name": "Co foil",
             "location": "Co",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "CoO",
             "name": "Cobalt oxide",
             "location": "Co",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Co2O3",
             "name": "Cobalt sequioxide",
             "location": "Co",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Co3O4",
             "name": "Cobalt (II,III) Oxide",
             "location": "Co",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CoAlO3",
@@ -455,25 +520,29 @@
             "material": "Ni",
             "name": "Ni foil",
             "location": "Ni",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "NiO",
             "name": "Bunsenite",
             "location": "Ni",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "NiFe2O4",
             "name": "Nickel ferrite",
             "location": "Fe standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "NiAl2O4",
             "name": "Ni aluminate",
             "location": "Ni",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "LaNiO3",
@@ -487,25 +556,29 @@
             "material": "Cu",
             "name": "Cu foil",
             "location": "Cu",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "CuO",
             "name": "Cupric oxide",
             "location": "Cu standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Cu2O",
             "name": "Cuprite",
             "location": "Cu standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CuS",
             "name": "Covellite",
             "location": "Cu",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "CuSiO3.H₂O",
@@ -519,13 +592,15 @@
             "material": "Zn",
             "name": "Zn foil",
             "location": "Zn",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "ZnFe2O4",
             "name": "Zinc ferrite",
             "location": "Zn",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Ca2ZnSi2O7",
@@ -555,61 +630,71 @@
             "material": "As2O3",
             "name": "Arsenic trioxide",
             "location": "As",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
 	{
             "material": "As2O5",
             "name": "Arsenic pentoxide",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "AsS",
             "name": "Realgar",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "As2S3",
             "name": "Orpiment",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "C5H11AsO2",
             "name": "Arsenobetaine",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "C3H9AsO",
             "name": "Trimethylarsine oxide",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "KH2AsO4",
             "name": "Potassium arsenate",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "C4H12AsI",
             "name": "Tetramethyl arsonium iodide",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "NaAsO2",
             "name": "sodium meta arsenite",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "CH3AsO3Na2",
             "name": "Disodium methyl aresenate",
             "location": "As",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "(CH3)2AsO2H",
@@ -623,7 +708,8 @@
             "material": "Se",
             "name": "Selenium",
             "location": "Se",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "SeO2",
@@ -653,19 +739,22 @@
             "material": "SrSO4",
             "name": "Strontium sulfate",
             "location": "Sr standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "SrMoO4",
             "name": "Strontium molybdate",
             "location": "Sr standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Sr(OH)2.8H2O",
             "name": "Strontium hydroxide",
             "location": "Sr standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "SrTiO3",
@@ -679,7 +768,8 @@
             "material": "Y2O3",
             "name": "Yttria, yttrium oxide",
             "location": "Y",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "Y2TiO5",
@@ -693,25 +783,29 @@
             "material": "Zr",
             "name": "Zr foil",
             "location": "Zr",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "ZrO2",
             "name": "Zirconia",
             "location": "Zr",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CaZrTi2O7",
             "name": "Zirconalite",
             "location": "Zr",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Li2ZrO3",
             "name": "Lithium zirconate",
             "location": "Zr",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "K2ZrSi3O9",
@@ -725,31 +819,36 @@
             "material": "Nb",
             "name": "Nb foil",
             "location": "Nb",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "NbO2",
             "name": "Niobium IV Oxide",
             "location": "Nb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Nb2O5",
             "name": "Niobium V Oxide",
             "location": "Nb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "NbC",
             "name": "",
             "location": "Nb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "NbN",
             "name": "",
             "location": "Nb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CeTiNbO6",
@@ -763,31 +862,36 @@
             "material": "Mo",
             "name": "Mo foil",
             "location": "Mo",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "MoS2",
             "name": "Molybdenum disulfide",
             "location": "Mo",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "MoO2",
             "name": "Tugarinovite",
             "location": "Mo",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "MoO3",
             "name": "Molybdite",
             "location": "Mo",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CaMoO4",
             "name": "Powellite",
             "location": "Mo",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "SrMoO4",
@@ -802,13 +906,15 @@
             "material": "RuO2",
             "name": "Ruthenium dioxide",
             "location": "Ru",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "PtRu",
             "name": "Platinum ruthenium",
             "location": "Ru",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "RuNO4",
@@ -824,31 +930,36 @@
             "material": "Ag3PO4",
             "name": "Silver orthophosphate",
             "location": "Ag",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Ag2O",
             "name": "",
             "location": "Ag",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AgK(CN)2",
             "name": "Silver potassium cyanide",
             "location": "Ag",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AgCN",
             "name": "Sliver cyanide",
             "location": "Ag",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AgCl2",
             "name": "Silver chloride",
             "location": "Ag",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AgSCN",
@@ -862,19 +973,22 @@
             "material": "CdSO4",
             "name": "Cadmium sulphate",
             "location": "Cd",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Cd(OH)2",
             "name": "Cadmiun hydroxide",
             "location": "Cd",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CdNO3",
             "name": "Cadmium nitride",
             "location": "Cd",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "CdCl2",
@@ -909,7 +1023,8 @@
             "material": "LaNiO3",
             "name": "Lanthanum nickelate",
             "location": "Ni",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "La(OH)3",
@@ -924,49 +1039,57 @@
             "material": "CeO2",
             "name": "Ceria (C 4+)",
             "location": "Ce",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
 	{
             "material": "CePO4",
             "name": "Cerium phosphate (Ce 3+)",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Ce2Ti2O7",
             "name": "pyrohlore cerium titanate",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Ce2Ti2O6",
             "name": "rhombic cerium titanate",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Ce0.67TiO3",
             "name": "cerium titante",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "CaCe2Ti4O12",
             "name": "calcium cerium titanate",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "SrCe2Ti4O12",
             "name": "strontium cerium titanate",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Bi2Ce2Ti4O12",
             "name": "bismuth cerium titanate",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Ce2SiO7",
@@ -981,19 +1104,22 @@
             "name": "Praseodymium (III, IV) oxide",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Pr(OH)3",
             "name": "Praseodymium hydroxide",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
 	},
 	{
             "material": "Pr2Ti2O7",
             "name": "pyrochlore praseodymium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Pr2TiO5",
@@ -1008,25 +1134,29 @@
             "name": "Neodymium trioxide",
             "location": "Nd",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Nd(OH)3",
             "name": "neodymium hydroxide",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Nd2Ti2O7",
             "name": "pyrochlore neodymium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Nd2Zr2O7",
             "name": "pyrochlore zirconium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Nd2TiO5",
@@ -1042,13 +1172,15 @@
             "name": "Samarium oxide",
             "location": "Sm",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Sm2Ti2O7",
             "name": "pyrochlore samarium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Sm2TiO5",
@@ -1063,21 +1195,24 @@
             "name": "cubic europium oxide",
             "location": "Eu",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Eu2O3",
             "name": "monoclinic europium oxide",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Eu2Ti2O7",
             "name": "pyrochlore Europium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
         {
             "material": "EuTiO3",
@@ -1093,20 +1228,23 @@
             "name": "Gadolinium sulphate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Gd2O3",
             "name": "Gadolinium oxide",
             "location": "Gd",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Gd2Ti2O7",
             "name": "pyrochlore gadolinium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Gd2TiO5",
@@ -1121,7 +1259,8 @@
             "name": "Terbium (III, IV) oxide",
             "location": "Tb",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Tb2TiO5",
@@ -1135,19 +1274,22 @@
             "material": "Dy2O3",
             "name": "Dysprosium oxide",
             "location": "Dy",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "DyScO3",
             "name": "Dysprosium scandate",
             "location": "Dy",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Dy2Ti2O7",
             "name": "pyrochlore dysprosium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Dy2TiO5",
@@ -1162,13 +1304,15 @@
             "name": "Holmium trioxide",
             "location": "Ho",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Ho2Sn2O7",
             "name": "Holmium stannate",
             "location": "Ho",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
             "material": "Ho2TiO5",
@@ -1182,14 +1326,16 @@
             "material": "ErCrO3",
             "name": "Erbium chromate",
             "location": "Cr",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Er2O3",
             "name": "Erbium oxide",
             "location": "Er",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Er2TiO5",
@@ -1204,7 +1350,8 @@
             "name": "Thullium oxide",
             "location": "Tm",
 	    "refwheel" : false,
-	    "lanthanidewheel" : true
+	    "lanthanidewheel" : true,
+	    "datafile" : false
         },
 	{
             "material": "Tm2TiO5",
@@ -1218,7 +1365,8 @@
             "material": "Yb2O3",
             "name": "Ytterbium oxide",
             "location": "Yb",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
 	{
             "material": "Yb2TiO5",
@@ -1233,7 +1381,8 @@
             "name": "lutetium oxide",
             "location": "Lu",
 	    "refwheel" : true,
-	    "lanthanidewheel" : false
+	    "lanthanidewheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Lu2TiO5",
@@ -1271,19 +1420,22 @@
             "material": "ReO2",
             "name": "Rhenium dioxide",
             "location": "Re",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "ReO3",
             "name": "Rhenia",
             "location": "Re",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Re",
             "name": "Rhenium metal",
             "location": "Re",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "NH4ReO4",
@@ -1299,19 +1451,22 @@
             "material": "Pt",
             "name": "Pt foil",
             "location": "Pt",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "PtRu",
             "name": "Platinum ruthenium",
             "location": "Ru",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "Pt(NH3)4Cl2 (H2O)x",
             "name": "TAPC (tetraamine platinum chloride)",
             "location": "Pt",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "PtCl2",
@@ -1325,73 +1480,85 @@
             "material": "Au",
             "name": "Au foil",
             "location": "Au",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "Au",
             "name": "Gold foil",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AuS",
             "name": "Sold sulfide",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AuCl",
             "name": "Gold(I) chloride",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AuCl3",
             "name": "Gold(III) chloride",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AuCN",
             "name": "Gold cyanide",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "AuH4Na3O8S4",
             "name": "Gold thiosulfate",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "C4H4AuNaO4S",
             "name": "Gold thiomalate",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": "C4AuKN4S4",
             "name": "Gold potassium thiocyanate",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
         {
             "material": " [H3O]2[PtCl6](H2O)x",
             "name": "chloroplatinic acid, hexachloroplatinate",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
         },
 	{
             "material": "Au2O3",
             "name": "gold oxide",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
 	    "material": "Au(ac)3",
             "name": "gold acetate",
             "location": "Au",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
 	},
 	{
 	    "material": "La4LiAuO8",
@@ -1408,31 +1575,36 @@
             "material": "Pb",
             "name": "Pb foil",
             "location": "Pb",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
             },
             {
             "material": "PbO",
             "name": "Pb (II) oxide, massicot",
             "location": "Pb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
             },
             {
             "material": "PbO2",
             "name": "Pb (IV) dioxide",
             "location": "Pb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
             },
             {
             "material": "PbS",
             "name": "Pb (II) sulfide, galena",
             "location": "Pb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
             },
             {
             "material": "PbSO4",
             "name": "Pb sulfate, angelsite",
             "location": "Pb",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : false
             },
             {
             "material": "PbCO3",
@@ -1446,7 +1618,8 @@
             "material": "Bi2O3",
             "name": "Bismuth oxide",
             "location": "Bi",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         },
         {
             "material": "BiF3",

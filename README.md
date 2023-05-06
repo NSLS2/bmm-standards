@@ -1,7 +1,7 @@
 # bmm-standards
-A pretty webpage for BMM's collection of XAFS standards
+A pretty webpage for BMM's collection of common XAFS materials
 
-[BMM's standards collection](./BMM-standards.html)
+[BMM's common materials collection](./BMM-standards.html)
 
 Periodic table adapted from [some guy named Daniel](https://codepen.io/gooseofmusic/pen/PjKdNQ)
 

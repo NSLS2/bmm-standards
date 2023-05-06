@@ -6,7 +6,7 @@ from mendeleev import element
 pp = pprint.PrettyPrinter(indent=4)
 
 
-class Standards():
+class CommonMaterials():
     '''A class for managing a JSON file of items in the BMM standards
     collection and writing a useful HTML file summarizing the collection.
 
@@ -74,28 +74,40 @@ class Standards():
             page = f'''
 <html>
   <head>
-    <title>XAFS Standards at BMM</title>
+    <title>Common XAFS materials at BMM</title>
     <style>
 {css}
     </style>
   </head>
 
   <body>
-  <h1>XAFS Standards at BMM</h1>'''
+  <h1>Common XAFS materials at BMM</h1>'''
         else:
             page = f'''
 <html>
   <head>
-    <title>XAFS Standards at BMM</title>
+    <title>Common XAFS materials at BMM</title>
     <link rel="stylesheet" href="{self.cssfile}" />
     <link rel="stylesheet" href="pt.css" />
   </head>
 
   <body>
-  <h1>&emsp;XAFS Standards at BMM</h1>
+  <h1>&emsp;Common XAFS materials at BMM</h1>
   <main>
 '''
-            
+        page = page + '''
+<div class="topmatter">
+  <p>
+    This page lists common (mostly metals, oxides, and other simple, stable compounds) for the 
+    elements within the measurement range of BMM.  As of May 6, 2023, collection of data on all
+    these compounds is an ongoing process.  Eventually, everything listed here will have an
+    example data file.
+  </p>
+  <p>
+    Click on an element to jump to the list of compounds in BMM's collection.
+  </p>
+</div>
+'''
 
         with open('pt.html') as pt:
             ptable = pt.read()
@@ -120,7 +132,7 @@ class Standards():
             if len(data[el.symbol]) > 0:
                 page = page + f'\n\n    <h2 id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
                 page = page + '            <table>\n'
-                page = page + '              <tr><th width=45%>Material</th><th width=35%>Common/mineral name</th><th width=20%>Location</th></tr>\n'
+                page = page + '              <tr><th width=37%>Material</th><th width=25%>Common/mineral name</th><th width=20%>Location</th><th width=25%>Data&nbsp;File</th></tr>\n'
             
             for i, this in enumerate(data[el.symbol]):
                 formula = re.sub(r'(\d+)', r'<sub>\g<1></sub>', this['material'])
@@ -134,12 +146,22 @@ class Standards():
                     location = 'on reference wheel'
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'on lanthanide wheel'
+
+                if 'datafile' not in this:
+                    datafile = ''
+                elif this['datafile'] is False:
+                    datafile = ''
+                else:
+                    datafile = f'<a href="Data/Fe/{this["datafile"]}">{this["datafile"]}</a>'
+                
+                
                 ## generate a div for the table explaining each port
                 page = page + f'''
                <tr>
                   <td>{formula}</td>
                   <td>{name}</td>
                   <td>{location}</td>
+                  <td>{datafile}</td>
                </tr>
 '''
             page = page + '            </table>\n'
@@ -169,7 +191,7 @@ class Standards():
     
     def oneitem(self, znum=26, symbol='Fe', name='Iron', material='FeTiO3', commonname='ilmenite', location='Fe'):
         '''Generate a table that will occupy one div of the output html file.
-        This table contains the data from a single standard material.
+        This table contains the data from a single common material.
         The div looks something like this:
 
         +--------------------------+
@@ -222,7 +244,7 @@ class Standards():
 
 
 def main():
-    m=Standards()
+    m=CommonMaterials()
     #m.spreadsheet = 'Standards.xlsx'
     m.html        = 'BMM-standards.html'
     #m.html        = 'test.html'
