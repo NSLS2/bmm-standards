@@ -151,34 +151,35 @@
             "name": "V foil",
             "location": "V",
 	    "refwheel" : true,
-	    "datafile" : false
+	    "datafile" : "V-Vfoil.001"
         },
 	{
             "material": "VO2",
             "name": "Vanadium oxide",
             "location": "V standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "V-VO2.001"
 	},
 	{
             "material": "V2O3",
             "name": "Vanadium trioxide",
             "location": "V standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "V-V2O3.001"
 	},
 	{
             "material": "V2O5",
             "name": "Vanadium pentoxide",
             "location": "V standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "V-V2O5.001"
 	},
 	{
             "material": "VOSO4",
             "name": "Vanadyl sulfate",
             "location": "V standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile": "V-VanadylSulfate.001"
 	}
     ],
     "Cr": [
@@ -557,56 +558,87 @@
             "name": "Cu foil",
             "location": "Cu",
 	    "refwheel" : true,
-	    "datafile" : false
+	    "datafile" : "Cu-Cufoil.001"
         },
         {
             "material": "CuO",
             "name": "Cupric oxide",
             "location": "Cu standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Cu-CuO.001"
         },
         {
             "material": "Cu2O",
             "name": "Cuprite",
             "location": "Cu standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Cu-Cu2O.001"
         },
         {
             "material": "CuS",
             "name": "Covellite",
-            "location": "Cu",
+            "location": "Cu standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Cu-Covellite.001"
         },
 	{
             "material": "CuSiO3.H₂O",
             "name": "Dioptase",
             "location": "Cu standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Cu-Dioptase.001"
 	}
     ],
     "Zn": [
         {
             "material": "Zn",
             "name": "Zn foil",
-            "location": "Zn",
+            "location": "Zn standards wheel",
 	    "refwheel" : true,
-	    "datafile" : false
+	    "datafile" : "Zn-Znfoil.001"
         },
         {
             "material": "ZnFe2O4",
             "name": "Zinc ferrite",
-            "location": "Zn",
+            "location": "Zn standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Zn-ZnFerrite.001"
         },
         {
             "material": "Ca2ZnSi2O7",
             "name": "Hardystonite",
-            "location": "Zn",
-	    "refwheel" : false
+            "location": "Zn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Zn-Hardystonite.001"
+        },
+        {
+            "material": "Zn4Si2O7(OH)2.H2O",
+            "name": "Hemimorphite",
+            "location": "Zn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Zn-Hemimorphite.001"
+        },
+        {
+            "material": "ZnO",
+            "name": "Zincite",
+            "location": "Zn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Zn-Zincite.001"
+        },
+        {
+            "material": "Ca(Zn,Mn,Fe,Mg)Si2O6",
+            "name": "Petedunnite",
+	    "fluorescence" : true,
+            "location": "Zn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Zn-Petedunnite.002"
+        },
+        {
+            "material": "Zn2SiO4",
+            "name": "Willemite",
+            "location": "Zn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Zn-Willemite.001"
         }
     ],
     "Ga": [
@@ -614,7 +646,8 @@
             "material": "Ga2O3",
             "name": "Gallium trioxide",
             "location": "Ga",
-	    "refwheel" : true
+	    "refwheel" : true,
+	    "datafile" : false
         }
     ],
     "Ge": [
@@ -1040,62 +1073,63 @@
             "name": "Ceria (C 4+)",
             "location": "Ce",
 	    "refwheel" : true,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-CeO2.001"
         },
 	{
             "material": "CePO4",
             "name": "Cerium phosphate (Ce 3+)",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-CePO4.001"
 	},
 	{
             "material": "Ce2Ti2O7",
             "name": "pyrohlore cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-Ce2Ti2O7.001"
 	},
 	{
             "material": "Ce2Ti2O6",
             "name": "rhombic cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-Ce2Ti2O6.001"
 	},
 	{
             "material": "Ce0.67TiO3",
             "name": "cerium titante",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-Ce0.67TiO3.001"
 	},
 	{
             "material": "CaCe2Ti4O12",
             "name": "calcium cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-CaCe2Ti4O12.001"
 	},
 	{
             "material": "SrCe2Ti4O12",
             "name": "strontium cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-SrCe2Ti4O12.001"
 	},
 	{
             "material": "Bi2Ce2Ti4O12",
             "name": "bismuth cerium titanate",
             "location": "Ce standards half-wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Ce-L3-Bi2Ce2Ti4O12.001"
 	},
 	{
             "material": "Ce2SiO7",
             "name": "cerium silicate",
             "location": "Ce standards half-wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+	    "datafile" : "Ce-L3-Ce2SiO7.001"
 	}
     ],
     "Pr": [
@@ -1153,7 +1187,7 @@
 	},
 	{
             "material": "Nd2Zr2O7",
-            "name": "pyrochlore zirconium titanate",
+            "name": "pyrochlore neodymium zirconate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "datafile" : false

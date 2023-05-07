@@ -98,15 +98,20 @@ class CommonMaterials():
         page = page + '''
 <div class="topmatter">
   <p>
-    This page lists common (mostly metals, oxides, and other simple, stable compounds) for the 
-    elements within the measurement range of BMM.  As of May 6, 2023, collection of data on all
-    these compounds is an ongoing process.  Eventually, everything listed here will have an
+    This page lists common compounds (mostly metals, oxides, and other simple, stable compounds)
+    for the elements within the measurement range of BMM.  As of May 6, 2023, collection of data
+    on all these compounds is an ongoing process.  Eventually, everything listed here will have an
     example data file.
   </p>
   <p>
-    Click on an element to jump to the list of compounds in BMM's collection.
+    Note that the compounds listed as being on the reference wheel have been measured <i>on the
+    reference wheel</i>.  So look in the I<sub>R</sub> channel for the transmission signal for those compounds.
+  </p>
+  <p>
+    Click on an element to jump to that list of compounds in BMM's collection.
   </p>
 </div>
+<div id="divfix">Compounds marked with &#10004; are permanently mounted on the reference wheel.</div>
 '''
 
         with open('pt.html') as pt:
@@ -131,8 +136,17 @@ class CommonMaterials():
                 continue
             if len(data[el.symbol]) > 0:
                 page = page + f'\n\n    <h2 id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
-                page = page + '            <table>\n'
-                page = page + '              <tr><th width=37%>Material</th><th width=25%>Common/mineral name</th><th width=20%>Location</th><th width=25%>Data&nbsp;File</th></tr>\n'
+                page = page + '''
+            <table>
+              <tr>
+                <th></th>
+                <th width=35%>Material</th>
+                <th width=25%>Common/mineral name</th>
+                <th width=18%>Location</th>
+                <th width=2%>&nbsp;</th>
+                <th width=25%>Data&nbsp;File</th>
+              </tr>
+'''
             
             for i, this in enumerate(data[el.symbol]):
                 formula = re.sub(r'(\d+)', r'<sub>\g<1></sub>', this['material'])
@@ -143,24 +157,35 @@ class CommonMaterials():
                 if this['location'] != el.symbol:
                     location = this['location'] # 'location: '+
                 if this['refwheel'] is True:
-                    location = 'on reference wheel'
+                    location = 'reference wheel'
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
-                    location = 'on lanthanide wheel'
+                    location = 'lanthanide wheel'
 
                 if 'datafile' not in this:
                     datafile = ''
                 elif this['datafile'] is False:
                     datafile = ''
                 else:
-                    datafile = f'<a href="Data/Fe/{this["datafile"]}">{this["datafile"]}</a>'
+                    datafile = f'<a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
                 
-                
+                if 'refwheel' in this and this['refwheel'] is True:
+                    onrefwheel = '&#10004;'
+                else:
+                    onrefwheel = ''
+
+                if 'fluorescence' in this and this['fluorescence'] is True:
+                    fluo = 'F'
+                else:
+                    fluo = ''
+                    
                 ## generate a div for the table explaining each port
                 page = page + f'''
                <tr>
+                  <td>{onrefwheel}</td>
                   <td>{formula}</td>
                   <td>{name}</td>
                   <td>{location}</td>
+                  <td>{fluo}</td>
                   <td>{datafile}</td>
                </tr>
 '''

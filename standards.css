@@ -80,6 +80,16 @@ h2.first {
     width: 70%;
     margin-left: 5%;
 }
+#divfix {
+       bottom: 0;
+       right: 0;
+       position: fixed;
+       z-index: 3000;
+       width: 15%;
+       font-weight: bold;
+       color: #600;
+       background-color: #eeeeee;
+}
 table {
     border: 4px solid black;
     border-spacing: 0px;
