@@ -149,7 +149,9 @@ class CommonMaterials():
 '''
             
             for i, this in enumerate(data[el.symbol]):
-                formula = re.sub(r'(\d+)', r'<sub>\g<1></sub>', this['material'])
+                if 'missing' in this and this['missing'] is True:
+                    continue
+                formula = re.sub(r'(\d+\.\d+|\d+)', r'<sub>\g<1></sub>', this['material'])
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]
@@ -253,7 +255,7 @@ class CommonMaterials():
             major = 'longmajor'
         else:
             major = 'verylongmajor'
-        material = re.sub('(\d)', r'<sub>\g<1></sub>', material)
+        material = re.sub(r'(\d+\.\d+|\d+)', r'<sub>\g<1></sub>', material)
         return(form.format(znum       = znum,
                            name       = name,
                            symbol     = symbol,

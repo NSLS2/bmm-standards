@@ -203,34 +203,79 @@
             "name": "Mn foil",
             "location": "Mn",
 	    "refwheel" : true,
-	    "datafile" : false
+	    "datafile" : "Mn-Mnfoil.001"
         },
         {
             "material": "MnO",
-            "name": "Manganese oxide",
-            "location": "Mn",
+            "name": "Manganosite",
+            "location": "Mn standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Mn-Manganosite.001"
+        },
+        {
+            "material": "Mn3O4",
+            "name": "Manganese tetroxide",
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "missing" : true,
+	    "datafile" : "Mn-Manganese_tetroxide.001"
         },
         {
             "material": "Mn2O3",
             "name": "Bixbyite",
-            "location": "Mn",
+            "location": "Mn standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Mn-Bixbyite.001"
         },
         {
             "material": "MnO2",
             "name": "Pyrolucite",
-            "location": "Mn",
+            "location": "Mn standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Mn-Pyrolucite.001"
         },
         {
             "material": "MnCO3",
             "name": "Rhodochrosite",
-            "location": "Mn",
-	    "refwheel" : false
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Mn-Rhodocrosite.001"
+        },
+        {
+            "material": "Mn6O8(SiO4)",
+            "name": "Braunite",
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Mn-Braunite.001"
+        },
+        {
+            "material": "CaMnSiO3(OH)2",
+            "name": "Olmite",
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "MnOlmite.001"
+        },
+        {
+            "material": "CaMn3Mn(Si5O15)",
+            "name": "Rhodonite",
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Mn-Rhodonite.001"
+        },
+        {
+            "material": "Ca2Fe0.75Mn0.25FeSi5O14(OH)",
+            "name": "Babingtonite",
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "fluorescence" : true,
+	    "datafile" : "Mn-Babingtonite.002"
+        },
+        {
+            "material": "Ca2MnAl2BSi4O15(OH)",
+            "name": "Axinite",
+            "location": "Mn standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Mn-Axinite.001"
         }
     ],
     "Fe": [
@@ -274,6 +319,7 @@
             "name": "Pyrite (oxidized?)",
             "location": "Fe",
 	    "refwheel" : false,
+	    "missing" : true,
 	    "datafile" : false
         },
         {
@@ -288,6 +334,7 @@
             "name": "Pyrrhotite (oxidized?)",
             "location": "Fe",
 	    "refwheel" : false,
+	    "missing" : true,
 	    "datafile" : false
         },
         {
@@ -500,6 +547,7 @@
             "name": "Cobalt sequioxide",
             "location": "Co",
 	    "refwheel" : false,
+	    "missing" : true,
 	    "datafile" : false
         },
         {
@@ -1137,7 +1185,7 @@
             "material": "Pr6O11",
             "name": "Praseodymium (III, IV) oxide",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false,
+	    "refwheel" : true,
 	    "lanthanidewheel" : false,
 	    "datafile" : false
         },
@@ -1145,20 +1193,24 @@
             "material": "Pr(OH)3",
             "name": "Praseodymium hydroxide",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : true,
-	    "datafile" : false
+	    "refwheel" : false,
+	    "datafile" : "Pr-L3-Pr-hydroxide.001",
+	    "datafile2" : "Pr-L1-Pr-hydroxide.001"
 	},
 	{
             "material": "Pr2Ti2O7",
             "name": "pyrochlore praseodymium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Pr-L3-Pr2Ti2O7.001",
+	    "datafile2" : "Pr-L1-Pr2Ti2O7.001"
 	},
 	{
             "material": "Pr2TiO5",
             "name": "stuffed pyrochlore praseodymium titanate",
             "location": "Lanthanide standards wheel",
+	    "datafile2" : "Pr-L1-Pr2TiO5.001",
+	    "datafile" : "Pr-L3-Pr2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1176,26 +1228,31 @@
             "name": "neodymium hydroxide",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Nd-L3-Nd-hydroxide.001",
+	    "datafile2" : "Nd-L1-Nd-hydroxide.001"
 	},
 	{
             "material": "Nd2Ti2O7",
             "name": "pyrochlore neodymium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Nd-L3-Nd2Ti2O7.001",
+	    "datafile2" : "Nd-L1-Nd2Ti2O7.001"
 	},
 	{
             "material": "Nd2Zr2O7",
             "name": "pyrochlore neodymium zirconate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+            "datafile" : "Nd-L3-Nd2Zr2O7.001",
+	    "datafile2" : "Nd-L1-Nd2Zr2O7.001"
 	},
 	{
             "material": "Nd2TiO5",
             "name": "stuffed pyrochlore neodymium titanate",
             "location": "Lanthanide standards wheel",
+	    "datafile" : "Nd-L3-Nd2TiO5.001",
+	    "datafile2" : "Nd-L1-Nd2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1203,23 +1260,35 @@
     "Sm": [
         {
             "material": "Sm2O3",
-            "name": "Samarium oxide",
+            "name": "cubic Samarium oxide",
             "location": "Sm",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false,
 	    "datafile" : false
+        },
+        {
+            "material": "Sm2O3",
+            "name": "monoclinic Samarium oxide",
+            "location": "Sm",
+	    "refwheel" : true,
+	    "lanthanidewheel" : false,
+	    "datafile" : "Sm-L3-Sm2O3-m.001",
+	    "datafile2" : "Sm-L1-Sm2O3-m.001"
         },
 	{
             "material": "Sm2Ti2O7",
             "name": "pyrochlore samarium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Sm-L3-Sm2Ti2O7.001",
+	    "datafile2" : "Sm-L1-Sm2Ti2O7.001"
 	},
 	{
             "material": "Sm2TiO5",
             "name": "stuffed pyrochlore samarium titanate",
             "location": "Lanthanide standards wheel",
+            "datafile" : "Sm-L3-Sm2TiO5.001",
+	    "datafile2" : "Sm-L1-Sm2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1230,7 +1299,8 @@
             "location": "Eu",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false,
-	    "datafile" : false
+	    "datafile" : "Eu-L3-Eu2O3-c.001",
+	    "datafile2" : "Eu-L1-Eu2O3-c.001"
         },
 	{
             "material": "Eu2O3",
@@ -1238,7 +1308,8 @@
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false,
-	    "datafile" : false
+	    "datafile" : "Eu-L3-Eu2O3-m.001",
+	    "datafile2" : "Eu-L1-Eu2O3-m.001"
         },
         {
             "material": "Eu2Ti2O7",
@@ -1246,15 +1317,26 @@
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false,
-	    "datafile" : false
+	    "datafile" : "Eu-L3-Eu2Ti2O7.001",
+	    "datafile2" : "Eu-L1-Eu2Ti2O7.001"
         },
         {
             "material": "EuTiO3",
             "name": "Europium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
+            "datafile" : "Eu-L3-EuTiO3.001",
+	    "datafile2" : "Eu-L1-EuTiO3.001",
 	    "lanthanidewheel" : false
-        }
+        },
+	{
+            "material": "Eu2TiO5",
+            "name": "stuffed pyrochlore europium titanate",
+            "location": "Lanthanide standards wheel",
+	    "refwheel" : false,
+	    "datafile" : "Eu-L3-Eu2TiO5.001",
+	    "datafile2" : "Eu-L1-Eu2TiO5.001"
+	}
     ],
     "Gd": [
         {
@@ -1263,7 +1345,8 @@
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
 	    "lanthanidewheel" : false,
-	    "datafile" : false
+            "datafile" : "Gd-L3-Gd_sulfate.001",
+	    "datafile2" : "Gd-L1-Gd_sulfate.001"
         },
         {
             "material": "Gd2O3",
@@ -1278,12 +1361,15 @@
             "name": "pyrochlore gadolinium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Gd-L3-Gd2Ti2O7.001",
+	    "datafile2" : "Gd-L1-Gd2Ti2O7.001"
 	},
 	{
             "material": "Gd2TiO5",
             "name": "stuffed pyrochlore gadolinium titanate",
             "location": "Lanthanide standards wheel",
+	    "datafile" : "Gd-L3-Gd2TiO5.001",
+	    "datafile2" : "Gd-L1-Gd2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1300,7 +1386,9 @@
             "material": "Tb2TiO5",
             "name": "stuffed pyrochlore terbium titanate",
             "location": "Lanthanide standards wheel",
-	    "refwheel" : false
+	    "refwheel" : false,
+            "datafile" : "Tb-L3-Tb2TiO5.001",
+	    "datafile2" : "Tb-L1-Tb2TiO5.001"
 	}
     ],
     "Dy": [
@@ -1316,19 +1404,23 @@
             "name": "Dysprosium scandate",
             "location": "Dy",
 	    "refwheel" : false,
-	    "datafile" : false
+            "datafile" : "Dy-L3-DyScO3.001",
+	    "datafile2" : "Dy-L1-DyScO3.001"
         },
 	{
             "material": "Dy2Ti2O7",
             "name": "pyrochlore dysprosium titanate",
             "location": "Lanthanide standards wheel",
 	    "refwheel" : false,
-	    "datafile" : false
+	    "datafile" : "Dy-L3-Dy2Ti2O7.001",
+	    "datafile2" : "Dy-L1-Dy2Ti2O7.001"
 	},
 	{
             "material": "Dy2TiO5",
             "name": "stuffed pyrochlore dysprosium titanate",
             "location": "Lanthanide standards wheel",
+	    "datafile" : "Dy-L3-Dy2TiO5.001",
+	    "datafile2" : "Dy-L1-Dy2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1352,6 +1444,8 @@
             "material": "Ho2TiO5",
             "name": "stuffed pyrochlore holmium titanate",
             "location": "Lanthanide standards wheel",
+            "datafile" : "Ho-L3-Ho2TiO5.001",
+	    "datafile2" : "Ho-L1-Ho2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1369,12 +1463,15 @@
             "location": "Er",
 	    "refwheel" : true,
 	    "lanthanidewheel" : false,
-	    "datafile" : false
+	    "datafile" : "Er-L3-Er2O3.001",
+	    "datafile2" : "Er-L1-Er2O3.001"
         },
 	{
             "material": "Er2TiO5",
             "name": "stuffed pyrochlore erbium titanate",
             "location": "Lanthanide standards wheel",
+            "datafile" : "Er-L3-Er2TiO5.001",
+	    "datafile2" : "Er-L1-Er2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1391,6 +1488,8 @@
             "material": "Tm2TiO5",
             "name": "stuffed pyrochlore thullium titanate",
             "location": "Lanthanide standards wheel",
+	    "datafile" : "Tm-L3-Tm2TiO5.001",
+	    "datafile2" : "Tm-L1-Tm2TiO5.001",
 	    "refwheel" : false
 	}
     ],
@@ -1400,7 +1499,8 @@
             "name": "Ytterbium oxide",
             "location": "Yb",
 	    "refwheel" : true,
-	    "datafile" : false
+	    "datafile" : "Yb-L3-Yb2O3.001",
+            "datafile2" : "Yb-L1-Yb2O3.001"
         },
 	{
             "material": "Yb2TiO5",
@@ -1422,6 +1522,8 @@
             "material": "Lu2TiO5",
             "name": "stuffed pyrochlore lutetium titanate",
             "location": "Lanthanide standards wheel",
+            "datafile" : "Lu-L3-Lu2TiO5.001",
+	    "datafile2" : "Lu-L1-Lu2TiO5.001",
 	    "refwheel" : false
 	}
     ],
