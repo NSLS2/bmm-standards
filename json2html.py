@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from openpyxl import load_workbook
-import json, datetime, pprint, re
+import json, datetime, pprint, re, os
 from mendeleev import element
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -104,14 +104,30 @@ class CommonMaterials():
     example data file.
   </p>
   <p>
-    Note that the compounds listed as being on the reference wheel have been measured <i>on the
-    reference wheel</i>.  So look in the I<sub>R</sub> channel for the transmission signal for those compounds.
+    Note that the compounds listed as being on the reference wheel were measured <i>on the
+    reference wheel</i>.  So look in the I<sub>R</sub> channel for the transmission signal for 
+    those compounds.  Some of the L<sub>1</sub> data is borderline useful due to a small edge
+    step. 
   </p>
   <p>
     Click on an element to jump to that list of compounds in BMM's collection.
   </p>
 </div>
-<div id="divfix">Compounds marked with &#10004; are permanently mounted on the reference wheel.</div>
+<div id="divfix">
+   <p>
+     <a href="https://github.com/NSLS-II-BMM/bmm-standards">
+        <img src="github-mark.svg" width=20px>
+        GitHub repo
+     </a>
+   </p>
+   <p>
+     Compounds marked with &#10004; are permanently mounted on the reference wheel.<br>
+   </p>
+   <p>  
+     Compounds marked with <span style="font-family: \'Brush Script MT\', cursive;">Fl</span>
+     were measured in fluorescence.
+   </p>
+</div>
 '''
 
         with open('pt.html') as pt:
@@ -163,12 +179,25 @@ class CommonMaterials():
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'lanthanide wheel'
 
+                if el.atomic_number > 46:
+                    edge = 'L<sub>3</sub>'
+                else:
+                    edge = 'K'
+                    
                 if 'datafile' not in this:
                     datafile = ''
                 elif this['datafile'] is False:
                     datafile = ''
                 else:
-                    datafile = f'<a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
+                    datafile = f'{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
+                if 'datafile2' not in this:
+                    datafile2 = ''
+                elif this['datafile2'] is False:
+                    datafile2 = ''
+                elif not os.path.isfile(f'Data/{el.symbol}/{this["datafile2"]}'):
+                    datafile2 = ''
+                else:
+                    datafile2 = f'<br>L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
                 
                 if 'refwheel' in this and this['refwheel'] is True:
                     onrefwheel = '&#10004;'
@@ -176,7 +205,7 @@ class CommonMaterials():
                     onrefwheel = ''
 
                 if 'fluorescence' in this and this['fluorescence'] is True:
-                    fluo = 'F'
+                    fluo = '<span style="font-family: \'Brush Script MT\', cursive;">Fl</span>'
                 else:
                     fluo = ''
                     
@@ -188,7 +217,7 @@ class CommonMaterials():
                   <td>{name}</td>
                   <td>{location}</td>
                   <td>{fluo}</td>
-                  <td>{datafile}</td>
+                  <td>{datafile}{datafile2}</td>
                </tr>
 '''
             page = page + '            </table>\n'
@@ -198,6 +227,12 @@ class CommonMaterials():
         # footer #
         ##########
         page = page + '''
+  <p class="copyright">
+    This web page and its collection of data were developed and
+    measured by a NIST employee. Pursuant to title 17 United States
+    Code Section 105, works of NIST employees are not subject to
+    copyright protection in the United States.
+  </p>
   </body>
 </html>
 

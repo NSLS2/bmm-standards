@@ -919,14 +919,14 @@
         },
         {
             "material": "NbC",
-            "name": "",
+            "name": "Niobium Carbide",
             "location": "Nb",
 	    "refwheel" : false,
 	    "datafile" : false
         },
         {
             "material": "NbN",
-            "name": "",
+            "name": "Niobium Nitride",
             "location": "Nb",
 	    "refwheel" : false,
 	    "datafile" : false
@@ -987,7 +987,7 @@
             "material": "RuO2",
             "name": "Ruthenium dioxide",
             "location": "Ru",
-	    "refwheel" : false,
+	    "refwheel" : true,
 	    "datafile" : false
         },
         {
@@ -1270,7 +1270,7 @@
             "material": "Sm2O3",
             "name": "monoclinic Samarium oxide",
             "location": "Sm",
-	    "refwheel" : true,
+	    "refwheel" : false,
 	    "lanthanidewheel" : false,
 	    "datafile" : "Sm-L3-Sm2O3-m.001",
 	    "datafile2" : "Sm-L1-Sm2O3-m.001"
@@ -1479,8 +1479,8 @@
         {
             "material": "Tm2O3",
             "name": "Thullium oxide",
-            "location": "Tm",
-	    "refwheel" : false,
+            "location": "reference wheel",
+	    "refwheel" : true,
 	    "lanthanidewheel" : true,
 	    "datafile" : false
         },
@@ -1555,8 +1555,8 @@
         {
             "material": "ReO2",
             "name": "Rhenium dioxide",
-            "location": "Re",
-	    "refwheel" : false,
+            "location": "reference wheel",
+	    "refwheel" : true,
 	    "datafile" : false
         },
         {

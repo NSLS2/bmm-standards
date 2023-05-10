@@ -90,6 +90,16 @@ h2.first {
        color: #600;
        background-color: #eeeeee;
 }
+.copyright {
+    border-top: 2px solid black;
+    z-index: 4000;
+    width: 82%;
+    font-weight: bold;
+    color: #000;
+    background-color: #eeeeee;
+    margin-left: 10px;
+    padding-top: 3px;
+}
 table {
     border: 4px solid black;
     border-spacing: 0px;
