@@ -2,6 +2,7 @@
 from openpyxl import load_workbook
 import json, datetime, pprint, re, os
 from mendeleev import element
+from larch.xray import xray_edge
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -150,8 +151,25 @@ class CommonMaterials():
             print(el.symbol, end=' ', flush=True)
             if el.symbol not in data:
                 continue
+            if xray_edge(el.symbol, 'K')[0] > 23500:
+                kcolor, lcolor = 'outofrange', 'inrange'
+            else:
+                kcolor, lcolor = 'inrange', 'outofrange'
+                
             if len(data[el.symbol]) > 0:
-                page = page + f'\n\n    <h2 id="{el.name}">{el.symbol}&nbsp;&nbsp;&nbsp;({z})&nbsp;&nbsp;&nbsp;{el.name}</h2>\n      <div class="wrapper">\n'
+                page = page + f''''
+
+    <h2 id="{el.name}">
+       {el.symbol}&nbsp;
+       ({z})&nbsp;{el.name}&nbsp;&nbsp;&nbsp;
+       <div id="floatright">
+         <span id="{kcolor}">K: {xray_edge(el.symbol, 'K')[0]:.0f} eV &#8226;</span> 
+         <span id="{lcolor}">L<sub>1</sub>: {xray_edge(el.symbol, 'L1')[0]:.0f} eV &#8226;
+         L<sub>2</sub>: {xray_edge(el.symbol, 'L2')[0]:.0f} eV &#8226;
+         L<sub>3</sub>: {xray_edge(el.symbol, 'L3')[0]:.0f} eV</span>
+      </div>
+    </h2>
+      <div class="wrapper">\n'''
                 page = page + '''
             <table>
               <tr>

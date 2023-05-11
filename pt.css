@@ -84,6 +84,8 @@ main .color-table {
 }
 .element.color-guide {
 	text-align: center;
+	cursor: default;
+	transform: scale(1.0);
 }
 .element.alkali {
 	background: rgba(0, 2, 198, 0.25);

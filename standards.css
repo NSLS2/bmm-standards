@@ -29,14 +29,19 @@ h1 {
     text-align: left;
 }
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
     margin-left: 10%;
 }
 h2.first {
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
     padding-left: 10%;
+}
+#floatright {
+    float: right;
+    margin-right: 20%;
+    font-size: 30px;
 }
 
 /* table { */
@@ -89,6 +94,7 @@ h2.first {
        font-weight: bold;
        color: #600;
        background-color: #eeeeee;
+       padding: 4px;
 }
 .copyright {
     border-top: 2px solid black;
@@ -100,6 +106,12 @@ h2.first {
     margin-left: 10px;
     padding-top: 3px;
 }
+#outofrange {
+    color: #999;
+}
+#inrange {
+    color: #000;
+}
 table {
     border: 4px solid black;
     border-spacing: 0px;
@@ -107,9 +119,10 @@ table {
     
 }
 th {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: #AAC;
+    background-color: #669;
+    color: #eee;
     text-align: left;
 }
 th, td {
@@ -120,5 +133,7 @@ th, td {
     padding: 4px;
     margin: 10%;
 }
-tr:nth-child(even) {background: #FFF}
-tr:nth-child(odd) {background: rgba(160, 160, 255, 0.25)}
+tr:nth-child(2n) {background: #ddd}
+tr:nth-child(2n-1) {background: rgba(160, 160, 255, 0.25)}
+tr:nth-child(4n-2) {background: #fff}
+tr:nth-child(4n-1) {background: rgba(210, 210, 255, 0.25)}
