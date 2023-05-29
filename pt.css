@@ -33,6 +33,7 @@ main .ptable {
 main .color-table {
 	grid-template-columns: repeat(10, 9rem);
 	grid-template-rows: 2rem;
+	margin-left: 15%;
 }
 .element {
 	position: relative;
@@ -494,19 +495,19 @@ main .color-table {
 	grid-area: 1 / 6 / 1 / 6;
 }
 #cg-nonmetal {
-	grid-area: 1 / 7 / 1 / 7;
+	grid-area: 2 / 2 / 2 / 2;
 }
 #cg-halogen {
-	grid-area: 1 / 8 / 1 / 8;
+	grid-area: 2 / 3 / 2 / 3;
 }
 #cg-noble {
-	grid-area: 1 / 9 / 1 / 9;
+	grid-area: 2 / 4 / 2 / 4;
 }
 #cg-lanthanide {
-	grid-area: 1 / 10 / 1 / 10;
+	grid-area: 2 / 5 / 2 / 5;
 }
 #cg-actinide {
-	grid-area: 1 / 11 / 1 / 11;
+	grid-area: 2 / 6 / 2 / 6;
 }
 #cg-nostandards {
 	grid-area: 1 / 1 / 1 / 1;

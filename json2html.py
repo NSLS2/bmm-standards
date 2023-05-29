@@ -98,28 +98,19 @@ class CommonMaterials():
 '''
         page = page + '''
 <div class="topmatter">
-  <p>
-    This page lists common compounds (mostly metals, oxides, and other simple, stable compounds)
-    for the elements within the measurement range of BMM.  As of May 6, 2023, collection of data
-    on all these compounds is an ongoing process.  Eventually, everything listed here will have an
-    example data file.
-  </p>
-  <p>
-    Note that the compounds listed as being on the reference wheel were measured <i>on the
-    reference wheel</i>.  So look in the I<sub>R</sub> channel for the transmission signal for 
-    those compounds.  Some of the L<sub>1</sub> data is borderline useful due to a small edge
-    step. 
-  </p>
-  <p>
-    Click on an element to jump to that list of compounds in BMM's collection.
-  </p>
 </div>
 <div id="divfix">
    <p>
-     <a href="https://github.com/NSLS-II-BMM/bmm-standards">
-        <img src="github-mark.svg" width=20px>
-        GitHub repo
-     </a>
+     <span class="instructions">Click on an element to jump to that list of compounds in BMM's
+     collection.</span> 
+   </p>
+   <p>
+     The compounds listed as being on the reference wheel were measured <i>on the
+     reference wheel</i>.  Look in the I<sub>R</sub> channel for the transmission signal for 
+     those data.  
+   </p>
+   <p>
+     L<sub>1</sub> data may not be useful due to a small edge step. 
    </p>
    <p>
      Compounds marked with &#10004; are permanently mounted on the reference wheel.<br>
@@ -127,6 +118,19 @@ class CommonMaterials():
    <p>  
      Compounds marked with <span style="font-family: \'Brush Script MT\', cursive;">Fl</span>
      were measured in fluorescence.
+   </p>
+   <p>
+     Edges energies given in <span id="inrange">black text</span> are accessible at BMM. 
+     Those in <span id="outofrange">grey text</span> are not. 
+   <p>
+     As of May 2023, collection of data on these compounds is ongoing.
+     Eventually, everything listed here will have an example data file.
+   </p>
+   <p>
+     <a href="https://github.com/NSLS-II-BMM/bmm-standards">
+        <img src="github-mark.svg" width=20px>
+        GitHub repository
+     </a>
    </p>
 </div>
 '''
@@ -175,11 +179,11 @@ class CommonMaterials():
             <table>
               <tr>
                 <th></th>
-                <th width=35%>Material</th>
+                <th width=30%>Material</th>
                 <th width=25%>Common/mineral name</th>
-                <th width=18%>Location</th>
+                <th width=20%>Location</th>
                 <th width=2%>&nbsp;</th>
-                <th width=25%>Data&nbsp;File</th>
+                <th width=28%>Data&nbsp;File</th>
               </tr>
 '''
             

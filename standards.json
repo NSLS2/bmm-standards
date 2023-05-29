@@ -588,7 +588,7 @@
         },
         {
             "material": "NiFe2O4",
-            "name": "Nickel ferrite",
+            "name": "Nickel ferrite, trevorite",
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": false
@@ -828,14 +828,14 @@
     "Sr": [
         {
             "material": "SrTiO3",
-            "name": "Strontium titanate",
+            "name": "Strontium titanate, tausonite",
             "refwheel": true,
             "location": "Sr",
             "datafile": "Sr-K-StrontiumTitanate.001"
         },
         {
             "material": "SrSO4",
-            "name": "Strontium sulfate",
+            "name": "Strontium sulfate, celestine",
             "location": "Sr standards wheel",
             "refwheel": false,
             "datafile": false
@@ -1759,7 +1759,7 @@
     "Bi": [
         {
             "material": "Bi2O3",
-            "name": "Bismuth oxide",
+            "name": "Bismuth oxide, bismite",
             "refwheel": true,
             "location": "Bi",
             "datafile": "Bi-L3-BismuthOxide.001",
