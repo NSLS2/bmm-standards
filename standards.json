@@ -1385,7 +1385,7 @@
             "refwheel": true,
             "location": "Tb",
             "datafile": "Tb-L3-TerbiumOxide.001",
-            "datafile": "Tb-L1-TerbiumOxide.001"
+            "datafile2": "Tb-L1-TerbiumOxide.001"
         },
         {
             "material": "Tb2TiO5",
@@ -1403,7 +1403,7 @@
             "refwheel": true,
             "location": "Dy",
             "datafile": "Dy-L3-DysprosiumOxide.001",
-            "datafile": "Dy-L1-DysprosiumOxide.001"
+            "datafile2": "Dy-L1-DysprosiumOxide.001"
         },
         {
             "material": "DyScO3",
@@ -1437,7 +1437,7 @@
             "refwheel": true,
             "location": "Ho",
             "datafile": "Ho-L3-HolmiumOxide.001",
-            "datafile": "Ho-L1-HolmiumOxide.001"
+            "datafile2": "Ho-L1-HolmiumOxide.001"
         },
         {
             "material": "Ho2Sn2O7",
@@ -1462,7 +1462,7 @@
             "refwheel": true,
             "location": "Er",
             "datafile": "Er-L3-ErbiumOxide.001",
-            "datafile": "Er-L1-ErbiumOxide.001"
+            "datafile2": "Er-L1-ErbiumOxide.001"
         },
         {
             "material": "ErCrO3",
