@@ -108,6 +108,8 @@ h2.first {
 }
 #outofrange {
     color: #999;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px; 
 }
 #inrange {
     color: #000;

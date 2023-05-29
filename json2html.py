@@ -155,7 +155,8 @@ class CommonMaterials():
                 kcolor, lcolor = 'outofrange', 'inrange'
             else:
                 kcolor, lcolor = 'inrange', 'outofrange'
-                
+            if xray_edge(el.symbol, 'L3')[0] < 5000:
+                lcolor = 'outofrange'
             if len(data[el.symbol]) > 0:
                 page = page + f''''
 
@@ -163,9 +164,9 @@ class CommonMaterials():
        {el.symbol}&nbsp;
        ({z})&nbsp;{el.name}&nbsp;&nbsp;&nbsp;
        <div id="floatright">
-         <span id="{kcolor}">K: {xray_edge(el.symbol, 'K')[0]:.0f} eV &#8226;</span> 
-         <span id="{lcolor}">L<sub>1</sub>: {xray_edge(el.symbol, 'L1')[0]:.0f} eV &#8226;
-         L<sub>2</sub>: {xray_edge(el.symbol, 'L2')[0]:.0f} eV &#8226;
+         <span id="{kcolor}">K: {xray_edge(el.symbol, 'K')[0]:.0f} eV &nbsp;</span> 
+         <span id="{lcolor}">L<sub>1</sub>: {xray_edge(el.symbol, 'L1')[0]:.0f} eV &nbsp;
+         L<sub>2</sub>: {xray_edge(el.symbol, 'L2')[0]:.0f} eV &nbsp;
          L<sub>3</sub>: {xray_edge(el.symbol, 'L3')[0]:.0f} eV</span>
       </div>
     </h2>
