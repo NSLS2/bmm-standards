@@ -8,13 +8,13 @@ body {
 body * {
 	box-sizing: border-box;
 }
-h1 {
-	margin-top: 0;
-	padding-left: 1rem;
-	padding-bottom: .5rem;
-	border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5);
-	text-align: left;
-}
+/* h1 { */
+/* 	margin-top: 0; */
+/* 	padding-left: 0; */
+/* 	padding-bottom: .5rem; */
+/* 	border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5); */
+/* 	text-align: left; */
+/* } */
 main {
 	/* background: linear-gradient(to bottom right, #fff, #f2f2f2); */
 	margin: 2rem auto;
@@ -23,24 +23,29 @@ main {
 	padding: 1rem;
 }
 main .ptable, main .color-table {
-	display: grid;
+    display: grid;
+    margin-left: 15em;
+    overflow-y: scroll;
 }
 main .ptable {
+	padding-left: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	margin-bottom: 2rem;
-	grid-template-columns: repeat(18, 4.3rem);
-	grid-template-rows: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 2rem 4.5rem 4.5rem;
+	grid-template-columns: repeat(18, 4.0rem);
+	grid-template-rows: 4.rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 2rem 4.5rem 4.5rem;
 }
 main .color-table {
-	grid-template-columns: repeat(10, 9rem);
-	grid-template-rows: 2rem;
-	margin-left: 15%;
+    grid-template-columns: repeat(6, 9rem);
+    grid-template-rows: 2rem;
+    margin-left: 25em;
 }
 .element {
 	position: relative;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0);
 	padding: .25rem;
 	margin: 2px;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0);
 	transition-property: box-shadow, transform;
 	transition-duration: .2s;
 	transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -57,8 +62,9 @@ main .color-table {
 }
 .element .element-name {
 	text-align: center;
-	font-size: .6rem;
+	font-size: .5rem;
 	margin-bottom: .25rem;
+	word-wrap: break-word;
 }
 .element .element-weight {
 	text-align: center;
@@ -67,7 +73,7 @@ main .color-table {
 }
 .element:hover {
 	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-	transform: scale(1.05);
+	transform: scale(1.5);
 	z-index: 2;
 	cursor: pointer;
 }
@@ -89,37 +95,37 @@ main .color-table {
 	transform: scale(1.0);
 }
 .element.alkali {
-	background: rgba(0, 2, 198, 0.25);
+	background: #b2b3e4;
 }
 .element.alkaline {
-	background: rgba(0, 114, 198, 0.25);
+	background: #b2cfe4;
 }
 .element.transition {
-	background: rgba(17, 122, 33, 0.25);
+	background: #b6d1ba;
 }
 .element.basic {
-	background: rgba(0, 165, 29, 0.25);
+	background: #b2dbb9;
 }
 .element.semimetal {
-	background: rgba(226, 255, 0, 0.25);
+	background: #ebf2b2;
 }
 .element.nonmetal {
-	background: rgba(214, 130, 0, 0.25);
+	background: #e8d3b2;
 }
 .element.halogen {
-	background: rgba(198, 0, 0, 0.25);
+	background: #e4b2b2;
 }
 .element.noble {
-	background: rgba(217, 11, 128, 0.25);
+	background: #e8b5d2;
 }
 .element.lanthanide {
-	background: rgba(144, 0, 179, 0.25);
+	background: #d6b2df;
 }
 .element.actinide {
-	background: rgba(91, 0, 136, 0.25);
+	background: #c9b2d4;
 }
 .element.nostandards {
-	background: rgba(121, 101, 81, 0.25);
+	background: #d0cbc6;
 	cursor: default;
 }
 #key {

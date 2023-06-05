@@ -93,35 +93,36 @@ class CommonMaterials():
   </head>
 
   <body>
-  <h1>&emsp;Common XAFS materials at BMM</h1>
   <main>
 '''
         page = page + '''
 <div class="topmatter">
 </div>
 <div id="divfix">
+   <h1>Common XAFS materials at BMM</h1>
    <p>
      <span class="instructions">Click on an element to jump to that list of compounds in BMM's
-     collection.</span> 
+     collection.</span>
    </p>
    <p>
-     The compounds listed as being on the reference wheel were measured <i>on the
-     reference wheel</i>.  Look in the I<sub>R</sub> channel for the transmission signal for 
-     those data.  
+     Compounds marked with &#10004; are permanently mounted on the reference wheel.
    </p>
    <p>
-     L<sub>1</sub> data may not be useful due to a small edge step. 
-   </p>
-   <p>
-     Compounds marked with &#10004; are permanently mounted on the reference wheel.<br>
-   </p>
-   <p>  
      Compounds marked with <span style="font-family: \'Brush Script MT\', cursive;">Fl</span>
      were measured in fluorescence.
    </p>
    <p>
-     Edges energies given in <span id="inrange">black text</span> are accessible at BMM. 
-     Those in <span id="outofrange">grey text</span> are not. 
+     Edges energies given in <span id="inrange">black text</span> are accessible at BMM.
+     Those in <span id="outofrange">grey text</span> are not.
+   </p>
+   <p>
+     The compounds listed as being on the reference wheel were measured <i>on the
+     reference wheel</i>.  Look in the I<sub>R</sub> channel for the transmission signal for
+     those data.
+   </p>
+   <p>
+     Some L<sub>1</sub> data may not be useful due to a small edge step.
+   </p>
    <p>
      As of May 2023, collection of data on these compounds is ongoing.
      Eventually, everything listed here will have an example data file.
@@ -168,10 +169,10 @@ class CommonMaterials():
        {el.symbol}&nbsp;
        ({z})&nbsp;{el.name}&nbsp;&nbsp;&nbsp;
        <div id="floatright">
-         <span id="{kcolor}">K: {xray_edge(el.symbol, 'K')[0]:.0f} eV &nbsp;</span> 
-         <span id="{lcolor}">L<sub>1</sub>: {xray_edge(el.symbol, 'L1')[0]:.0f} eV &nbsp;
-         L<sub>2</sub>: {xray_edge(el.symbol, 'L2')[0]:.0f} eV &nbsp;
-         L<sub>3</sub>: {xray_edge(el.symbol, 'L3')[0]:.0f} eV</span>
+         <span id="{kcolor}">K:&nbsp;{xray_edge(el.symbol, 'K')[0]:.0f}&nbsp;eV</span> 
+         <span id="{lcolor}">L<sub>1</sub>:&nbsp;{xray_edge(el.symbol, 'L1')[0]:.0f}&nbsp;eV
+         L<sub>2</sub>:&nbsp;{xray_edge(el.symbol, 'L2')[0]:.0f}&nbsp;eV
+         L<sub>3</sub>:&nbsp;{xray_edge(el.symbol, 'L3')[0]:.0f}&nbsp;eV</span>
       </div>
     </h2>
       <div class="wrapper">\n'''
