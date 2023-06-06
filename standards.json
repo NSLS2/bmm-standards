@@ -838,21 +838,21 @@
             "name": "Strontium sulfate, celestine",
             "location": "Sr standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Sr-StrontiumSulfate.001"
         },
         {
             "material": "SrMoO4",
             "name": "Strontium molybdate",
             "location": "Sr standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Sr-StrontiumMolybdate.001"
         },
         {
             "material": "Sr(OH)2.8H2O",
             "name": "Strontium hydroxide",
             "location": "Sr standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Sr-StrontiumHydroxide.001"
         }
     ],
     "Y": [

@@ -251,11 +251,20 @@ class CommonMaterials():
         # footer #
         ##########
         page = page + '''
+  <p class="copyright ctop">
+    This web page, any associated software, and its collection of data
+    were developed and measured by a NIST employee. Pursuant to title
+    17 United States Code Section 105, works of NIST employees are not
+    subject to copyright protection in the United States.  Permission
+    in the United States and in foreign countries, to the extent that
+    NIST may hold copyright, to use, copy, modify, create derivative
+    works, and distribute this web page, software, data, and its
+    documentation without fee is hereby granted on a non-exclusive
+    basis, provided that this notice and disclaimer of warranty
+    appears in all copies.
+  </p>
   <p class="copyright">
-    This web page and its collection of data were developed and
-    measured by a NIST employee. Pursuant to title 17 United States
-    Code Section 105, works of NIST employees are not subject to
-    copyright protection in the United States.
+    See the <a href='LICENSE'>license file</a> for details.
   </p>
   </body>
 </html>
