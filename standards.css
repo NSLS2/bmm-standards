@@ -112,8 +112,19 @@ p {
     background-color: #eeeeee;
     padding: 4px;
     border-right: 0.125rem solid rgba(0, 0, 0, 0.5);
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
+
+#container{
+    width: 100%;
+    font-size: 26px;
+}
+#floated{
+    float: left;
+    width: 40%;
+}
+
+
 .instructions {
     font-weight: bold;
     color: #600;

@@ -67,24 +67,24 @@ class CommonMaterials():
             data=json.loads(myfile.read())
         
             
-        ##########
-        # header #
-        ##########
-        if self.singlepage is True:
-            with open(self.cssfile) as x: css = x.read()
-            page = f'''
-<html>
-  <head>
-    <title>Common XAFS materials at BMM</title>
-    <style>
-{css}
-    </style>
-  </head>
+#         ##########
+#         # header #
+#         ##########
+#         if self.singlepage is True:
+#             with open(self.cssfile) as x: css = x.read()
+#             page = f'''
+# <html>
+#   <head>
+#     <title>Common XAFS materials at BMM</title>
+#     <style>
+# {css}
+#     </style>
+#   </head>
 
-  <body>
-  <h1>Common XAFS materials at BMM</h1>'''
-        else:
-            page = f'''
+#   <body>
+#   <h1>Common XAFS materials at BMM</h1>'''
+#         else:
+        page = f'''
 <html>
   <head>
     <title>Common XAFS materials at BMM</title>
@@ -99,7 +99,12 @@ class CommonMaterials():
 <div class="topmatter">
 </div>
 <div id="divfix">
-   <h1>Common XAFS materials at BMM</h1>
+   <div id="container">
+     <div id="floated">
+       <image src="floor_mat.png" width=90%>
+     </div>
+     Common XAFS materials
+    </div>
    <p>
      <span class="instructions">Click on an element to jump to that list of compounds in BMM's
      collection.</span>
@@ -112,20 +117,18 @@ class CommonMaterials():
      were measured in fluorescence.
    </p>
    <p>
-     Edges energies given in <span id="inrange">black text</span> are accessible at BMM.
+     Edges energies in <span id="inrange">black text</span> are accessible at BMM.
      Those in <span id="outofrange">grey text</span> are not.
    </p>
    <p>
-     The compounds listed as being on the reference wheel were measured <i>on the
-     reference wheel</i>.  Look in the I<sub>R</sub> channel for the transmission signal for
-     those data.
+     For compounds listed as being on the reference wheel, data are 
+     ln(I<sub>t</sub>/I<sub>R</sub>.
    </p>
    <p>
      Some L<sub>1</sub> data may not be useful due to a small edge step.
    </p>
    <p>
      As of May 2023, collection of data on these compounds is ongoing.
-     Eventually, everything listed here will have an example data file.
    </p>
    <p>
      <a href="https://github.com/NSLS-II-BMM/bmm-standards">
@@ -134,6 +137,7 @@ class CommonMaterials():
      </a>
    </p>
 </div>
+
 '''
 
         with open('pt.html') as pt:

@@ -162,7 +162,7 @@
         },
         {
             "material": "VO2",
-            "name": "Vanadium oxide",
+            "name": "Vanadium dioxide",
             "location": "V standards wheel",
             "refwheel": false,
             "datafile": "V-VO2.001"
@@ -391,7 +391,7 @@
             "name": "fayalite",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": "Fe-Wustite.001"
+            "datafile": "Fe-Fayalite.001"
         },
         {
             "material": "NaFaSi2O6",

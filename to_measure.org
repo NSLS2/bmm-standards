@@ -26,6 +26,8 @@ examine using materials from https://github.com/bruceravel/XAS-Data-Standards
 + ErCrO3 : Er
 + Yb2TiO5 : Yb
 + BiF3
++ L1 edge of monoclinic Eu2O3
++ Ho2Sn2O7
 
 * Zr, Nb, Mo
 
