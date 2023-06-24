@@ -31,7 +31,7 @@
         {
             "material": "DyScO3",
             "name": "Dysprosium scandate",
-            "location": "Dy",
+            "location": "lanthanide wheel",
             "refwheel": false,
             "datafile": false
         }
@@ -225,7 +225,7 @@
             "location": "Mn standards wheel",
             "refwheel": false,
             "missing": true,
-            "datafile": "Mn-Manganese_tetroxide.001"
+            "datafile": false
         },
         {
             "material": "Mn2O3",
@@ -450,7 +450,7 @@
             "datafile": "Fe-Ludwigite.001"
         },
         {
-            "material": "Fe2(PO4)(SO4)OH.5H20",
+            "material": "Fe2(PO4)(SO4)OH.5H2O",
             "name": "Diadochite",
             "location": "Fe standards wheel",
             "refwheel": false,
