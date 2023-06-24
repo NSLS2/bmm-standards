@@ -193,8 +193,9 @@ class CommonMaterials():
 '''
             
             for i, this in enumerate(data[el.symbol]):
+                missing = 'present'
                 if 'missing' in this and this['missing'] is True:
-                    continue
+                    missing = 'missing'
                 formula = re.sub(r'(\d+\.\d+|\d+)', r'<sub>\g<1></sub>', this['material'])
                 name = this['name']
                 if len(name) > 0:
@@ -202,7 +203,7 @@ class CommonMaterials():
                 location = ''
                 if this['location'] != el.symbol:
                     location = this['location'] # 'location: '+
-                if this['refwheel'] is True:
+                if 'refwheel' in this and this['refwheel'] is True:
                     location = 'reference wheel'
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'lanthanide wheel'
@@ -239,7 +240,7 @@ class CommonMaterials():
                     
                 ## generate a div for the table explaining each port
                 page = page + f'''
-               <tr>
+               <tr class={missing}>
                   <td>{onrefwheel}</td>
                   <td>{formula}</td>
                   <td>{name}</td>

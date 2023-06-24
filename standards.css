@@ -175,6 +175,16 @@ th, td {
     padding: 4px;
     margin: 10%;
 }
+
+tr,present {
+    color: #000;
+    font-style: normal;
+}
+tr.missing {
+    color: #999;
+    font-style: italic;
+}
+
 tr:nth-child(2n) {background: #ddd}
 tr:nth-child(2n-1) {background: rgba(160, 160, 255, 0.25)}
 tr:nth-child(4n-2) {background: #fff}
