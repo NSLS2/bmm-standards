@@ -197,7 +197,7 @@ class CommonMaterials():
                 if 'missing' in this and this['missing'] is True:
                     missing = 'missing'
                 formula = re.sub(r'(\d+\.\d+|\d+)(?!\+)', r'<sub>\g<1></sub>', this['material'])
-                formula = re.sub(r'(\d+\.\d+|\d+)(?=\+)', r'<sup>\g<0></sup>', this['material'])
+                #formula = re.sub(r'(\d+\.\d+|\d+)(?=\+)', r'<sup>\g<0></sup>', this['material'])
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]

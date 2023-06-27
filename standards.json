@@ -522,8 +522,8 @@
             "datafile": "Fe-Epidote.001"
         },
         {
-            "material": "CaFe(2+)2Fe(3+)(Si2O7)O(OH)",
-            "name": "Ilvaite",
+            "material": "CaFe3(Si2O7)O(OH)",
+            "name": "Ilvaite, mixed Fe 2+/3+",
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": "Fe-Ilvaite.001"
