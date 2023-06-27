@@ -209,7 +209,7 @@
             "material": "Mn",
             "name": "Mn metal powder",
             "refwheel": true,
-            "location": "Mn",
+            "location": "Mn standards wheel",
             "datafile": "Mn-K-ManganeseMetal.001"
         },
         {
@@ -335,6 +335,14 @@
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": "Fe-Hematite.001"
+        },
+        {
+            "material": "\u03b3-Fe2O3",
+            "name": "Maghemite",
+            "location": "Fe",
+            "missing": true,
+            "refwheel": false,
+            "datafile": false
         },
         {
             "material": "FeS",
@@ -539,20 +547,20 @@
             "material": "Co",
             "name": "Co foil",
             "refwheel": true,
-            "location": "Co",
+            "location": "Co standards wheel",
             "datafile": "Co-K-CobaltFoil.001"
         },
         {
             "material": "CoO",
             "name": "Cobalt oxide",
-            "location": "Co",
+            "location": "Co standards wheel",
             "refwheel": false,
             "datafile": "Co-K-CoO.001"
         },
         {
             "material": "Co2O3",
             "name": "Cobalt sequioxide",
-            "location": "Co",
+            "location": "Co standards wheel",
             "refwheel": false,
             "missing": true,
             "datafile": false
@@ -560,14 +568,14 @@
         {
             "material": "Co3O4",
             "name": "Cobalt (II,III) Oxide",
-            "location": "Co",
+            "location": "Co standards wheel",
             "refwheel": false,
             "datafile": "Co-K-Co3O4.001"
         },
         {
             "material": "CoAlO3",
             "name": "Cobalt aluminate",
-            "location": "Co",
+            "location": "Co standards wheel",
             "refwheel": false,
             "datafile": "Co-K-CobaltAluminate.001"
         }
@@ -583,7 +591,7 @@
         {
             "material": "NiO",
             "name": "Bunsenite",
-            "location": "Ni",
+            "location": "Ni standards wheel",
             "refwheel": false,
             "datafile": "Ni-K-NickelOxide.001"
         },
@@ -597,28 +605,28 @@
         {
             "material": "NiAl2O4",
             "name": "Ni aluminate",
-            "location": "Ni",
+            "location": "Ni standards wheel",
             "refwheel": false,
             "datafile": "Ni-K-NickelAluminate.001"
         },
         {
             "material": "LaNiO3",
             "name": "Lanthanum nickelate",
-            "location": "Ni",
+            "location": "Ni standards wheel",
             "refwheel": false,
             "datafile": "Ni-K-LanthanumNickelate.001"
         },
         {
-            "material": "NiBO3.xH20",
+            "material": "NiBO3.xH2O",
             "name": "Nickel borate hydrate",
-            "location": "Ni",
+            "location": "Ni standards wheel",
             "refwheel": false,
             "datafile": "Ni-K-NickelBorateHydrate.001"
         },
         {
             "material": "Ni(OH)2",
             "name": "Nickel hydroxide, Theophrastite",
-            "location": "Ni",
+            "location": "Ni standards wheel",
             "refwheel": false,
             "datafile": "Ni-K-NickelHydroxide.001"
         }
@@ -877,13 +885,13 @@
             "material": "Y2O3",
             "name": "Yttria, yttrium oxide",
             "refwheel": true,
-            "location": "Y",
+            "location": "4d metals wheel",
             "datafile": "Y-K-YttriumOxide.001"
         },
         {
             "material": "Y2TiO5",
             "name": "stuffed pyrochlore Yttrium titanium oxide",
-            "location": "Y",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Y-K-Y2TiO5.001"
         }
@@ -899,28 +907,28 @@
         {
             "material": "ZrO2",
             "name": "Zirconia",
-            "location": "Zr",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Zr-K-ZirconiumOxide.001"
         },
         {
             "material": "CaZrTi2O7",
             "name": "Zirconolite",
-            "location": "Zr",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Zr-K-Zirconolite.001"
         },
         {
             "material": "Li2ZrO3",
             "name": "Lithium zirconate",
-            "location": "Zr",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Zr-K-LithiumZirconate.001"
         },
         {
             "material": "K2ZrSi3O9",
             "name": "Wadeite",
-            "location": "Zr",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Zr-K-Wadeite.001"
         }
@@ -936,35 +944,35 @@
         {
             "material": "NbO2",
             "name": "Niobium IV Oxide",
-            "location": "Nb",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Nb-K-NiobiumDioxide.001"
         },
         {
             "material": "Nb2O5",
             "name": "Niobium V Oxide",
-            "location": "Nb",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Nb-K-NiobiumPentoxide.001"
         },
         {
             "material": "NbC",
             "name": "Niobium Carbide",
-            "location": "Nb",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Nb-K-NiobiumCarbide.001"
         },
         {
             "material": "NbN",
             "name": "Niobium Nitride",
-            "location": "Nb",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Nb-K-NiobiumNitride.001"
         },
         {
             "material": "CeTiNbO6",
             "name": "cerium titanoniobate",
-            "location": "Nb",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Nb-K-CeriumTitanoniobate.001"
         }
@@ -980,28 +988,28 @@
         {
             "material": "MoS2",
             "name": "Molybdenum disulfide",
-            "location": "Mo",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Mo-K-MolybdenumDisulfide.001"
         },
         {
             "material": "MoO2",
             "name": "Tugarinovite",
-            "location": "Mo",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Mo-K-Tugarinovite.001"
         },
         {
             "material": "MoO3",
             "name": "Molybdite",
-            "location": "Mo",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Mo-K-Molybdite.001"
         },
         {
             "material": "CaMoO4",
             "name": "Powellite",
-            "location": "Mo",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Mo-K-Powellite.001"
         },
@@ -1144,7 +1152,7 @@
         {
             "material": "LaNiO3",
             "name": "Lanthanum nickelate",
-            "location": "Ni",
+            "location": "Ni standards wheel",
             "refwheel": false,
             "datafile": "La-L3-LanthanumNickelate.001",
             "datafile2": "La-L1-LanthanumNickelate.001"
@@ -1634,14 +1642,20 @@
         {
             "material": "Pt(NH3)4Cl2 (H2O)x",
             "name": "TAPC (tetraamine platinum chloride)",
-            "location": "Pt",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "PtCl2",
             "name": "Platinum chloride",
-            "location": "Pt",
+            "location": "5d metals wheel",
+            "refwheel": false
+        },
+        {
+            "material": "K2PtCl6",
+            "name": "Potassium hexachloro platinate",
+            "location": "5d metals wheel",
             "refwheel": false
         }
     ],
@@ -1745,7 +1759,7 @@
         {
             "material": "PbO",
             "name": "Pb (II) oxide, massicot",
-            "location": "Pb",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Pb-L3-Massicot.001",
             "datafile2": "Pb-L1-Massicot.001"
@@ -1753,7 +1767,7 @@
         {
             "material": "PbO2",
             "name": "Pb (IV) dioxide",
-            "location": "Pb",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Pb-L3-LeadDioxide.001",
             "datafile2": "Pb-L1-LeadDioxide.001"
@@ -1761,7 +1775,7 @@
         {
             "material": "PbS",
             "name": "Pb (II) sulfide, galena",
-            "location": "Pb",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Pb-L3-Galena.001",
             "datafile2": "Pb-L1-Galena.001"
@@ -1769,7 +1783,7 @@
         {
             "material": "PbSO4",
             "name": "Pb sulfate, angelsite",
-            "location": "Pb",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Pb-L3-Angelsite.001",
             "datafile2": "Pb-L1-Angelsite.001"
@@ -1777,7 +1791,7 @@
         {
             "material": "PbCO3",
             "name": "Pb carbonate, cerrusite",
-            "location": "Pb",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Pb-L3-Cerrusite.001",
             "datafile2": "Pb-L1-Cerrusite.001"
@@ -1785,7 +1799,7 @@
         {
             "material": "PbCl",
             "name": "Pb chloride",
-            "location": "Pb",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Pb-L3-LeadChloride.001",
             "datafile2": "Pb-L1-LeadChloride.001"
@@ -1803,7 +1817,7 @@
         {
             "material": "Bi",
             "name": "Bismuth metal",
-            "location": "Bi",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Bi-L3-BismuthMetal.001",
             "datafile2": "Bi-L1-BismuthMetal.001"
@@ -1811,7 +1825,7 @@
         {
             "material": "BiF3",
             "name": "Bismuth fluoride",
-            "location": "Bi",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": "Bi-L3-BismuthFluoride.001",
             "datafile2": "Bi-L1-BismuthFluoride.001"

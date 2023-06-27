@@ -121,8 +121,8 @@ class CommonMaterials():
      Those in <span id="outofrange">grey text</span> are not.
    </p>
    <p>
-     For compounds listed as being on the reference wheel, data are 
-     ln(I<sub>t</sub>/I<sub>R</sub>.
+     For compounds listed as being on the reference wheel, data are
+     ln(I<sub>t</sub>/I<sub>R)</sub>.
    </p>
    <p>
      Some L<sub>1</sub> data may not be useful due to a small edge step.
@@ -196,7 +196,8 @@ class CommonMaterials():
                 missing = 'present'
                 if 'missing' in this and this['missing'] is True:
                     missing = 'missing'
-                formula = re.sub(r'(\d+\.\d+|\d+)', r'<sub>\g<1></sub>', this['material'])
+                formula = re.sub(r'(\d+\.\d+|\d+)(?!\+)', r'<sub>\g<1></sub>', this['material'])
+                formula = re.sub(r'(\d+\.\d+|\d+)(?=\+)', r'<sup>\g<0></sup>', this['material'])
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]
