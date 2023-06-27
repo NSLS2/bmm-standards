@@ -283,6 +283,14 @@
             "location": "Mn standards wheel",
             "refwheel": false,
             "datafile": "Mn-Axinite.001"
+        },
+        {
+            "material": "Ca(Zn,Mn,Fe,Mg)Si2O6",
+            "name": "Petedunnite",
+            "fluorescence": true,
+            "location": "Zn standards wheel",
+            "refwheel": false,
+            "datafile": "Mn-K-Petedunnite.001"
         }
     ],
     "Fe": [
@@ -540,7 +548,16 @@
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": "Fe-Vesuvianite.001"
+        },
+        {
+            "material": "Ca(Zn,Mn,Fe,Mg)Si2O6",
+            "name": "Petedunnite",
+            "fluorescence": true,
+            "location": "Zn standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-K-Petedunnite.001"
         }
+
     ],
     "Co": [
         {
@@ -600,7 +617,7 @@
             "name": "Nickel ferrite, trevorite",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Ni-K-NickelFerrite.001"
         },
         {
             "material": "NiAl2O4",
@@ -878,6 +895,13 @@
             "location": "Sr standards wheel",
             "refwheel": false,
             "datafile": "Sr-StrontiumHydroxide.001"
+        },
+	{
+            "material": "SrCe2Ti4O12",
+            "name": "strontium cerium titanate",
+            "location": "Ce standards half-wheel",
+            "refwheel": false,
+            "datafile": "Sr-K-SrCe2Ti4O12.001"
         }
     ],
     "Y": [
@@ -1596,28 +1620,28 @@
             "material": "ReO2",
             "name": "Rhenium dioxide",
             "refwheel": true,
-            "location": "Re",
+            "location": "5d metals wheel",
             "datafile": "Re-L3-RheniumOxide.001",
             "datafile2": "Re-L1-RheniumOxide.001"
         },
         {
             "material": "ReO3",
             "name": "Rhenia",
-            "location": "Re",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "Re",
             "name": "Rhenium metal",
-            "location": "Re",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "NH4ReO4",
             "name": "Ammonium perrhenate",
-            "location": "Re",
+            "location": "5d metals wheel",
             "refwheel": false
         }
     ],
@@ -1635,7 +1659,7 @@
         {
             "material": "PtRu",
             "name": "Platinum ruthenium",
-            "location": "Ru",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -1829,6 +1853,14 @@
             "refwheel": false,
             "datafile": "Bi-L3-BismuthFluoride.001",
             "datafile2": "Bi-L1-BismuthFluoride.001"
+        },
+	{
+            "material": "Bi2Ce2Ti4O12",
+            "name": "bismuth cerium titanate",
+            "location": "Ce standards half-wheel",
+            "refwheel": false,
+            "datafile": "Bi-L3-Bi2Ce2Ti4O12.001",
+            "datafile2": "Bi-L1-Bi2Ce2Ti4O12.001"
         }
     ],
     "Po": [],
