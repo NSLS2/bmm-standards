@@ -1629,20 +1629,24 @@
             "name": "Rhenia",
             "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Re-L3-RheniumTrioxide.001",
+            "datafile2": "Re-L1-RheniumTrioxide.001"
         },
         {
             "material": "Re",
             "name": "Rhenium metal",
             "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Re-L3-Rhenium_metal.001",
+            "datafile2": "Re-L1-Rhenium_metal.001"
         },
         {
             "material": "NH4ReO4",
             "name": "Ammonium perrhenate",
             "location": "5d metals wheel",
-            "refwheel": false
+            "refwheel": false,
+            "datafile": "Re-L3-AmmoniumPerrhenate.001",
+            "datafile2": "Re-L1-AmmoniumPerrhenate.001"
         }
     ],
     "Os": [ ],
@@ -1661,26 +1665,33 @@
             "name": "Platinum ruthenium",
             "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Pt-L3-PtRu.001",
+            "datafile2": "Pt-L1-PtRu.001"
         },
         {
             "material": "Pt(NH3)4Cl2 (H2O)x",
             "name": "TAPC (tetraamine platinum chloride)",
             "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Pt-L3-TetraammineplatinumChloride.001",
+            "datafile2": "Pt-L1-TetraammineplatinumChloride.001"
         },
         {
             "material": "PtCl2",
             "name": "Platinum chloride",
             "location": "5d metals wheel",
-            "refwheel": false
+            "refwheel": false,
+            "datafile": "Pt-L3-PlatinumChloride.001",
+            "datafile2": "Pt-L1-PlatinumChloride.001"
         },
         {
             "material": "K2PtCl6",
             "name": "Potassium hexachloro platinate",
             "location": "5d metals wheel",
-            "refwheel": false
+            "refwheel": false,
+	    "datafile": "Pt-L3-PotassiumHexaChloroPlatinate.001",
+            "datafile2": "Pt-L1-PotassiumHexaChloroPlatinate.001"
+
         }
     ],
     "Au": [
@@ -1695,78 +1706,80 @@
         {
             "material": "AuS",
             "name": "Sold sulfide",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Au-L3-GoldSufide.001",
+            "datafile2": "Au-L1-GoldSulfide.001"
         },
         {
             "material": "AuCl",
             "name": "Gold(I) chloride",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "AuCl3",
             "name": "Gold(III) chloride",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "AuCN",
             "name": "Gold cyanide",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "AuH4Na3O8S4",
             "name": "Gold thiosulfate",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Au-L3-GoldThiosulfate.001",
+            "datafile2": "Au-L1-GoldThiosulfate.001"
         },
         {
             "material": "C4H4AuNaO4S",
             "name": "Gold thiomalate",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Au-L3-GoldThiomalate.001",
+            "datafile2": "Au-L1-GoldThiomalate.001"
         },
         {
             "material": "C4AuKN4S4",
             "name": "Gold potassium thiocyanate",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
-        },
-        {
-            "material": " [H3O]2[PtCl6](H2O)x",
-            "name": "chloroplatinic acid, hexachloroplatinate",
-            "location": "Au",
-            "refwheel": false,
-            "datafile": false
+            "datafile": "Au-L3-GoldThiocyanate.001",
+            "datafile2": "Au-L1-GoldThiocyanate.001"
         },
         {
             "material": "Au2O3",
             "name": "gold oxide",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Au-L3-GoldOxide.001",
+            "datafile2": "Au-L1-GoldOxide.001"
         },
         {
             "material": "Au(ac)3",
             "name": "gold acetate",
-            "location": "Au",
+            "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Au-L3-GoldAcetate.001",
+            "datafile2": "Au-L1-GoldAcetate.001"
         },
         {
             "material": "La4LiAuO8",
             "name": "lanthanum lithium gold oxide",
-            "location": "Au",
-            "refwheel": false
+            "location": "5d metals wheel",
+            "refwheel": false,
+            "datafile": "Au-L3-La4LiAuO8.001",
+            "datafile2": "Au-L1-La4LiAuO8.001"
+
         }
     ],
     "Hg": [],
