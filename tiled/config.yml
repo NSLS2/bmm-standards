@@ -1,0 +1,12 @@
+authentication:
+  allow_anonymous_access: true
+trees:
+  - tree: files
+    path: /bmm/standards
+    args:
+      directory: /home/bruce/git/bmm-standards/Data
+      readers_by_mimetype:
+        text/x-xdi: xdi:XDIDataFrameAdapter.from_file
+      mimetypes_by_file_ext:
+        .xdi: text/x-xdi
+

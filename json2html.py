@@ -122,7 +122,7 @@ class CommonMaterials():
    </p>
    <p>
      For compounds listed as being on the reference wheel, data are
-     ln(I<sub>t</sub>/I<sub>R)</sub>.
+     ln(I<sub>t</sub>/I<sub>R</sub>).
    </p>
    <p>
      Some L<sub>1</sub> data may not be useful due to a small edge step.
