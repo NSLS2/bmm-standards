@@ -766,71 +766,72 @@
         {
             "material": "As2O5",
             "name": "Arsenic pentoxide",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-ArsenicPentoxide.001"
         },
         {
             "material": "AsS",
             "name": "Realgar",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-Realgar.001"
         },
         {
             "material": "As2S3",
             "name": "Orpiment",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "C5H11AsO2",
             "name": "Arsenobetaine",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-ArsenoBetaine.001"
         },
         {
             "material": "C3H9AsO",
             "name": "Trimethylarsine oxide",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "KH2AsO4",
             "name": "Potassium arsenate",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-PotassiumAresenate.001"
         },
         {
             "material": "C4H12AsI",
             "name": "Tetramethyl arsonium iodide",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-TetramethylArsoniumIodide.001"
         },
         {
             "material": "NaAsO2",
             "name": "sodium meta arsenite",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-SodiumMetaArsenite.001"
         },
         {
             "material": "CH3AsO3Na2",
             "name": "Disodium methyl aresenate",
-            "location": "As",
+            "location": "As standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-DisodiumMethylArsenate.001"
         },
         {
             "material": "(CH3)2AsO2H",
             "name": "Cacodylic acid",
-            "location": "As",
-            "refwheel": false
+            "location": "As standards wheel",
+	    "refwheel": false,
+            "datafile": "As-K-CacodylicAsAcid.001"
         }
     ],
     "Se": [
@@ -844,7 +845,7 @@
         {
             "material": "SeO2",
             "name": "Selenium dioxide",
-            "location": "Se",
+            "location": "As standards wheel",
             "refwheel": false,
             "datafile": "Se-K-SeleniumOxide.001"
         }
