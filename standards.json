@@ -1371,6 +1371,15 @@
             "datafile2": "Eu-L1-EuropiumOxide.xdi"
         },
         {
+            "material": "EuTiO3",
+            "name": "perovskite europium titanate",
+            "location": "Lanthanide standards wheel",
+            "refwheel": false,
+            "lanthanidewheel": false,
+            "datafile": "Eu-L3-EuTiO3.xdi",
+            "datafile2": "Eu-L1-EuTiO3.xdi"
+        },
+        {
             "material": "Eu2O3",
             "name": "monoclinic europium oxide",
             "location": "Lanthanide standards wheel",
