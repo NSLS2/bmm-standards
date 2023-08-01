@@ -200,7 +200,7 @@
         {
             "material": "ErCrO3",
             "name": "Erbium Chromate",
-            "location": "Er",
+            "location": "Lanthanide standards wheel",
             "refwheel": false
         }
     ],
@@ -1057,7 +1057,7 @@
         {
             "material": "PtRu",
             "name": "Platinum ruthenium",
-            "location": "Ru",
+            "location": "5d metals wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -1338,7 +1338,7 @@
         {
             "material": "Sm2O3",
             "name": "monoclinic Samarium oxide",
-            "location": "Sm",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "lanthanidewheel": false,
             "datafile": "Sm-L3-Sm2O3-m.xdi",
@@ -1471,7 +1471,7 @@
         {
             "material": "DyScO3",
             "name": "Dysprosium scandate",
-            "location": "Dy",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "datafile": "Dy-L3-DyScO3.xdi",
             "datafile2": "Dy-L1-DyScO3.xdi"
@@ -1503,13 +1503,6 @@
             "datafile2": "Ho-L1-HolmiumOxide.xdi"
         },
         {
-            "material": "Ho2Sn2O7",
-            "name": "Holmium stannate",
-            "location": "Ho",
-            "refwheel": false,
-            "datafile": false
-        },
-        {
             "material": "Ho2TiO5",
             "name": "stuffed pyrochlore holmium titanate",
             "location": "Lanthanide standards wheel",
@@ -1521,7 +1514,7 @@
     "Er": [
         {
             "material": "Er2O3",
-            "name": "Erbium oxide",
+            "name": "Erbium trioxide",
             "refwheel": true,
             "location": "Er",
             "datafile": "Er-L3-ErbiumOxide.xdi",
@@ -1530,7 +1523,7 @@
         {
             "material": "ErCrO3",
             "name": "Erbium chromate",
-            "location": "Cr",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -1546,7 +1539,7 @@
     "Tm": [
         {
             "material": "Tm2O3",
-            "name": "Thullium oxide",
+            "name": "Thullium trioxide",
             "refwheel": true,
             "location": "Tm",
             "datafile": "Tm-L3-ThuliumOxide.xdi",
@@ -1564,7 +1557,7 @@
     "Yb": [
         {
             "material": "Yb2O3",
-            "name": "Ytterbium oxide",
+            "name": "Ytterbium trioxide",
             "refwheel": true,
             "location": "Yb",
             "datafile2": "Yb-L1-YtterbiumOxide.xdi",
@@ -1580,7 +1573,7 @@
     "Lu": [
         {
             "material": "Lu2O3",
-            "name": "lutetium oxide",
+            "name": "lutetium trioxide",
             "refwheel": true,
             "location": "Lu",
             "datafile": "Lu-L3-LutetiumOxide.xdi",
