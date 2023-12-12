@@ -31,7 +31,7 @@
         {
             "material": "DyScO3",
             "name": "Dysprosium scandate",
-            "location": "lanthanide wheel",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "datafile": false
         }
@@ -97,7 +97,7 @@
         {
             "material": "EuTiO3",
             "name": "Europium titanate",
-            "location": "Eu",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "lanthanidewheel": false,
             "datafile": false
@@ -105,7 +105,7 @@
         {
             "material": "Nd2TiO5",
             "name": "stuffed pyrochlore Neodymium titanium oxide",
-            "location": "Ti",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "lanthanidewheel": false,
             "datafile": false
@@ -113,14 +113,14 @@
         {
             "material": "Er2TiO5",
             "name": "stuffed pyrochlore Erbium titanium oxide",
-            "location": "Er",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "datafile": false
         },
         {
             "material": "Yb2TiO5",
             "name": "stuffed pyrochlore Ytterbium titanium oxide",
-            "location": "Yb",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -134,7 +134,7 @@
         {
             "material": "Er2TiO5",
             "name": "stuffed pyrochlore Erbium titanium oxide",
-            "location": "Er",
+            "location": "Lanthanide standards wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -1711,7 +1711,7 @@
             "name": "Sold sulfide",
             "location": "5d metals wheel",
             "refwheel": false,
-            "datafile": "Au-L3-GoldSufide.xdi",
+            "datafile": "Au-L3-GoldSulfide.xdi",
             "datafile2": "Au-L1-GoldSulfide.xdi"
         },
         {
