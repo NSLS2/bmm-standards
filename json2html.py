@@ -260,11 +260,11 @@ class CommonMaterials():
         ##########
         page = page + '''
   <p class="copyright ctop">
-    Many of the samples on this page were provided by Martin Stennett 
-    of the University if Sheffield.  This page would be much less interesting
-    and useful without his numerous contributions.
+    A large number of the samples on this page were provided by Martin Stennett 
+    of the University of Sheffield.  This page would be much less interesting
+    and much less useful without his numerous contributions.
   </p>
-  <p class="copyright">
+  <p class="copyright ctop">
     This web page, any associated software, and its collection of data
     were developed and measured by a NIST employee. Pursuant to title
     17 United States Code Section 105, works of NIST employees are not
