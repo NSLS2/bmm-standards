@@ -184,6 +184,10 @@ tr.missing {
     color: #999;
     font-style: italic;
 }
+.missing {
+    color: #994;
+    font-style: italic;
+}
 
 tr:nth-child(2n) {background: #ddd}
 tr:nth-child(2n-1) {background: rgba(160, 160, 255, 0.25)}

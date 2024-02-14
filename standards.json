@@ -10,7 +10,7 @@
         {
             "material": "CaTiO3",
             "name": "Perovskite",
-            "location": "Ti",
+            "location": "Ti standards wheel",
             "refwheel": false
         }
     ],
@@ -45,67 +45,256 @@
             "datafile": "Ti-K-TitaniumFoil.xdi"
         },
         {
-            "material": "TiCN",
-            "name": "Titanium carbonitride",
-            "location": "Ti",
+            "material": "TiO2 (anatase)",
+            "name": "Anatase",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-Anatase.xdi"
+        },
+        {
+            "material": "TiO2 (rutile)",
+            "name": "Rutile",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-Rutile.xdi"
+        },
+        {
+            "material": "TiO2 (akaogiite)",
+            "name": "Akaogiite",
+	    "missing": true,
+            "location": "",
             "refwheel": false,
             "datafile": false
         },
         {
-            "material": "TiN",
-            "name": "Titanium nitride",
-            "location": "Ti",
+            "material": "TiO2 (brookite)",
+            "name": "Brookite",
+            "location": "sample not in collection",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Ti-K-Brookite.xdi"
+        },
+        {
+            "material": "Ti2O3",
+            "name": "titanium(III) oxide, titanium sesquioxide",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-Ti2O3.xdi"
+        },
+        {
+            "material": "TiO",
+            "name": "Titanium (II) oxide",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-TiO.xdi"
+        },
+        {
+            "material": "Ba1.2Al2.4Ti5.6O16",
+            "name": "Barium aluminum titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-BATO16.xdi"
+        },
+        {
+            "material": "Ba1.2Fe2.4Ti5.6O16",
+            "name": "Barium iron titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-BFTO16.xdi"
+        },
+        {
+            "material": "BaTiO3",
+            "name": "Barium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-BaTiO3.xdi"
+        },
+        {
+            "material": "Bi2Ce2Ti3O12",
+            "name": "Bismuth cerium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Bi2Ce2Ti3O12.xdi"
+        },
+        {
+            "material": "CaCe2Ti4O12",
+            "name": "Calcium cerium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-CaCe2Ti4O12.xdi"
         },
         {
             "material": "CaTiO3",
-            "name": "Perovskite",
-            "location": "Ti",
+            "name": "Perovskite, Calcium titanate",
+            "location": "Ti standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Ti-K-CaTiO3.xdi"
         },
         {
-            "material": "LiTiO3",
-            "name": "Lithium titanate",
-            "location": "Ti",
+            "material": "CaZrTi2O7",
+            "name": "Zirconolite",
+            "location": "Ti standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Ti-K-CaZrTi2O7.xdi"
         },
         {
-            "material": "SrTiO3",
-            "name": "Tausonite",
-            "location": "Ti",
+            "material": "Ce0.67TiO3",
+            "name": "Cerium titanate",
+            "location": "sample not in collection",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Ti-K-Ce067TiO3.xdi"
+        },
+        {
+            "material": "Ce2Ti2O7",
+            "name": "pyrochlore cerium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Ce2Ti2O7.xdi"
+        },
+        {
+            "material": "CeTi2O6",
+            "name": "Cerium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-CeTi2O6.xdi"
+        },
+        {
+            "material": "Dy2TiO5",
+            "name": "stuffed pyrochlore dysprosium titanate",
+            "location": "Lanthanide standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-Dy2TiO5.xdi"
+        },
+        {
+            "material": "Eu2Ti2O7",
+            "name": "pyrochlore europium titanate",
+            "location": "Lanthanide standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-Eu2Ti2O7.xdi"
+        },
+        {
+            "material": "EuTiO3",
+            "name": "europium titanate",
+            "location": "Lanthanide standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-EuTiO3.xdi"
+        },
+        {
+            "material": "Fe2TiO5",
+            "name": "stuffed pyrochlore iron titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Fe2TiO5.xdi"
         },
         {
             "material": "FeTiO3",
             "name": "Ilmenite",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": false
+            "datafile": "Ti-K-FeTiO3.xdi"
         },
         {
-            "material": "Eu2Ti2O7",
-            "name": "Pyrochlore europium titanate",
-            "location": "Eu",
+            "material": "Ba2(TiO)Si2O7",
+            "name": "fresnoite",
+            "location": "sample not in collection",
             "refwheel": false,
-            "lanthanidewheel": false,
-            "datafile": false
+            "datafile": "Ti-K-Fresnoite.xdi"
         },
         {
-            "material": "EuTiO3",
-            "name": "Europium titanate",
+            "material": "Gd2TiO5",
+            "name": "stuffed pyrochlore gadolinium titanate",
             "location": "Lanthanide standards wheel",
             "refwheel": false,
-            "lanthanidewheel": false,
+            "datafile": "Ti-K-Gd2TiO5.xdi"
+        },
+        {
+            "material": "Li2TiO5",
+            "name": "stuffed pyrochlore lithium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Li2TiO5.xdi"
+        },
+        {
+            "material": "Na2Ti3O7",
+            "name": "sodium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Na2Ti3O7.xdi"
+        },
+        {
+            "material": "Na2Ti2O7",
+            "name": "sodium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Na2Ti2O7.xdi"
+        },
+        {
+            "material": "Ni2TiO4",
+            "name": "nickel titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Ni2TiO4.xdi"
+        },
+        {
+            "material": "NiTiO3",
+            "name": "nickel titanate",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-NiTiO3.xdi"
+        },
+        {
+            "material": "SrCe2Ti4O12",
+            "name": "Strontium cerium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-SrCe2Ti4O12.xdi"
+        },
+        {
+            "material": "SrTiO3",
+            "name": "Tasonite, strontium titanate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-SrTiO3.xdi"
+        },
+        {
+            "material": "TiCN",
+            "name": "Titanium carbonitride",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": false
+        },
+        {
+            "material": "TiC",
+            "name": "Titanium carbide",
+            "location": "Ti",
+	    "missing": true,
+            "refwheel": false,
+            "datafile": false
+        },
+        {
+            "material": "TiN",
+            "name": "Titanium nitride",
+            "location": "Ti standards wheel",
+            "refwheel": false,
+            "datafile": "Ti-K-TiN.xdi"
+        },
+        {
+            "material": "CaTiSiO5",
+            "name": "Titanite, sphene",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Titanite.xdi"
+        },
+        {
+            "material": "LiTi2O5",
+            "name": "Lithium titanate",
+            "location": "Ti standards wheel",
+            "refwheel": false,
             "datafile": false
         },
         {
             "material": "Nd2TiO5",
             "name": "stuffed pyrochlore Neodymium titanium oxide",
-            "location": "Lanthanide standards wheel",
+            "location": "Ti standards wheel",
             "refwheel": false,
             "lanthanidewheel": false,
             "datafile": false
@@ -113,7 +302,7 @@
         {
             "material": "Er2TiO5",
             "name": "stuffed pyrochlore Erbium titanium oxide",
-            "location": "Lanthanide standards wheel",
+            "location": "Ti standards wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -127,7 +316,7 @@
         {
             "material": "Y2TiO5",
             "name": "stuffed pyrochlore Yttrium titanium oxide",
-            "location": "Y",
+            "location": "4d metals wheel",
             "refwheel": false,
             "datafile": false
         },
@@ -144,12 +333,6 @@
             "location": "Ti",
             "refwheel": false,
             "datafile": false
-        },
-        {
-            "material": "CeTi2O6",
-            "name": "cerium titanate",
-            "location": "Ti",
-            "refwheel": false
         }
     ],
     "V": [

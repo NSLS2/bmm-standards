@@ -208,7 +208,9 @@ class CommonMaterials():
                     location = 'reference wheel'
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'lanthanide wheel'
-
+                if location == 'sample not in collection':
+                    location = f'<span class="missing">({location})</span>'
+                    
                 if el.atomic_number > 46:
                     edge = 'L<sub>3</sub>'
                 else:
@@ -258,6 +260,11 @@ class CommonMaterials():
         ##########
         page = page + '''
   <p class="copyright ctop">
+    Many of the samples on this page were provided by Martin Stennett 
+    of the University if Sheffield.  This page would be much less interesting
+    and useful without his numerous contributions.
+  </p>
+  <p class="copyright">
     This web page, any associated software, and its collection of data
     were developed and measured by a NIST employee. Pursuant to title
     17 United States Code Section 105, works of NIST employees are not
