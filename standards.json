@@ -59,19 +59,19 @@
             "datafile": "Ti-K-Rutile.xdi"
         },
         {
+            "material": "TiO2 (brookite)",
+            "name": "Brookite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ti-K-Brookite.xdi"
+        },
+        {
             "material": "TiO2 (akaogiite)",
             "name": "Akaogiite",
 	    "missing": true,
             "location": "",
             "refwheel": false,
             "datafile": false
-        },
-        {
-            "material": "TiO2 (brookite)",
-            "name": "Brookite",
-            "location": "sample not in collection",
-            "refwheel": false,
-            "datafile": "Ti-K-Brookite.xdi"
         },
         {
             "material": "Ti2O3",
@@ -459,13 +459,6 @@
             "datafile": "Mn-Manganosite.xdi"
         },
         {
-            "material": "Mn3O4",
-            "name": "Manganese tetroxide",
-            "location": "sample not in collection",
-            "refwheel": false,
-            "datafile": "Mn-K-Mn3O4.xdi"
-        },
-        {
             "material": "Mn2O3",
             "name": "Bixbyite",
             "location": "Mn standards wheel",
@@ -473,11 +466,25 @@
             "datafile": "Mn-Bixbyite.xdi"
         },
         {
+            "material": "Mn3O4",
+            "name": "Manganese tetroxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Mn3O4.xdi"
+        },
+        {
             "material": "MnO2",
             "name": "Pyrolucite",
             "location": "Mn standards wheel",
             "refwheel": false,
             "datafile": "Mn-Pyrolucite.xdi"
+        },
+        {
+            "material": "MnO(OH)",
+            "name": "Manganite, manganese oxyhydroxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Manganite.xdi"
         },
         {
             "material": "MnCO3",
@@ -544,13 +551,6 @@
             "location": "sample not in collection",
             "refwheel": false,
             "datafile": "Mn-K-Macfallite.xdi"
-        },
-        {
-            "material": "MnO(OH)",
-            "name": "Manganite, manganese oxyhydroxide",
-            "location": "sample not in collection",
-            "refwheel": false,
-            "datafile": "Mn-K-Manganite.xdi"
         },
         {
             "material": "CaMn2O4",
@@ -625,27 +625,6 @@
             "datafile": "Fe-Wustite.xdi"
         },
         {
-            "material": "ZnFe2O4",
-            "name": "Zinc ferrite",
-            "location": "Fe standards wheel",
-            "refwheel": false,
-            "datafile": "Fe-ZnFerrite.xdi"
-        },
-        {
-            "material": "FeTiO3",
-            "name": "Ilmenite",
-            "location": "Fe standards wheel",
-            "refwheel": false,
-            "datafile": "Fe-Ilmenite.xdi"
-        },
-        {
-            "material": "NiFe2O4",
-            "name": "Nickel ferrite",
-            "location": "Fe standards wheel",
-            "refwheel": false,
-            "datafile": "Fe-NiFerrite.xdi"
-        },
-        {
             "material": "\u03b1-Fe2O3",
             "name": "Hematite",
             "location": "Fe standards wheel",
@@ -661,6 +640,13 @@
             "datafile": false
         },
         {
+            "material": "Fe2O3(H2O)0.5",
+            "name": "ferrihydrite",
+            "location": "Fe standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-Ferrihydrite.xdi"
+        },
+        {
             "material": "\u03b1-FeOOH",
             "name": "Goethite",
             "location": "Fe standards wheel",
@@ -673,6 +659,41 @@
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": "Fe-Lepidocrocite.xdi"
+        },
+        {
+            "material": "Fe3O4",
+            "name": "magnetite",
+            "location": "Fe standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-Magnetite.xdi"
+        },
+        {
+            "material": "ZnFe2O4",
+            "name": "Zinc ferrite",
+            "location": "Fe standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-ZnFerrite.xdi"
+        },
+        {
+            "material": "NiFe2O4",
+            "name": "Nickel ferrite",
+            "location": "Fe standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-NiFerrite.xdi"
+        },
+        {
+            "material": "MnFe2O4",
+            "name": "Jacobsite, manganese ferrite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Fe-K-Jacobsite.xdi"
+        },
+        {
+            "material": "FeTiO3",
+            "name": "Ilmenite",
+            "location": "Fe standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-Ilmenite.xdi"
         },
         {
             "material": "FeS2",
@@ -705,18 +726,25 @@
             "datafile": "Fe-Vivianite.xdi"
         },
         {
-            "material": "FeOOH",
-            "name": "ferrihydrite",
+            "material": "FeCO3",
+            "name": "siderite",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": "Fe-Ferrihydrite.xdi"
+            "datafile": "Fe-Siderite.xdi"
         },
         {
-            "material": "Fe3O4",
-            "name": "magnetite",
+            "material": "FeC2O4(H2O)2",
+            "name": "Fe(II) oxalate",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": "Fe-Magnetite.xdi"
+            "datafile": "Fe-Fe2Oxalate.xdi"
+        },
+        {
+            "material": "Fe2(C2O4)3 (H2O)6",
+            "name": "Fe(III) oxalate",
+            "location": "Fe standards wheel",
+            "refwheel": false,
+            "datafile": "Fe-Fe3Oxalate.xdi"
         },
         {
             "material": "Fe2SiO4",
@@ -738,27 +766,6 @@
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": "Fe-Staurolite.xdi"
-        },
-        {
-            "material": "FeCO3",
-            "name": "siderite",
-            "location": "Fe standards wheel",
-            "refwheel": false,
-            "datafile": "Fe-Siderite.xdi"
-        },
-        {
-            "material": "FeC2O4(H2O)2",
-            "name": "Fe(II) oxalate",
-            "location": "Fe standards wheel",
-            "refwheel": false,
-            "datafile": "Fe-Fe2Oxalate.xdi"
-        },
-        {
-            "material": "Fe2(C2O4)3 (H2O)6",
-            "name": "Fe(III) oxalate",
-            "location": "Fe standards wheel",
-            "refwheel": false,
-            "datafile": "Fe-Fe3Oxalate.xdi"
         },
         {
             "material": "(Fe,Mg)Al2 (OH,PO4)2",
@@ -886,13 +893,6 @@
             "location": "sample not in collection",
             "refwheel": false,
             "datafile": "Fe-K-Carpholite.xdi"
-        },
-        {
-            "material": "MnFe2O4",
-            "name": "Jacobsite",
-            "location": "sample not in collection",
-            "refwheel": false,
-            "datafile": "Fe-K-Jacobsite.xdi"
         },
         {
             "material": "(Fe,Mn)WO4",
@@ -1084,7 +1084,7 @@
     "Ga": [
         {
             "material": "Ga2O3",
-            "name": "Ga2O3",
+            "name": "Galllium oxide, gallium sesquioxide",
             "refwheel": true,
             "location": "Ga",
             "datafile": "Ga-K-GalliumOxide.xdi"
@@ -1093,7 +1093,7 @@
     "Ge": [
         {
             "material": "GeO2",
-            "name": "GeO2",
+            "name": "Germanium oxide",
             "refwheel": true,
             "location": "Ge",
             "datafile": "Ge-K-GermaniumOxide.xdi"
