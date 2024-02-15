@@ -128,6 +128,9 @@ main .color-table {
 	background: #d0cbc6;
 	cursor: default;
 }
+.element.nolink {
+	cursor: default;
+}
 #key {
 	grid-area: 1 / 7 / 3 / 10;
 }

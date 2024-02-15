@@ -9,767 +9,878 @@
   <body>
   <main>
 
-<div class="topmatter">
-</div>
-<div id="divfix">
-   <div id="container">
-     <div id="floated">
-       <image src="floor_mat.png" width=90%>
-     </div>
-     Common XAFS materials
-    </div>
-   <p>
-     <span class="instructions">Click on an element to jump to that list of compounds in BMM's
-     collection.</span>
-   </p>
-   <p>
-     Compounds marked with &#10004; are permanently mounted on the reference wheel.
-   </p>
-   <p>
-     Compounds marked with <span style="font-family: 'Brush Script MT', cursive;">Fl</span>
-     were measured in fluorescence.
-   </p>
-   <p>
-      <span class="missing">[___]</span> means the data was measured 
-      at BMM on a high-quality sample, but the sample is not in BMM's 
-      collection.
-   </p>
-   <p>
-     Edge energies in <span id="inrange">black text</span> are accessible at BMM.
-     Those in <span id="outofrange">grey text</span> are not.
-   </p>
-   <p>
-     For compounds listed as being on the reference wheel, data are
-     ln(I<sub>t</sub>/I<sub>r</sub>).
-   </p>
-   <p>
-     Some L<sub>1</sub> data may not be useful due to a small edge step.
-   </p>
-   <p>
-     <a href="https://github.com/NSLS-II-BMM/bmm-standards">
-        <img src="github-mark.svg" width=20px>
-        GitHub repository
-     </a>
-   </p>
-</div>
+  <div id="divfix">
+     <div id="container">
+       <div id="floated">
+         <image src="floor_mat.png" width=90%>
+       </div>
+       Common XAFS materials
+      </div>
+     <p>
+       <span class="instructions">Click on an element to jump to that list of compounds in BMM's
+       collection.</span>
+     </p>
+     <p>
+       Compounds marked with &#10004; are permanently mounted on the reference wheel.
+     </p>
+     <p>
+       Compounds marked with <span style="font-family: 'Brush Script MT', cursive;">Fl</span>
+       were measured in fluorescence.
+     </p>
+     <p>
+        <span class="missing">[___]</span> means the data was measured 
+        at BMM on a high-quality sample, but the sample is not in BMM's 
+        collection.
+     </p>
+     <p>
+       Edge energies in <span id="inrange">black text</span> are accessible at BMM.
+       Those in <span id="outofrange">grey text</span> are not.
+     </p>
+     <p>
+       For compounds listed as being on the reference wheel, data are
+       ln(I<sub>t</sub>/I<sub>r</sub>).
+     </p>
+     <p>
+       Some L<sub>1</sub> data may not be useful due to a small edge step.
+     </p>
+     <p>
+       <a href="https://github.com/NSLS-II-BMM/bmm-standards">
+          <img src="github-mark.svg" width=20px>
+          GitHub repository
+       </a>
+     </p>
+  </div>
 
   <div class="ptable">
-    <!-- <section class="element" id="key"> -->
-    <!--   <div class="element-number">Number</div> -->
-    <!--   <h2 class="element-symbol">Symbol</h2> -->
-    <!--   <div class="element-name">Name</div> -->
-    <!--   <\!-- <div class="element-weight">Weight</div> -\-> -->
-    <!-- </section> -->
-    <section class="element nostandards" id="h">
-      <div class="element-number">1</div>
-      <h2 class="element-symbol">H</h2>
-      <div class="element-name">Hydrogen</div>
-      <!-- <div class="element-weight">1.008</div> -->
-    </section>
-    <section class="element nostandards" id="he">
-      <div class="element-number">2</div>
-      <h2 class="element-symbol">He</h2>
-      <div class="element-name">Helium</div>
-      <!-- <div class="element-weight">4.003</div> -->
-    </section>
-    <section class="element nostandards" id="li">
-      <div class="element-number">3</div>
-      <h2 class="element-symbol">Li</h2>
-      <div class="element-name">Lithium</div>
-      <!-- <div class="element-weight">6.941</div> -->
-    </section>
-    <section class="element nostandards" id="be">
-      <div class="element-number">4</div>
-      <h2 class="element-symbol">Be</h2>
-      <div class="element-name">Berylium</div>
-      <!-- <div class="element-weight">9.012</div> -->
-    </section>
-    <section class="element nostandards" id="b">
-      <div class="element-number">5</div>
-      <h2 class="element-symbol">B</h2>
-      <div class="element-name">Boron</div>
-      <!-- <div class="element-weight">10.511</div> -->
-    </section>
-    <section class="element nostandards" id="c">
-      <div class="element-number">6</div>
-      <h2 class="element-symbol">C</h2>
-      <div class="element-name">Carbon</div>
-      <!-- <div class="element-weight">12.011</div> -->
-    </section>
-    <section class="element nostandards" id="n">
-      <div class="element-number">7</div>
-      <h2 class="element-symbol">N</h2>
-      <div class="element-name">Nitrogen</div>
-      <!-- <div class="element-weight">14.007</div> -->
-    </section>
-    <section class="element nostandards" id="o">
-      <div class="element-number">8</div>
-      <h2 class="element-symbol">O</h2>
-      <div class="element-name">Oxygen</div>
-      <!-- <div class="element-weight">15.999</div> -->
-    </section>
-    <section class="element nostandards" id="f">
-      <div class="element-number">9</div>
-      <h2 class="element-symbol">F</h2>
-      <div class="element-name">Flourine</div>
-      <!-- <div class="element-weight">18.958</div> -->
-    </section>
-    <section class="element nostandards" id="ne">
-      <div class="element-number">10</div>
-      <h2 class="element-symbol">Ne</h2>
-      <div class="element-name">Neon</div>
-      <!-- <div class="element-weight">20.180</div> -->
-    </section>
-    <section class="element nostandards" id="na">
-      <div class="element-number">11</div>
-      <h2 class="element-symbol">Na</h2>
-      <div class="element-name">Sodium</div>
-      <!-- <div class="element-weight">22.990</div> -->
-    </section>
-    <section class="element nostandards" id="mg">
-      <div class="element-number">12</div>
-      <h2 class="element-symbol">Mg</h2>
-      <div class="element-name">Magnesium</div>
-      <!-- <div class="element-weight">24.305</div> -->
-    </section>
-    <section class="element nostandards" id="al">
-      <div class="element-number">13</div>
-      <h2 class="element-symbol">Al</h2>
-      <div class="element-name">Aluminum</div>
-      <!-- <div class="element-weight">25.982</div> -->
-    </section>
-    <section class="element nostandards" id="si">
-      <div class="element-number">14</div>
-      <h2 class="element-symbol">Si</h2>
-      <div class="element-name">Silicon</div>
-      <!-- <div class="element-weight">28.086</div> -->
-    </section>
-    <section class="element nostandards" id="p">
-      <div class="element-number">15</div>
-      <h2 class="element-symbol">P</h2>
-      <div class="element-name">Phosphorus</div>
-      <!-- <div class="element-weight">30.974</div> -->
-    </section>
-    <section class="element nostandards" id="s">
-      <div class="element-number">16</div>
-      <h2 class="element-symbol">S</h2>
-      <div class="element-name">Sulfur</div>
-      <!-- <div class="element-weight">32.056</div> -->
-    </section>
-    <section class="element nostandards" id="cl">
-      <div class="element-number">17</div>
-      <h2 class="element-symbol">Cl</h2>
-      <div class="element-name">Chlorine</div>
-      <!-- <div class="element-weight">35.453</div> -->
-    </section>
-    <section class="element nostandards" id="ar">
-      <div class="element-number">18</div>
-      <h2 class="element-symbol">Ar</h2>
-      <div class="element-name">Argon</div>
-      <!-- <div class="element-weight">39.948</div> -->
-    </section>
-    <section class="element nostandards" id="k">
-      <div class="element-number">19</div>
-      <h2 class="element-symbol">K</h2>
-      <div class="element-name">Potasium</div>
-      <!-- <div class="element-weight">39.098</div> -->
-    </section>
-    <section class="element alkaline" id="ca">
-      <div class="element-number">20</div>
-      <h2 class="element-symbol">Ca</h2>
-      <div class="element-name">Calcium</div>
-      <!-- <div class="element-weight">40.078</div> -->
-    </section>
-    <section class="element transition" id="sc" onclick="goToAnchor('Scandium')">
-      <div class="element-number">21</div>
-      <h2 class="element-symbol">Sc</h2>
-      <div class="element-name">Scandium</div>
-      <!-- <div class="element-weight">44.956</div> -->
-    </section>
-    <section class="element transition" id="ti" onclick="goToAnchor('Titanium')">
-      <div class="element-number">22</div>
-      <h2 class="element-symbol">Ti</h2>
-      <div class="element-name">Titanium</div>
-      <!-- <div class="element-weight">47.857</div> -->
-    </section>
-    <section class="element transition" id="v" onclick="goToAnchor('Vanadium')">
-      <div class="element-number">23</div>
-      <h2 class="element-symbol">V</h2>
-      <div class="element-name">Vanadium</div>
-      <!-- <div class="element-weight">50.942</div> -->
-    </section>
-    <section class="element transition" id="cr" onclick="goToAnchor('Chromium')">
-      <div class="element-number">24</div>
-      <h2 class="element-symbol">Cr</h2>
-      <div class="element-name">Chromium</div>
-      <!-- <div class="element-weight">51.996</div> -->
-    </section>
-    <section class="element transition" id="mn" onclick="goToAnchor('Manganese')">
-      <div class="element-number">25</div>
-      <h2 class="element-symbol">Mn</h2>
-      <div class="element-name">Manganese</div>
-      <!-- <div class="element-weight">54.938</div> -->
-    </section>
-    <section class="element transition" id="fe" onclick="goToAnchor('Iron')">
-      <div class="element-number">26</div>
-      <h2 class="element-symbol">Fe</h2>
-      <div class="element-name">Iron</div>
-      <!-- <div class="element-weight">55.845</div> -->
-    </section>
-    <section class="element transition" id="co" onclick="goToAnchor('Cobalt')">
-      <div class="element-number">27</div>
-      <h2 class="element-symbol">Co</h2>
-      <div class="element-name">Cobalt</div>
-      <!-- <div class="element-weight">58.933</div> -->
-    </section>
-    <section class="element transition" id="ni" onclick="goToAnchor('Nickel')">
-      <div class="element-number">28</div>
-      <h2 class="element-symbol">Ni</h2>
-      <div class="element-name">Nickel</div>
-      <!-- <div class="element-weight">58.593</div> -->
-    </section>
-    <section class="element transition" id="cu" onclick="goToAnchor('Copper')">
-      <div class="element-number">29</div>
-      <h2 class="element-symbol">Cu</h2>
-      <div class="element-name">Copper</div>
-      <!-- <div class="element-weight">63.546</div> -->
-    </section>
-    <section class="element transition" id="zn" onclick="goToAnchor('Zinc')">
-      <div class="element-number">30</div>
-      <h2 class="element-symbol">Zn</h2>
-      <div class="element-name">Zinc</div>
-      <!-- <div class="element-weight">65.38</div> -->
-    </section>
-    <section class="element basic" id="ga" onclick="goToAnchor('Gallium')">
-      <div class="element-number">31</div>
-      <h2 class="element-symbol">Ga</h2>
-      <div class="element-name">Gallium</div>
-      <!-- <div class="element-weight">69.723</div> -->
-    </section>
-    <section class="element semimetal" id="ge" onclick="goToAnchor('Germanium')">
-      <div class="element-number">32</div>
-      <h2 class="element-symbol">Ge</h2>
-      <div class="element-name">Germanium</div>
-      <!-- <div class="element-weight">72.631</div> -->
-    </section>
-    <section class="element semimetal" id="as" onclick="goToAnchor('Arsenic')">
-      <div class="element-number">33</div>
-      <h2 class="element-symbol">As</h2>
-      <div class="element-name">Arsenic</div>
-      <!-- <div class="element-weight">74.922</div> -->
-    </section>
-    <section class="element nonmetal" id="se" onclick="goToAnchor('Selenium')">
-      <div class="element-number">34</div>
-      <h2 class="element-symbol">Se</h2>
-      <div class="element-name">Selenium</div>
-      <!-- <div class="element-weight">78.971</div> -->
-    </section>
-    <section class="element halogen" id="br" onclick="goToAnchor('Bromine')">
-      <div class="element-number">35</div>
-      <h2 class="element-symbol">Br</h2>
-      <div class="element-name">Bromine</div>
-      <!-- <div class="element-weight">79.904</div> -->
-    </section>
-    <section class="element nostandards" id="kr">
-      <div class="element-number">36</div>
-      <h2 class="element-symbol">Kr</h2>
-      <div class="element-name">Krypton</div>
-      <!-- <div class="element-weight">84.796</div> -->
-    </section>
-    <section class="element alkali" id="rb" onclick="goToAnchor('Rubidium')">
-      <div class="element-number">37</div>
-      <h2 class="element-symbol">Rb</h2>
-      <div class="element-name">Rubidium</div>
-      <!-- <div class="element-weight">84.468</div> -->
-    </section>
-    <section class="element alkaline" id="sr" onclick="goToAnchor('Strontium')">
-      <div class="element-number">38</div>
-      <h2 class="element-symbol">Sr</h2>
-      <div class="element-name">Strontium</div>
-      <!-- <div class="element-weight">87.62</div> -->
-    </section>
-    <section class="element transition" id="y" onclick="goToAnchor('Yttrium')">
-      <div class="element-number">39</div>
-      <h2 class="element-symbol">Y</h2>
-      <div class="element-name">Yttrium</div>
-      <!-- <div class="element-weight">88.906</div> -->
-    </section>
-    <section class="element transition" id="zr" onclick="goToAnchor('Zirconium')">
-      <div class="element-number">40</div>
-      <h2 class="element-symbol">Zr</h2>
-      <div class="element-name">Zirconium</div>
-      <!-- <div class="element-weight">91.224</div> -->
-    </section>
-    <section class="element transition" id="nb" onclick="goToAnchor('Niobium')">
-      <div class="element-number">41</div>
-      <h2 class="element-symbol">Nb</h2>
-      <div class="element-name">Niobium</div>
-      <!-- <div class="element-weight">92.906</div> -->
-    </section>
-    <section class="element transition" id="mo" onclick="goToAnchor('Molybdenum')">
-      <div class="element-number">42</div>
-      <h2 class="element-symbol">Mo</h2>
-      <div class="element-name">Molybdenum</div>
-      <!-- <div class="element-weight">95.95</div> -->
-    </section>
-    <section class="element nostandards" id="tc">
-      <div class="element-number">43</div>
-      <h2 class="element-symbol">Tc</h2>
-      <div class="element-name">Technetium</div>
-      <!-- <div class="element-weight">98.907</div> -->
-    </section>
-    <section class="element transition" id="ru" onclick="goToAnchor('Ruthenium')">
-      <div class="element-number">44</div>
-      <h2 class="element-symbol">Ru</h2>
-      <div class="element-name">Ruthenium</div>
-      <!-- <div class="element-weight">101.07</div> -->
-    </section>
-    <section class="element transition" id="rh" onclick="goToAnchor('Rhodium')">
-      <div class="element-number">45</div>
-      <h2 class="element-symbol">Rh</h2>
-      <div class="element-name">Rhodium</div>
-      <!-- <div class="element-weight">102.906</div> -->
-    </section>
-    <section class="element transition" id="pd" onclick="goToAnchor('Palladium')">
-      <div class="element-number">46</div>
-      <h2 class="element-symbol">Pd</h2>
-      <div class="element-name">Palladium</div>
-      <!-- <div class="element-weight">106.42</div> -->
-    </section>
-    <section class="element transition" id="ag" onclick="goToAnchor('Silver')">
-      <div class="element-number">47</div>
-      <h2 class="element-symbol">Ag</h2>
-      <div class="element-name">Silver</div>
-      <!-- <div class="element-weight">107.868</div> -->
-    </section>
-    <section class="element transition" id="cd" onclick="goToAnchor('Cadmium')">
-      <div class="element-number">48</div>
-      <h2 class="element-symbol">Cd</h2>
-      <div class="element-name">Cadmium</div>
-      <!-- <div class="element-weight">112.411</div> -->
-    </section>
-    <section class="element basic" id="in" onclick="goToAnchor('Indium')">
-      <div class="element-number">49</div>
-      <h2 class="element-symbol">In</h2>
-      <div class="element-name">Indium</div>
-      <!-- <div class="element-weight">114.818</div> -->
-    </section>
-    <section class="element basic" id="sn" onclick="goToAnchor('Tin')">
-      <div class="element-number">50</div>
-      <h2 class="element-symbol">Sn</h2>
-      <div class="element-name">Tin</div>
-      <!-- <div class="element-weight">118.710</div> -->
-    </section>
-    <section class="element semimetal" id="sb" onclick="goToAnchor('Antimony')">
-      <div class="element-number">51</div>
-      <h2 class="element-symbol">Sb</h2>
-      <div class="element-name">Antimony</div>
-      <!-- <div class="element-weight">121.760</div> -->
-    </section>
-    <section class="element semimetal" id="te" onclick="goToAnchor('Tellurium')">
-      <div class="element-number">52</div>
-      <h2 class="element-symbol">Te</h2>
-      <div class="element-name">Tellurium</div>
-      <!-- <div class="element-weight">127.6</div> -->
-    </section>
-    <section class="element halogen" id="i" onclick="goToAnchor('Iodine')">
-      <div class="element-number">53</div>
-      <h2 class="element-symbol">I</h2>
-      <div class="element-name">Iodine</div>
-      <!-- <div class="element-weight">126.904</div> -->
-    </section>
-    <section class="element nostandards" id="xe">
-      <div class="element-number">54</div>
-      <h2 class="element-symbol">Xe</h2>
-      <div class="element-name">Xenon</div>
-      <!-- <div class="element-weight">131.293</div> -->
-    </section>
-    <section class="element alkali" id="cs" onclick="goToAnchor('Cesium')">
-      <div class="element-number">55</div>
-      <h2 class="element-symbol">Cs</h2>
-      <div class="element-name">Cesium</div>
-      <!-- <div class="element-weight">132.905</div> -->
-    </section>
-    <section class="element alkaline" id="ba" onclick="goToAnchor('Barium')">
-      <div class="element-number">56</div>
-      <h2 class="element-symbol">Ba</h2>
-      <div class="element-name">Barium</div>
-      <!-- <div class="element-weight">132.327</div> -->
-    </section>
-    <section class="element lanthanide" id="la" onclick="goToAnchor('Lanthanum')">
-      <div class="element-number">57</div>
-      <h2 class="element-symbol">La</h2>
-      <div class="element-name">Lanthanum</div>
-      <!-- <div class="element-weight">138.905</div> -->
-    </section>
-    <section class="element lanthanide" id="ce" onclick="goToAnchor('Cerium')">
-      <div class="element-number">58</div>
-      <h2 class="element-symbol">Ce</h2>
-      <div class="element-name">Cerium</div>
-      <!-- <div class="element-weight">140.116</div> -->
-    </section>
-    <section class="element lanthanide" id="pr" onclick="goToAnchor('Praseodymium')">
-      <div class="element-number">59</div>
-      <h2 class="element-symbol">Pr</h2>
-      <div class="element-name">Praseo- dymium</div>
-      <!-- <div class="element-weight">140.90765</div> -->
-    </section>
-    <section class="element lanthanide" id="nd" onclick="goToAnchor('Neodymium')">
-      <div class="element-number">60</div>
-      <h2 class="element-symbol">Nd</h2>
-      <div class="element-name">Neodymium</div>
-      <!-- <div class="element-weight">144.908</div> -->
-    </section>
-    <section class="element nostandards" id="pm">
-      <div class="element-number">61</div>
-      <h2 class="element-symbol">Pm</h2>
-      <div class="element-name">Promethium</div>
-      <!-- <div class="element-weight">(145)</div> -->
-    </section>
-    <section class="element lanthanide" id="sm" onclick="goToAnchor('Samarium')">
-      <div class="element-number">62</div>
-      <h2 class="element-symbol">Sm</h2>
-      <div class="element-name">Samarium</div>
-      <!-- <div class="element-weight">150.36</div> -->
-    </section>
-    <section class="element lanthanide" id="eu" onclick="goToAnchor('Europium')">
-      <div class="element-number">63</div>
-      <h2 class="element-symbol">Eu</h2>
-      <div class="element-name">Europium</div>
-      <!-- <div class="element-weight">151.964</div> -->
-    </section>
-    <section class="element lanthanide" id="gd" onclick="goToAnchor('Gadolinium')">
-      <div class="element-number">64</div>
-      <h2 class="element-symbol">Gd</h2>
-      <div class="element-name">Gadolinium</div>
-      <!-- <div class="element-weight">157.25</div> -->
-    </section>
-    <section class="element lanthanide" id="tb" onclick="goToAnchor('Terbium')">
-      <div class="element-number">65</div>
-      <h2 class="element-symbol">Tb</h2>
-      <div class="element-name">Terbium</div>
-      <!-- <div class="element-weight">158.925</div> -->
-    </section>
-    <section class="element lanthanide" id="dy" onclick="goToAnchor('Dysprosium')">
-      <div class="element-number">66</div>
-      <h2 class="element-symbol">Dy</h2>
-      <div class="element-name">Dysprosium</div>
-      <!-- <div class="element-weight">162.5</div> -->
-    </section>
-    <section class="element lanthanide" id="ho" onclick="goToAnchor('Holmium')">
-      <div class="element-number">67</div>
-      <h2 class="element-symbol">Ho</h2>
-      <div class="element-name">Holmium</div>
-      <!-- <div class="element-weight">164.93</div> -->
-    </section>
-    <section class="element lanthanide" id="er" onclick="goToAnchor('Erbium')">
-      <div class="element-number">68</div>
-      <h2 class="element-symbol">Er</h2>
-      <div class="element-name">Erbium</div>
-      <!-- <div class="element-weight">167.259</div> -->
-    </section>
-    <section class="element lanthanide" id="tm" onclick="goToAnchor('Thulium')">
-      <div class="element-number">69</div>
-      <h2 class="element-symbol">Tm</h2>
-      <div class="element-name">Thulium</div>
-      <!-- <div class="element-weight">148.934</div> -->
-    </section>
-    <section class="element lanthanide" id="yb" onclick="goToAnchor('Ytterbium')">
-      <div class="element-number">70</div>
-      <h2 class="element-symbol">Yb</h2>
-      <div class="element-name">Ytterbium</div>
-      <!-- <div class="element-weight">173.054</div> -->
-    </section>
-    <section class="element lanthanide" id="lu" onclick="goToAnchor('Lutetium')">
-      <div class="element-number">71</div>
-      <h2 class="element-symbol">Lu</h2>
-      <div class="element-name">Lutetium</div>
-      <!-- <div class="element-weight">174.967</div> -->
-    </section>
-    <section class="element transition" id="hf" onclick="goToAnchor('Hafnium')">
-      <div class="element-number">72</div>
-      <h2 class="element-symbol">Hf</h2>
-      <div class="element-name">Hafnium</div>
-      <!-- <div class="element-weight">178.49</div> -->
-    </section>
-    <section class="element transition" id="ta" onclick="goToAnchor('Tantalum')">
-      <div class="element-number">73</div>
-      <h2 class="element-symbol">Ta</h2>
-      <div class="element-name">Tantalum</div>
-      <!-- <div class="element-weight">180.948</div> -->
-    </section>
-    <section class="element transition" id="w" onclick="goToAnchor('Tungsten')">
-      <div class="element-number">74</div>
-      <h2 class="element-symbol">W</h2>
-      <div class="element-name">Tungsten</div>
-      <!-- <div class="element-weight">183.84</div> -->
-    </section>
-    <section class="element transition" id="re" onclick="goToAnchor('Rhenium')">
-      <div class="element-number">75</div>
-      <h2 class="element-symbol">Re</h2>
-      <div class="element-name">Rhenium</div>
-      <!-- <div class="element-weight">186.207</div> -->
-    </section>
-    <section class="element transition" id="os" onclick="goToAnchor('Osmium')">
-      <div class="element-number">76</div>
-      <h2 class="element-symbol">Os</h2>
-      <div class="element-name">Osmium</div>
-      <!-- <div class="element-weight">190.23</div> -->
-    </section>
-    <section class="element transition" id="ir" onclick="goToAnchor('Iridium')">
-      <div class="element-number">77</div>
-      <h2 class="element-symbol">Ir</h2>
-      <div class="element-name">Iridium</div>
-      <!-- <div class="element-weight">192.217</div> -->
-    </section>
-    <section class="element transition" id="pt" onclick="goToAnchor('Platinum')">
-      <div class="element-number">78</div>
-      <h2 class="element-symbol">Pt</h2>
-      <div class="element-name">Platinum</div>
-      <!-- <div class="element-weight">195.084</div> -->
-    </section>
-    <section class="element transition" id="au" onclick="goToAnchor('Gold')">
-      <div class="element-number">79</div>
-      <h2 class="element-symbol">Au</h2>
-      <div class="element-name">Gold</div>
-      <!-- <div class="element-weight">196.967</div> -->
-    </section>
-    <section class="element transition" id="hg" onclick="goToAnchor('Mercury')">
-      <div class="element-number">80</div>
-      <h2 class="element-symbol">Hg</h2>
-      <div class="element-name">Mercury</div>
-      <!-- <div class="element-weight">200.59</div> -->
-    </section>
-    <section class="element basic" id="tl" onclick="goToAnchor('Thallium')">
-      <div class="element-number">81</div>
-      <h2 class="element-symbol">Tl</h2>
-      <div class="element-name">Thallium</div>
-      <!-- <div class="element-weight">204.3833</div> -->
-    </section>
-    <section class="element basic" id="pb" onclick="goToAnchor('Lead')">
-      <div class="element-number">82</div>
-      <h2 class="element-symbol">Pb</h2>
-      <div class="element-name">Lead</div>
-      <!-- <div class="element-weight">207.2</div> -->
-    </section>
-    <section class="element basic" id="bi" onclick="goToAnchor('Bismuth')">
-      <div class="element-number">83</div>
-      <h2 class="element-symbol">Bi</h2>
-      <div class="element-name">Bismuth</div>
-      <!-- <div class="element-weight">208.98040</div> -->
-    </section>
-    <section class="element nostandards" id="po">
-      <div class="element-number">84</div>
-      <h2 class="element-symbol">Po</h2>
-      <div class="element-name">Polonium</div>
-      <!-- <div class="element-weight">(208.982)</div> -->
-    </section>
-    <section class="element nostandards" id="at">
-      <div class="element-number">85</div>
-      <h2 class="element-symbol">At</h2>
-      <div class="element-name">Astantine</div>
-      <!-- <div class="element-weight">(209.987)</div> -->
-    </section>
-    <section class="element nostandards" id="rn">
-      <div class="element-number">86</div>
-      <h2 class="element-symbol">Rn</h2>
-      <div class="element-name">Radon</div>
-      <!-- <div class="element-weight">(222.018)</div> -->
-    </section>
-    <section class="element nostandards" id="fr">
-      <div class="element-number">87</div>
-      <h2 class="element-symbol">Fr</h2>
-      <div class="element-name">Francium</div>
-      <!-- <div class="element-weight">(223)</div> -->
-    </section>
-    <section class="element nostandards" id="ra">
-      <div class="element-number">88</div>
-      <h2 class="element-symbol">Ra</h2>
-      <div class="element-name">Radium</div>
-      <!-- <div class="element-weight">(226)</div> -->
-    </section>
-    <section class="element nostandards" id="ac">
-      <div class="element-number">89</div>
-      <h2 class="element-symbol">Ac</h2>
-      <div class="element-name">Actinium</div>
-      <!-- <div class="element-weight">(227)</div> -->
-    </section>
-    <section class="element nostandards" id="th">
-      <div class="element-number">90</div>
-      <h2 class="element-symbol">Th</h2>
-      <div class="element-name">Thorium</div>
-      <!-- <div class="element-weight">232.038</div> -->
-    </section>
-    <section class="element nostandards" id="pa">
-      <div class="element-number">91</div>
-      <h2 class="element-symbol">Pa</h2>
-      <div class="element-name">Protactinium</div>
-      <!-- <div class="element-weight">231.036</div> -->
-    </section>
-    <section class="element nostandards" id="u">
-      <div class="element-number">92</div>
-      <h2 class="element-symbol">U</h2>
-      <div class="element-name">Uranium</div>
-      <!-- <div class="element-weight">238.029</div> -->
-    </section>
-    <section class="element nostandards" id="np">
-      <div class="element-number">93</div>
-      <h2 class="element-symbol">Np</h2>
-      <div class="element-name">Neptunium</div>
-      <!-- <div class="element-weight">(237)</div> -->
-    </section>
-    <section class="element nostandards" id="pu">
-      <div class="element-number">94</div>
-      <h2 class="element-symbol">Pu</h2>
-      <div class="element-name">Plutonium</div>
-      <!-- <div class="element-weight">(244)</div> -->
-    </section>
-    <section class="element nostandards" id="am">
-      <div class="element-number">95</div>
-      <h2 class="element-symbol">Am</h2>
-      <div class="element-name">Americium</div>
-      <!-- <div class="element-weight">(243)</div> -->
-    </section>
-    <section class="element nostandards" id="cm">
-      <div class="element-number">96</div>
-      <h2 class="element-symbol">Cm</h2>
-      <div class="element-name">Curium</div>
-      <!-- <div class="element-weight">(247)</div> -->
-    </section>
-    <section class="element nostandards" id="bk">
-      <div class="element-number">97</div>
-      <h2 class="element-symbol">Bk</h2>
-      <div class="element-name">Berkelium</div>
-      <!-- <div class="element-weight">(247)</div> -->
-    </section>
-    <section class="element nostandards" id="cf">
-      <div class="element-number">98</div>
-      <h2 class="element-symbol">Cf</h2>
-      <div class="element-name">Californium</div>
-      <!-- <div class="element-weight">(251)</div> -->
-    </section>
-    <section class="element nostandards" id="es">
-      <div class="element-number">99</div>
-      <h2 class="element-symbol">Es</h2>
-      <div class="element-name">Einsteinium</div>
-      <!-- <div class="element-weight">252</div> -->
-    </section>
-    <section class="element nostandards" id="fm">
-      <div class="element-number">100</div>
-      <h2 class="element-symbol">Fm</h2>
-      <div class="element-name">Fermium</div>
-      <!-- <div class="element-weight">(257)</div> -->
-    </section>
-    <section class="element nostandards" id="md">
-      <div class="element-number">101</div>
-      <h2 class="element-symbol">Md</h2>
-      <div class="element-name">Mendelevium</div>
-      <!-- <div class="element-weight">(258)</div> -->
-    </section>
-    <section class="element nostandards" id="no">
-      <div class="element-number">102</div>
-      <h2 class="element-symbol">No</h2>
-      <div class="element-name">Nobelium</div>
-      <!-- <div class="element-weight">(259)</div> -->
-    </section>
-    <section class="element nostandards" id="lr">
-      <div class="element-number">103</div>
-      <h2 class="element-symbol">Lr</h2>
-      <div class="element-name">Lawrencium</div>
-      <!-- <div class="element-weight">(262)</div> -->
-    </section>
-    <section class="element nostandards" id="rf">
-      <div class="element-number">104</div>
-      <h2 class="element-symbol">Rf</h2>
-      <div class="element-name">Rutherfordium</div>
-      <!-- <div class="element-weight">(261)</div> -->
-    </section>
-    <section class="element nostandards" id="db">
-      <div class="element-number">105</div>
-      <h2 class="element-symbol">Db</h2>
-      <div class="element-name">Dubnium</div>
-      <!-- <div class="element-weight">(262)</div> -->
-    </section>
-    <section class="element nostandards" id="sg">
-      <div class="element-number">106</div>
-      <h2 class="element-symbol">Sg</h2>
-      <div class="element-name">Seaborgium</div>
-      <!-- <div class="element-weight">(266)</div> -->
-    </section>
-    <section class="element nostandards" id="bh">
-      <div class="element-number">107</div>
-      <h2 class="element-symbol">Bh</h2>
-      <div class="element-name">Bohrium</div>
-      <!-- <div class="element-weight">(264)</div> -->
-    </section>
-    <section class="element nostandards" id="hs">
-      <div class="element-number">108</div>
-      <h2 class="element-symbol">Hs</h2>
-      <div class="element-name">Hassium</div>
-      <!-- <div class="element-weight">(277)</div> -->
-    </section>
-    <section class="element nostandards" id="mt">
-      <div class="element-number">109</div>
-      <h2 class="element-symbol">Mt</h2>
-      <div class="element-name">Meitnerium</div>
-      <!-- <div class="element-weight">(268)</div> -->
-    </section>
-    <section class="element nostandards" id="ds">
-      <div class="element-number">110</div>
-      <h2 class="element-symbol">Ds</h2>
-      <div class="element-name">Darmstadtium</div>
-      <!-- <div class="element-weight">(271)</div> -->
-    </section>
-    <section class="element nostandards" id="rg">
-      <div class="element-number">111</div>
-      <h2 class="element-symbol">Rg</h2>
-      <div class="element-name">Roentgenium</div>
-      <!-- <div class="element-weight">(272)</div> -->
-    </section>
-    <section class="element nostandards" id="cn">
-      <div class="element-number">112</div>
-      <h2 class="element-symbol">Cn</h2>
-      <div class="element-name">Copernium</div>
-      <!-- <div class="element-weight">(277)</div> -->
-    </section>
-    <section class="element nostandards" id="uut">
-      <div class="element-number">113</div>
-      <h2 class="element-symbol">Nh</h2>
-      <div class="element-name">Nihonium</div>
-      <!-- <div class="element-weight"></div> -->
-    </section>
-    <section class="element nostandards" id="fl">
-      <div class="element-number">114</div>
-      <h2 class="element-symbol">Fl</h2>
-      <div class="element-name">Flerovium</div>
-      <!-- <div class="element-weight">(289)</div> -->
-    </section>
-    <section class="element nostandards" id="uup">
-      <div class="element-number">115</div>
-      <h2 class="element-symbol">Mc</h2>
-      <div class="element-name">Moscovium</div>
-      <!-- <div class="element-weight"></div> -->
-    </section>
-    <section class="element nostandards" id="lv">
-      <div class="element-number">116</div>
-      <h2 class="element-symbol">Lv</h2>
-      <div class="element-name">Livermorium</div>
-      <!-- <div class="element-weight">(298)</div> -->
-    </section>
-    <section class="element nostandards" id="uus">
-      <div class="element-number">117</div>
-      <h2 class="element-symbol">Ts</h2>
-      <div class="element-name">Tennesine</div>
-      <!-- <div class="element-weight"></div> -->
-    </section>
-    <section class="element nostandards" id="uuo">
-      <div class="element-number">118</div>
-      <h2 class="element-symbol">Og</h2>
-      <div class="element-name">Oganesson</div>
-      <!-- <div class="element-weight"></div> -->
-    </section>
+
+   <section class="element nostandards nolink" id="H">
+     <div class="element-number">1</div>
+     <h2 class="element-symbol">H</h2>
+     <div class="element-name">Hydrogen</div>
+     <!-- <div class="element-weight">1.008</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="He">
+     <div class="element-number">2</div>
+     <h2 class="element-symbol">He</h2>
+     <div class="element-name">Helium</div>
+     <!-- <div class="element-weight">4.003</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Li">
+     <div class="element-number">3</div>
+     <h2 class="element-symbol">Li</h2>
+     <div class="element-name">Lithium</div>
+     <!-- <div class="element-weight">6.941</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Be">
+     <div class="element-number">4</div>
+     <h2 class="element-symbol">Be</h2>
+     <div class="element-name">Berylium</div>
+     <!-- <div class="element-weight">9.012</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="B">
+     <div class="element-number">5</div>
+     <h2 class="element-symbol">B</h2>
+     <div class="element-name">Boron</div>
+     <!-- <div class="element-weight">10.511</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="C">
+     <div class="element-number">6</div>
+     <h2 class="element-symbol">C</h2>
+     <div class="element-name">Carbon</div>
+     <!-- <div class="element-weight">12.011</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="N">
+     <div class="element-number">7</div>
+     <h2 class="element-symbol">N</h2>
+     <div class="element-name">Nitrogen</div>
+     <!-- <div class="element-weight">14.007</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="O">
+     <div class="element-number">8</div>
+     <h2 class="element-symbol">O</h2>
+     <div class="element-name">Oxygen</div>
+     <!-- <div class="element-weight">15.999</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="F">
+     <div class="element-number">9</div>
+     <h2 class="element-symbol">F</h2>
+     <div class="element-name">Flourine</div>
+     <!-- <div class="element-weight">18.958</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Ne">
+     <div class="element-number">1</div>
+     <h2 class="element-symbol">Ne</h2>
+     <div class="element-name">Neon</div>
+     <!-- <div class="element-weight">20.18</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Na">
+     <div class="element-number">11</div>
+     <h2 class="element-symbol">Na</h2>
+     <div class="element-name">Sodium</div>
+     <!-- <div class="element-weight">22.99</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Mg">
+     <div class="element-number">12</div>
+     <h2 class="element-symbol">Mg</h2>
+     <div class="element-name">Magnesium</div>
+     <!-- <div class="element-weight">24.305</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Al">
+     <div class="element-number">13</div>
+     <h2 class="element-symbol">Al</h2>
+     <div class="element-name">Aluminum</div>
+     <!-- <div class="element-weight">25.982</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Si">
+     <div class="element-number">14</div>
+     <h2 class="element-symbol">Si</h2>
+     <div class="element-name">Silicon</div>
+     <!-- <div class="element-weight">28.086</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="P">
+     <div class="element-number">15</div>
+     <h2 class="element-symbol">P</h2>
+     <div class="element-name">Phosphorus</div>
+     <!-- <div class="element-weight">30.974</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="S">
+     <div class="element-number">16</div>
+     <h2 class="element-symbol">S</h2>
+     <div class="element-name">Sulfur</div>
+     <!-- <div class="element-weight">32.056</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Cl">
+     <div class="element-number">17</div>
+     <h2 class="element-symbol">Cl</h2>
+     <div class="element-name">Chlorine</div>
+     <!-- <div class="element-weight">35.453</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Ar">
+     <div class="element-number">18</div>
+     <h2 class="element-symbol">Ar</h2>
+     <div class="element-name">Argon</div>
+     <!-- <div class="element-weight">39.948</div> -->
+   </section>
+
+   <section class="element nostandards" id="K" onclick="goToAnchor('Potasium')">
+     <div class="element-number">19</div>
+     <h2 class="element-symbol">K</h2>
+     <div class="element-name">Potasium</div>
+     <!-- <div class="element-weight">39.098</div> -->
+   </section>
+
+   <section class="element alkaline" id="Ca" onclick="goToAnchor('Calcium')">
+     <div class="element-number">20</div>
+     <h2 class="element-symbol">Ca</h2>
+     <div class="element-name">Calcium</div>
+     <!-- <div class="element-weight">40.078</div> -->
+   </section>
+
+   <section class="element transition" id="Sc" onclick="goToAnchor('Scandium')">
+     <div class="element-number">21</div>
+     <h2 class="element-symbol">Sc</h2>
+     <div class="element-name">Scandium</div>
+     <!-- <div class="element-weight">44.956</div> -->
+   </section>
+
+   <section class="element transition" id="Ti" onclick="goToAnchor('Titanium')">
+     <div class="element-number">22</div>
+     <h2 class="element-symbol">Ti</h2>
+     <div class="element-name">Titanium</div>
+     <!-- <div class="element-weight">47.857</div> -->
+   </section>
+
+   <section class="element transition" id="V" onclick="goToAnchor('Vanadium')">
+     <div class="element-number">23</div>
+     <h2 class="element-symbol">V</h2>
+     <div class="element-name">Vanadium</div>
+     <!-- <div class="element-weight">50.942</div> -->
+   </section>
+
+   <section class="element transition" id="Cr" onclick="goToAnchor('Chromium')">
+     <div class="element-number">24</div>
+     <h2 class="element-symbol">Cr</h2>
+     <div class="element-name">Chromium</div>
+     <!-- <div class="element-weight">51.996</div> -->
+   </section>
+
+   <section class="element transition" id="Mn" onclick="goToAnchor('Manganese')">
+     <div class="element-number">25</div>
+     <h2 class="element-symbol">Mn</h2>
+     <div class="element-name">Manganese</div>
+     <!-- <div class="element-weight">54.938</div> -->
+   </section>
+
+   <section class="element transition" id="Fe" onclick="goToAnchor('Iron')">
+     <div class="element-number">26</div>
+     <h2 class="element-symbol">Fe</h2>
+     <div class="element-name">Iron</div>
+     <!-- <div class="element-weight">55.845</div> -->
+   </section>
+
+   <section class="element transition" id="Co" onclick="goToAnchor('Cobalt')">
+     <div class="element-number">27</div>
+     <h2 class="element-symbol">Co</h2>
+     <div class="element-name">Cobalt</div>
+     <!-- <div class="element-weight">58.933</div> -->
+   </section>
+
+   <section class="element transition" id="Ni" onclick="goToAnchor('Nickel')">
+     <div class="element-number">28</div>
+     <h2 class="element-symbol">Ni</h2>
+     <div class="element-name">Nickel</div>
+     <!-- <div class="element-weight">58.593</div> -->
+   </section>
+
+   <section class="element transition" id="Cu" onclick="goToAnchor('Copper')">
+     <div class="element-number">29</div>
+     <h2 class="element-symbol">Cu</h2>
+     <div class="element-name">Copper</div>
+     <!-- <div class="element-weight">63.546</div> -->
+   </section>
+
+   <section class="element transition" id="Zn" onclick="goToAnchor('Zinc')">
+     <div class="element-number">30</div>
+     <h2 class="element-symbol">Zn</h2>
+     <div class="element-name">Zinc</div>
+     <!-- <div class="element-weight">65.38</div> -->
+   </section>
+
+   <section class="element basic" id="Ga" onclick="goToAnchor('Gallium')">
+     <div class="element-number">31</div>
+     <h2 class="element-symbol">Ga</h2>
+     <div class="element-name">Gallium</div>
+     <!-- <div class="element-weight">69.723</div> -->
+   </section>
+
+   <section class="element semimetal" id="Ge" onclick="goToAnchor('Germanium')">
+     <div class="element-number">32</div>
+     <h2 class="element-symbol">Ge</h2>
+     <div class="element-name">Germanium</div>
+     <!-- <div class="element-weight">72.631</div> -->
+   </section>
+
+   <section class="element semimetal" id="As" onclick="goToAnchor('Arsenic')">
+     <div class="element-number">33</div>
+     <h2 class="element-symbol">As</h2>
+     <div class="element-name">Arsenic</div>
+     <!-- <div class="element-weight">74.922</div> -->
+   </section>
+
+   <section class="element nonmetal" id="Se" onclick="goToAnchor('Selenium')">
+     <div class="element-number">34</div>
+     <h2 class="element-symbol">Se</h2>
+     <div class="element-name">Selenium</div>
+     <!-- <div class="element-weight">78.971</div> -->
+   </section>
+
+   <section class="element halogen" id="Br" onclick="goToAnchor('Bromine')">
+     <div class="element-number">35</div>
+     <h2 class="element-symbol">Br</h2>
+     <div class="element-name">Bromine</div>
+     <!-- <div class="element-weight">79.904</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Kr">
+     <div class="element-number">36</div>
+     <h2 class="element-symbol">Kr</h2>
+     <div class="element-name">Krypton</div>
+     <!-- <div class="element-weight">84.796</div> -->
+   </section>
+
+   <section class="element alkali" id="Rb" onclick="goToAnchor('Rubidium')">
+     <div class="element-number">37</div>
+     <h2 class="element-symbol">Rb</h2>
+     <div class="element-name">Rubidium</div>
+     <!-- <div class="element-weight">84.468</div> -->
+   </section>
+
+   <section class="element alkaline" id="Sr" onclick="goToAnchor('Strontium')">
+     <div class="element-number">38</div>
+     <h2 class="element-symbol">Sr</h2>
+     <div class="element-name">Strontium</div>
+     <!-- <div class="element-weight">87.62</div> -->
+   </section>
+
+   <section class="element transition" id="Y" onclick="goToAnchor('Yttrium')">
+     <div class="element-number">39</div>
+     <h2 class="element-symbol">Y</h2>
+     <div class="element-name">Yttrium</div>
+     <!-- <div class="element-weight">88.906</div> -->
+   </section>
+
+   <section class="element transition" id="Zr" onclick="goToAnchor('Zirconium')">
+     <div class="element-number">40</div>
+     <h2 class="element-symbol">Zr</h2>
+     <div class="element-name">Zirconium</div>
+     <!-- <div class="element-weight">91.224</div> -->
+   </section>
+
+   <section class="element transition" id="Nb" onclick="goToAnchor('Niobium')">
+     <div class="element-number">41</div>
+     <h2 class="element-symbol">Nb</h2>
+     <div class="element-name">Niobium</div>
+     <!-- <div class="element-weight">92.906</div> -->
+   </section>
+
+   <section class="element transition" id="Mo" onclick="goToAnchor('Molybdenum')">
+     <div class="element-number">42</div>
+     <h2 class="element-symbol">Mo</h2>
+     <div class="element-name">Molybdenum</div>
+     <!-- <div class="element-weight">95.95</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Tc">
+     <div class="element-number">43</div>
+     <h2 class="element-symbol">Tc</h2>
+     <div class="element-name">Technetium</div>
+     <!-- <div class="element-weight">98.907</div> -->
+   </section>
+
+   <section class="element transition" id="Ru" onclick="goToAnchor('Ruthenium')">
+     <div class="element-number">44</div>
+     <h2 class="element-symbol">Ru</h2>
+     <div class="element-name">Ruthenium</div>
+     <!-- <div class="element-weight">101.07</div> -->
+   </section>
+
+   <section class="element transition nolink" id="Rh">
+     <div class="element-number">45</div>
+     <h2 class="element-symbol">Rh</h2>
+     <div class="element-name">Rhodium</div>
+     <!-- <div class="element-weight">102.906</div> -->
+   </section>
+
+   <section class="element transition nolink" id="Pd">
+     <div class="element-number">46</div>
+     <h2 class="element-symbol">Pd</h2>
+     <div class="element-name">Palladium</div>
+     <!-- <div class="element-weight">106.42</div> -->
+   </section>
+
+   <section class="element transition" id="Ag" onclick="goToAnchor('Silver')">
+     <div class="element-number">47</div>
+     <h2 class="element-symbol">Ag</h2>
+     <div class="element-name">Silver</div>
+     <!-- <div class="element-weight">107.868</div> -->
+   </section>
+
+   <section class="element transition" id="Cd" onclick="goToAnchor('Cadmium')">
+     <div class="element-number">48</div>
+     <h2 class="element-symbol">Cd</h2>
+     <div class="element-name">Cadmium</div>
+     <!-- <div class="element-weight">112.411</div> -->
+   </section>
+
+   <section class="element basic nolink" id="In">
+     <div class="element-number">49</div>
+     <h2 class="element-symbol">In</h2>
+     <div class="element-name">Indium</div>
+     <!-- <div class="element-weight">114.818</div> -->
+   </section>
+
+   <section class="element basic nolink" id="Sn">
+     <div class="element-number">50</div>
+     <h2 class="element-symbol">Sn</h2>
+     <div class="element-name">Tin</div>
+     <!-- <div class="element-weight">118.71</div> -->
+   </section>
+
+   <section class="element semimetal nolink" id="Sb">
+     <div class="element-number">51</div>
+     <h2 class="element-symbol">Sb</h2>
+     <div class="element-name">Antimony</div>
+     <!-- <div class="element-weight">121.76</div> -->
+   </section>
+
+   <section class="element semimetal" id="Te" onclick="goToAnchor('Tellurium')">
+     <div class="element-number">52</div>
+     <h2 class="element-symbol">Te</h2>
+     <div class="element-name">Tellurium</div>
+     <!-- <div class="element-weight">127.6</div> -->
+   </section>
+
+   <section class="element halogen nolink" id="I">
+     <div class="element-number">53</div>
+     <h2 class="element-symbol">I</h2>
+     <div class="element-name">Iodine</div>
+     <!-- <div class="element-weight">126.904</div> -->
+   </section>
+
+   <section class="element nostandards" id="Xe" onclick="goToAnchor('Xenon')">
+     <div class="element-number">54</div>
+     <h2 class="element-symbol">Xe</h2>
+     <div class="element-name">Xenon</div>
+     <!-- <div class="element-weight">131.293</div> -->
+   </section>
+
+   <section class="element alkali" id="Cs" onclick="goToAnchor('Cesium')">
+     <div class="element-number">55</div>
+     <h2 class="element-symbol">Cs</h2>
+     <div class="element-name">Cesium</div>
+     <!-- <div class="element-weight">132.905</div> -->
+   </section>
+
+   <section class="element alkaline nolink" id="Ba">
+     <div class="element-number">56</div>
+     <h2 class="element-symbol">Ba</h2>
+     <div class="element-name">Barium</div>
+     <!-- <div class="element-weight">132.327</div> -->
+   </section>
+
+   <section class="element lanthanide" id="La" onclick="goToAnchor('Lanthanum')">
+     <div class="element-number">57</div>
+     <h2 class="element-symbol">La</h2>
+     <div class="element-name">Lanthanum</div>
+     <!-- <div class="element-weight">138.905</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Ce" onclick="goToAnchor('Cerium')">
+     <div class="element-number">58</div>
+     <h2 class="element-symbol">Ce</h2>
+     <div class="element-name">Cerium</div>
+     <!-- <div class="element-weight">140.116</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Pr" onclick="goToAnchor('Praseo')">
+     <div class="element-number">59</div>
+     <h2 class="element-symbol">Pr</h2>
+     <div class="element-name">Praseo</div>
+     <!-- <div class="element-weight">140.90765</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Nd" onclick="goToAnchor('Neodymium')">
+     <div class="element-number">60</div>
+     <h2 class="element-symbol">Nd</h2>
+     <div class="element-name">Neodymium</div>
+     <!-- <div class="element-weight">144.908</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Pm">
+     <div class="element-number">61</div>
+     <h2 class="element-symbol">Pm</h2>
+     <div class="element-name">Promethium</div>
+     <!-- <div class="element-weight">145</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Sm" onclick="goToAnchor('Samarium')">
+     <div class="element-number">62</div>
+     <h2 class="element-symbol">Sm</h2>
+     <div class="element-name">Samarium</div>
+     <!-- <div class="element-weight">150.36</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Eu" onclick="goToAnchor('Europium')">
+     <div class="element-number">63</div>
+     <h2 class="element-symbol">Eu</h2>
+     <div class="element-name">Europium</div>
+     <!-- <div class="element-weight">151.964</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Gd" onclick="goToAnchor('Gadolinium')">
+     <div class="element-number">64</div>
+     <h2 class="element-symbol">Gd</h2>
+     <div class="element-name">Gadolinium</div>
+     <!-- <div class="element-weight">157.25</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Tb" onclick="goToAnchor('Terbium')">
+     <div class="element-number">65</div>
+     <h2 class="element-symbol">Tb</h2>
+     <div class="element-name">Terbium</div>
+     <!-- <div class="element-weight">158.925</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Dy" onclick="goToAnchor('Dysprosium')">
+     <div class="element-number">66</div>
+     <h2 class="element-symbol">Dy</h2>
+     <div class="element-name">Dysprosium</div>
+     <!-- <div class="element-weight">162.5</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Ho" onclick="goToAnchor('Holmium')">
+     <div class="element-number">67</div>
+     <h2 class="element-symbol">Ho</h2>
+     <div class="element-name">Holmium</div>
+     <!-- <div class="element-weight">164.93</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Er" onclick="goToAnchor('Erbium')">
+     <div class="element-number">68</div>
+     <h2 class="element-symbol">Er</h2>
+     <div class="element-name">Erbium</div>
+     <!-- <div class="element-weight">167.259</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Tm" onclick="goToAnchor('Thulium')">
+     <div class="element-number">69</div>
+     <h2 class="element-symbol">Tm</h2>
+     <div class="element-name">Thulium</div>
+     <!-- <div class="element-weight">148.934</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Yb" onclick="goToAnchor('Ytterbium')">
+     <div class="element-number">70</div>
+     <h2 class="element-symbol">Yb</h2>
+     <div class="element-name">Ytterbium</div>
+     <!-- <div class="element-weight">173.054</div> -->
+   </section>
+
+   <section class="element lanthanide" id="Lu" onclick="goToAnchor('Lutetium')">
+     <div class="element-number">71</div>
+     <h2 class="element-symbol">Lu</h2>
+     <div class="element-name">Lutetium</div>
+     <!-- <div class="element-weight">174.967</div> -->
+   </section>
+
+   <section class="element transition" id="Hf" onclick="goToAnchor('Hafnium')">
+     <div class="element-number">72</div>
+     <h2 class="element-symbol">Hf</h2>
+     <div class="element-name">Hafnium</div>
+     <!-- <div class="element-weight">178.49</div> -->
+   </section>
+
+   <section class="element transition" id="Ta" onclick="goToAnchor('Tantalum')">
+     <div class="element-number">73</div>
+     <h2 class="element-symbol">Ta</h2>
+     <div class="element-name">Tantalum</div>
+     <!-- <div class="element-weight">180.948</div> -->
+   </section>
+
+   <section class="element transition" id="W" onclick="goToAnchor('Tungsten')">
+     <div class="element-number">74</div>
+     <h2 class="element-symbol">W</h2>
+     <div class="element-name">Tungsten</div>
+     <!-- <div class="element-weight">183.84</div> -->
+   </section>
+
+   <section class="element transition" id="Re" onclick="goToAnchor('Rhenium')">
+     <div class="element-number">75</div>
+     <h2 class="element-symbol">Re</h2>
+     <div class="element-name">Rhenium</div>
+     <!-- <div class="element-weight">186.207</div> -->
+   </section>
+
+   <section class="element transition nolink" id="Os">
+     <div class="element-number">76</div>
+     <h2 class="element-symbol">Os</h2>
+     <div class="element-name">Osmium</div>
+     <!-- <div class="element-weight">190.23</div> -->
+   </section>
+
+   <section class="element transition nolink" id="Ir">
+     <div class="element-number">77</div>
+     <h2 class="element-symbol">Ir</h2>
+     <div class="element-name">Iridium</div>
+     <!-- <div class="element-weight">192.217</div> -->
+   </section>
+
+   <section class="element transition" id="Pt" onclick="goToAnchor('Platinum')">
+     <div class="element-number">78</div>
+     <h2 class="element-symbol">Pt</h2>
+     <div class="element-name">Platinum</div>
+     <!-- <div class="element-weight">195.084</div> -->
+   </section>
+
+   <section class="element transition" id="Au" onclick="goToAnchor('Gold')">
+     <div class="element-number">79</div>
+     <h2 class="element-symbol">Au</h2>
+     <div class="element-name">Gold</div>
+     <!-- <div class="element-weight">196.967</div> -->
+   </section>
+
+   <section class="element transition nolink" id="Hg">
+     <div class="element-number">80</div>
+     <h2 class="element-symbol">Hg</h2>
+     <div class="element-name">Mercury</div>
+     <!-- <div class="element-weight">200.59</div> -->
+   </section>
+
+   <section class="element basic nolink" id="Tl">
+     <div class="element-number">81</div>
+     <h2 class="element-symbol">Tl</h2>
+     <div class="element-name">Thallium</div>
+     <!-- <div class="element-weight">204.3833</div> -->
+   </section>
+
+   <section class="element basic" id="Pb" onclick="goToAnchor('Lead')">
+     <div class="element-number">82</div>
+     <h2 class="element-symbol">Pb</h2>
+     <div class="element-name">Lead</div>
+     <!-- <div class="element-weight">207.2</div> -->
+   </section>
+
+   <section class="element basic" id="Bi" onclick="goToAnchor('Bismuth')">
+     <div class="element-number">83</div>
+     <h2 class="element-symbol">Bi</h2>
+     <div class="element-name">Bismuth</div>
+     <!-- <div class="element-weight">208.9804</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Po">
+     <div class="element-number">84</div>
+     <h2 class="element-symbol">Po</h2>
+     <div class="element-name">Polonium</div>
+     <!-- <div class="element-weight">208.982</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="At">
+     <div class="element-number">85</div>
+     <h2 class="element-symbol">At</h2>
+     <div class="element-name">Astantine</div>
+     <!-- <div class="element-weight">209.987</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Rn">
+     <div class="element-number">86</div>
+     <h2 class="element-symbol">Rn</h2>
+     <div class="element-name">Radon</div>
+     <!-- <div class="element-weight">222.018</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Fr">
+     <div class="element-number">87</div>
+     <h2 class="element-symbol">Fr</h2>
+     <div class="element-name">Francium</div>
+     <!-- <div class="element-weight">223</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Ra">
+     <div class="element-number">88</div>
+     <h2 class="element-symbol">Ra</h2>
+     <div class="element-name">Radium</div>
+     <!-- <div class="element-weight">226</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Ac">
+     <div class="element-number">89</div>
+     <h2 class="element-symbol">Ac</h2>
+     <div class="element-name">Actinium</div>
+     <!-- <div class="element-weight">227</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Th">
+     <div class="element-number">90</div>
+     <h2 class="element-symbol">Th</h2>
+     <div class="element-name">Thorium</div>
+     <!-- <div class="element-weight">232.038</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Pa">
+     <div class="element-number">91</div>
+     <h2 class="element-symbol">Pa</h2>
+     <div class="element-name">Protactinium</div>
+     <!-- <div class="element-weight">231.036</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="U">
+     <div class="element-number">92</div>
+     <h2 class="element-symbol">U</h2>
+     <div class="element-name">Uranium</div>
+     <!-- <div class="element-weight">238.029</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Np">
+     <div class="element-number">93</div>
+     <h2 class="element-symbol">Np</h2>
+     <div class="element-name">Neptunium</div>
+     <!-- <div class="element-weight">237</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Pu">
+     <div class="element-number">94</div>
+     <h2 class="element-symbol">Pu</h2>
+     <div class="element-name">Plutonium</div>
+     <!-- <div class="element-weight">244</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Am">
+     <div class="element-number">95</div>
+     <h2 class="element-symbol">Am</h2>
+     <div class="element-name">Americium</div>
+     <!-- <div class="element-weight">243</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Cm">
+     <div class="element-number">96</div>
+     <h2 class="element-symbol">Cm</h2>
+     <div class="element-name">Curium</div>
+     <!-- <div class="element-weight">247</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Bk">
+     <div class="element-number">97</div>
+     <h2 class="element-symbol">Bk</h2>
+     <div class="element-name">Berkelium</div>
+     <!-- <div class="element-weight">247</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Cf">
+     <div class="element-number">98</div>
+     <h2 class="element-symbol">Cf</h2>
+     <div class="element-name">Californium</div>
+     <!-- <div class="element-weight">251</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Es">
+     <div class="element-number">99</div>
+     <h2 class="element-symbol">Es</h2>
+     <div class="element-name">Einsteinium</div>
+     <!-- <div class="element-weight">252</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Fm">
+     <div class="element-number">100</div>
+     <h2 class="element-symbol">Fm</h2>
+     <div class="element-name">Fermium</div>
+     <!-- <div class="element-weight">257</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Md">
+     <div class="element-number">101</div>
+     <h2 class="element-symbol">Md</h2>
+     <div class="element-name">Mendelevium</div>
+     <!-- <div class="element-weight">258</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="No">
+     <div class="element-number">102</div>
+     <h2 class="element-symbol">No</h2>
+     <div class="element-name">Nobelium</div>
+     <!-- <div class="element-weight">259</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Lr">
+     <div class="element-number">103</div>
+     <h2 class="element-symbol">Lr</h2>
+     <div class="element-name">Lawrencium</div>
+     <!-- <div class="element-weight">262</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Rf">
+     <div class="element-number">104</div>
+     <h2 class="element-symbol">Rf</h2>
+     <div class="element-name">Rutherfordium</div>
+     <!-- <div class="element-weight">261</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Db">
+     <div class="element-number">105</div>
+     <h2 class="element-symbol">Db</h2>
+     <div class="element-name">Dubnium</div>
+     <!-- <div class="element-weight">262</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Sg">
+     <div class="element-number">106</div>
+     <h2 class="element-symbol">Sg</h2>
+     <div class="element-name">Seaborgium</div>
+     <!-- <div class="element-weight">266</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Bh">
+     <div class="element-number">107</div>
+     <h2 class="element-symbol">Bh</h2>
+     <div class="element-name">Bohrium</div>
+     <!-- <div class="element-weight">264</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Hs">
+     <div class="element-number">108</div>
+     <h2 class="element-symbol">Hs</h2>
+     <div class="element-name">Hassium</div>
+     <!-- <div class="element-weight">277</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Mt">
+     <div class="element-number">109</div>
+     <h2 class="element-symbol">Mt</h2>
+     <div class="element-name">Meitnerium</div>
+     <!-- <div class="element-weight">268</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Ds">
+     <div class="element-number">110</div>
+     <h2 class="element-symbol">Ds</h2>
+     <div class="element-name">Darmstadtium</div>
+     <!-- <div class="element-weight">271</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Rg">
+     <div class="element-number">111</div>
+     <h2 class="element-symbol">Rg</h2>
+     <div class="element-name">Roentgenium</div>
+     <!-- <div class="element-weight">272</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Cn">
+     <div class="element-number">112</div>
+     <h2 class="element-symbol">Cn</h2>
+     <div class="element-name">Copernium</div>
+     <!-- <div class="element-weight">277</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Uut">
+     <div class="element-number">113</div>
+     <h2 class="element-symbol">Nh</h2>
+     <div class="element-name">Nihonium</div>
+     <!-- <div class="element-weight"></div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Fl">
+     <div class="element-number">114</div>
+     <h2 class="element-symbol">Fl</h2>
+     <div class="element-name">Flerovium</div>
+     <!-- <div class="element-weight">289</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Uup">
+     <div class="element-number">115</div>
+     <h2 class="element-symbol">Mc</h2>
+     <div class="element-name">Moscovium</div>
+     <!-- <div class="element-weight"></div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Lv">
+     <div class="element-number">116</div>
+     <h2 class="element-symbol">Lv</h2>
+     <div class="element-name">Livermorium</div>
+     <!-- <div class="element-weight">298</div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Uus">
+     <div class="element-number">117</div>
+     <h2 class="element-symbol">Ts</h2>
+     <div class="element-name">Tennesine</div>
+     <!-- <div class="element-weight"></div> -->
+   </section>
+
+   <section class="element nostandards nolink" id="Uuo">
+     <div class="element-number">118</div>
+     <h2 class="element-symbol">Og</h2>
+     <div class="element-name">Oganesson</div>
+     <!-- <div class="element-weight"></div> -->
+   </section>
+
   </div>
-	<div class="color-table">
+  <div class="color-table">
     <section class="element alkali color-guide" id="cg-alkali">Alkali Metal</section>
     <section class="element alkaline color-guide" id="cg-alkaline">Alkaline Metal</section>
     <section class="element transition color-guide" id="cg-transition">Transition Metal</section>
@@ -781,20 +892,21 @@
     <section class="element lanthanide color-guide" id="cg-lanthanide">Lanthanide</section>
     <section class="element actinide color-guide" id="cg-actinide">Actinide</section>
     <section class="element nostandards color-guide" id="cg-nostandards">No Standards</section>
-	</div>
-</main>
+  </div>
+  
+  </main>
 
-        <script type="text/javascript">
-            <!--
-            function goToAnchor(anchor) {
-               var loc = document.location.toString().split("#")[0];
-               document.location = loc + "#" + anchor;
-               return false;
-            }
-            //-->
-        </script>
-        <hr>
-        '
+  <script type="text/javascript">
+      <!--
+      function goToAnchor(anchor) {
+         var loc = document.location.toString().split("#")[0];
+         document.location = loc + "#" + anchor;
+         return false;
+      }
+      //-->
+  </script>
+  <hr>
+        
 
     <h2 id="Calcium">
        Ca&nbsp;
@@ -836,7 +948,8 @@
                   <td></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Scandium">
        Sc&nbsp;
@@ -887,7 +1000,8 @@
                   <td></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Titanium">
        Ti&nbsp;
@@ -1289,7 +1403,8 @@
                   <td></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Vanadium">
        V&nbsp;
@@ -1358,7 +1473,8 @@
                   <td>K : <a href="Data/V/V-VanadylSulfate.xdi">V-VanadylSulfate.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Chromium">
        Cr&nbsp;
@@ -1472,7 +1588,8 @@
                   <td>K : <a href="Data/Cr/Cr-K-YCrO3.xdi">Cr-K-YCrO3.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Manganese">
        Mn&nbsp;
@@ -1516,15 +1633,6 @@
 
                <tr class=present>
                   <td></td>
-                  <td>Mn<sub>3</sub>O<sub>4</sub></td>
-                  <td>Manganese tetroxide</td>
-                  <td><span class="missing">[___]</span></td>
-                  <td></td>
-                  <td>K : <a href="Data/Mn/Mn-K-Mn3O4.xdi">Mn-K-Mn3O4.xdi</a></td>
-               </tr>
-
-               <tr class=present>
-                  <td></td>
                   <td>Mn<sub>2</sub>O<sub>3</sub></td>
                   <td>Bixbyite</td>
                   <td>Mn standards wheel</td>
@@ -1534,11 +1642,29 @@
 
                <tr class=present>
                   <td></td>
+                  <td>Mn<sub>3</sub>O<sub>4</sub></td>
+                  <td>Manganese tetroxide</td>
+                  <td><span class="missing">[___]</span></td>
+                  <td></td>
+                  <td>K : <a href="Data/Mn/Mn-K-Mn3O4.xdi">Mn-K-Mn3O4.xdi</a></td>
+               </tr>
+
+               <tr class=present>
+                  <td></td>
                   <td>MnO<sub>2</sub></td>
                   <td>Pyrolucite</td>
                   <td>Mn standards wheel</td>
                   <td></td>
                   <td>K : <a href="Data/Mn/Mn-Pyrolucite.xdi">Mn-Pyrolucite.xdi</a></td>
+               </tr>
+
+               <tr class=present>
+                  <td></td>
+                  <td>MnO(OH)</td>
+                  <td>Manganite, manganese oxyhydroxide</td>
+                  <td><span class="missing">[___]</span></td>
+                  <td></td>
+                  <td>K : <a href="Data/Mn/Mn-K-Manganite.xdi">Mn-K-Manganite.xdi</a></td>
                </tr>
 
                <tr class=present>
@@ -1624,15 +1750,6 @@
 
                <tr class=present>
                   <td></td>
-                  <td>MnO(OH)</td>
-                  <td>Manganite, manganese oxyhydroxide</td>
-                  <td><span class="missing">[___]</span></td>
-                  <td></td>
-                  <td>K : <a href="Data/Mn/Mn-K-Manganite.xdi">Mn-K-Manganite.xdi</a></td>
-               </tr>
-
-               <tr class=present>
-                  <td></td>
                   <td>CaMn<sub>2</sub>O<sub>4</sub></td>
                   <td>Marokite</td>
                   <td><span class="missing">[___]</span></td>
@@ -1703,7 +1820,8 @@
                   <td>K : <a href="Data/Mn/Mn-K-WolframiteA.xdi">Mn-K-WolframiteA.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Iron">
        Fe&nbsp;
@@ -2096,7 +2214,8 @@
                   <td>K : <a href="Data/Fe/Fe-K-Wolframite.xdi">Fe-K-Wolframite.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Cobalt">
        Co&nbsp;
@@ -2165,7 +2284,8 @@
                   <td>K : <a href="Data/Co/Co-K-CobaltAluminate.xdi">Co-K-CobaltAluminate.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Nickel">
        Ni&nbsp;
@@ -2252,7 +2372,8 @@
                   <td>K : <a href="Data/Ni/Ni-K-NickelHydroxide.xdi">Ni-K-NickelHydroxide.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Copper">
        Cu&nbsp;
@@ -2321,7 +2442,8 @@
                   <td>K : <a href="Data/Cu/Cu-Dioptase.xdi">Cu-Dioptase.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Zinc">
        Zn&nbsp;
@@ -2408,7 +2530,8 @@
                   <td>K : <a href="Data/Zn/Zn-Willemite.xdi">Zn-Willemite.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Gallium">
        Ga&nbsp;
@@ -2441,7 +2564,8 @@
                   <td>K : <a href="Data/Ga/Ga-K-GalliumOxide.xdi">Ga-K-GalliumOxide.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Germanium">
        Ge&nbsp;
@@ -2474,7 +2598,8 @@
                   <td>K : <a href="Data/Ge/Ge-K-GermaniumOxide.xdi">Ge-K-GermaniumOxide.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Arsenic">
        As&nbsp;
@@ -2597,7 +2722,8 @@
                   <td>K : <a href="Data/As/As-K-CacodylicAcid.xdi">As-K-CacodylicAcid.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Selenium">
        Se&nbsp;
@@ -2639,7 +2765,8 @@
                   <td>K : <a href="Data/Se/Se-K-SeleniumOxide.xdi">Se-K-SeleniumOxide.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Bromine">
        Br&nbsp;
@@ -2672,7 +2799,8 @@
                   <td>K : <a href="Data/Br/Br-K-BromophenolBlue.xdi">Br-K-BromophenolBlue.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Rubidium">
        Rb&nbsp;
@@ -2705,7 +2833,8 @@
                   <td>K : <a href="Data/Rb/Rb-K-RubidiumCarbonate.xdi">Rb-K-RubidiumCarbonate.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Strontium">
        Sr&nbsp;
@@ -2774,7 +2903,8 @@
                   <td>K : <a href="Data/Sr/Sr-K-SrCe2Ti4O12.xdi">Sr-K-SrCe2Ti4O12.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Yttrium">
        Y&nbsp;
@@ -2825,7 +2955,8 @@
                   <td>K : <a href="Data/Y/Y-K-Y2TiO5.xdi">Y-K-Y2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Zirconium">
        Zr&nbsp;
@@ -2921,7 +3052,8 @@
                   <td>K : <a href="Data/Zr/Zr-K-Zektzerite.xdi">Zr-K-Zektzerite.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Niobium">
        Nb&nbsp;
@@ -2999,7 +3131,8 @@
                   <td>K : <a href="Data/Nb/Nb-K-CeriumTitanoniobate.xdi">Nb-K-CeriumTitanoniobate.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Molybdenum">
        Mo&nbsp;
@@ -3077,8 +3210,10 @@
                   <td></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Ruthenium">
        Ru&nbsp;
@@ -3129,9 +3264,12 @@
                   <td></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Silver">
        Ag&nbsp;
@@ -3209,7 +3347,8 @@
                   <td></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Cadmium">
        Cd&nbsp;
@@ -3269,10 +3408,14 @@
                   <td></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Tellurium">
        Te&nbsp;
@@ -3305,8 +3448,10 @@
                   <td></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Cesium">
        Cs&nbsp;
@@ -3339,8 +3484,10 @@
                   <td>L<sub>3</sub> : <a href="Data/Cs/Cs-L3-CesiumNitrate.xdi">Cs-L3-CesiumNitrate.xdi</a><br>L<sub>1</sub> : <a href="Data/Cs/Cs-L1-CesiumNitrate.xdi">Cs-L1-CesiumNitrate.xdi</a></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Lanthanum">
        La&nbsp;
@@ -3400,7 +3547,8 @@
                   <td>L<sub>3</sub> : <a href="Data/La/La-L3-LaPO4.xdi">La-L3-LaPO4.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Cerium">
        Ce&nbsp;
@@ -3505,7 +3653,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Ce/Ce-L3-Ce2SiO7.xdi">Ce-L3-Ce2SiO7.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Praseodymium">
        Pr&nbsp;
@@ -3574,7 +3723,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Pr/Pr-L3-Pr2TiO5.xdi">Pr-L3-Pr2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Pr/Pr-L1-Pr2TiO5.xdi">Pr-L1-Pr2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Neodymium">
        Nd&nbsp;
@@ -3643,8 +3793,10 @@
                   <td>L<sub>3</sub> : <a href="Data/Nd/Nd-L3-Nd2TiO5.xdi">Nd-L3-Nd2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Nd/Nd-L1-Nd2TiO5.xdi">Nd-L1-Nd2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Samarium">
        Sm&nbsp;
@@ -3704,7 +3856,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Sm/Sm-L3-Sm2TiO5.xdi">Sm-L3-Sm2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Sm/Sm-L1-Sm2TiO5.xdi">Sm-L1-Sm2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Europium">
        Eu&nbsp;
@@ -3773,7 +3926,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Eu/Eu-L3-Eu2TiO5.xdi">Eu-L3-Eu2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Eu/Eu-L1-Eu2TiO5.xdi">Eu-L1-Eu2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Gadolinium">
        Gd&nbsp;
@@ -3833,7 +3987,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Gd/Gd-L3-Gd2TiO5.xdi">Gd-L3-Gd2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Gd/Gd-L1-Gd2TiO5.xdi">Gd-L1-Gd2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Terbium">
        Tb&nbsp;
@@ -3875,7 +4030,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Tb/Tb-L3-Tb2TiO5.xdi">Tb-L3-Tb2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Tb/Tb-L1-Tb2TiO5.xdi">Tb-L1-Tb2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Dysprosium">
        Dy&nbsp;
@@ -3935,7 +4091,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Dy/Dy-L3-Dy2TiO5.xdi">Dy-L3-Dy2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Dy/Dy-L1-Dy2TiO5.xdi">Dy-L1-Dy2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Holmium">
        Ho&nbsp;
@@ -3977,7 +4134,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Ho/Ho-L3-Ho2TiO5.xdi">Ho-L3-Ho2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Ho/Ho-L1-Ho2TiO5.xdi">Ho-L1-Ho2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Erbium">
        Er&nbsp;
@@ -4028,7 +4186,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Er/Er-L3-Er2TiO5.xdi">Er-L3-Er2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Er/Er-L1-Er2TiO5.xdi">Er-L1-Er2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Thulium">
        Tm&nbsp;
@@ -4070,7 +4229,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Tm/Tm-L3-Tm2TiO5.xdi">Tm-L3-Tm2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Tm/Tm-L1-Tm2TiO5.xdi">Tm-L1-Tm2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Ytterbium">
        Yb&nbsp;
@@ -4112,7 +4272,8 @@
                   <td></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Lutetium">
        Lu&nbsp;
@@ -4154,7 +4315,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Lu/Lu-L3-Lu2TiO5.xdi">Lu-L3-Lu2TiO5.xdi</a><br>L<sub>1</sub> : <a href="Data/Lu/Lu-L1-Lu2TiO5.xdi">Lu-L1-Lu2TiO5.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Hafnium">
        Hf&nbsp;
@@ -4187,7 +4349,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Hf/Hf-L3-HafniumOxide.xdi">Hf-L3-HafniumOxide.xdi</a><br>L<sub>1</sub> : <a href="Data/Hf/Hf-L1-HafniumOxide.xdi">Hf-L1-HafniumOxide.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Tantalum">
        Ta&nbsp;
@@ -4238,7 +4401,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Ta/Ta-L3-Ta2O3.xdi">Ta-L3-Ta2O3.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Tungsten">
        W&nbsp;
@@ -4280,7 +4444,8 @@
                   <td>L<sub>3</sub> : <a href="Data/W/W-L3-metal.xdi">W-L3-metal.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Rhenium">
        Re&nbsp;
@@ -4340,9 +4505,12 @@
                   <td>L<sub>3</sub> : <a href="Data/Re/Re-L3-AmmoniumPerrhenate.xdi">Re-L3-AmmoniumPerrhenate.xdi</a><br>L<sub>1</sub> : <a href="Data/Re/Re-L1-AmmoniumPerrhenate.xdi">Re-L1-AmmoniumPerrhenate.xdi</a></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Platinum">
        Pt&nbsp;
@@ -4411,7 +4579,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Pt/Pt-L3-PotassiumHexaChloroPlatinate.xdi">Pt-L3-PotassiumHexaChloroPlatinate.xdi</a><br>L<sub>1</sub> : <a href="Data/Pt/Pt-L1-PotassiumHexaChloroPlatinate.xdi">Pt-L1-PotassiumHexaChloroPlatinate.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Gold">
        Au&nbsp;
@@ -4534,9 +4703,12 @@
                   <td>L<sub>3</sub> : <a href="Data/Au/Au-L3-La4LiAuO8.xdi">Au-L3-La4LiAuO8.xdi</a><br>L<sub>1</sub> : <a href="Data/Au/Au-L1-La4LiAuO8.xdi">Au-L1-La4LiAuO8.xdi</a></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>            </table>
-      </div>'
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+
 
     <h2 id="Lead">
        Pb&nbsp;
@@ -4623,7 +4795,8 @@
                   <td>L<sub>3</sub> : <a href="Data/Pb/Pb-L3-LeadChloride.xdi">Pb-L3-LeadChloride.xdi</a><br>L<sub>1</sub> : <a href="Data/Pb/Pb-L1-LeadChloride.xdi">Pb-L1-LeadChloride.xdi</a></td>
                </tr>
             </table>
-      </div>'
+      </div>
+
 
     <h2 id="Bismuth">
        Bi&nbsp;
@@ -4683,17 +4856,28 @@
                   <td>L<sub>3</sub> : <a href="Data/Bi/Bi-L3-Bi2Ce2Ti4O12.xdi">Bi-L3-Bi2Ce2Ti4O12.xdi</a><br>L<sub>1</sub> : <a href="Data/Bi/Bi-L1-Bi2Ce2Ti4O12.xdi">Bi-L1-Bi2Ce2Ti4O12.xdi</a></td>
                </tr>
             </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
-      </div>            </table>
       </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+            </table>
+      </div>
+
   <p class="copyright ctop">
     A large number of the samples on this page were provided by Martin Stennett 
     of the University of Sheffield.  This page would be much less interesting

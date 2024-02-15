@@ -1,10 +1,7 @@
 #!/usr/bin/env python
-from openpyxl import load_workbook
-import json, datetime, pprint, re, os
+import json, re, os
 from mendeleev import element
 from larch.xray import xray_edge
-
-pp = pprint.PrettyPrinter(indent=4)
 
 
 class CommonMaterials():
@@ -16,55 +13,82 @@ class CommonMaterials():
 
     from json2html import Standards
     m = Standards()
-    m.html       = 'test.html'
-    m.singlepage = False
-    m.make_html()         # write data to an html file
+    m.html = 'test.html'
+    m.make_html()
 
     '''
     def __init__(self):
-        self.spreadsheet = 'Standards.xlsx'
-        self.datadict = {}
         self.json = 'standards.json'
         self.html = 'test.html'
-        self.singlepage = False
         self.cssfile = 'standards.css'
-        
+        self.nosamp = '[___]'
+        self.beneath_table = '''
+  </div>
+  <div class="color-table">
+    <section class="element alkali color-guide" id="cg-alkali">Alkali Metal</section>
+    <section class="element alkaline color-guide" id="cg-alkaline">Alkaline Metal</section>
+    <section class="element transition color-guide" id="cg-transition">Transition Metal</section>
+    <section class="element basic color-guide" id="cg-basic">Basic Metal</section>
+    <section class="element semimetal color-guide" id="cg-semimetal">Semimetal</section>
+    <section class="element nonmetal color-guide" id="cg-nonmetal">Nonmetal</section>
+    <section class="element halogen color-guide" id="cg-halogen">Halogen</section>
+    <section class="element noble color-guide" id="cg-noble">Noble Gas</section>
+    <section class="element lanthanide color-guide" id="cg-lanthanide">Lanthanide</section>
+    <section class="element actinide color-guide" id="cg-actinide">Actinide</section>
+    <section class="element nostandards color-guide" id="cg-nostandards">No Standards</section>
+  </div>
+  
+  </main>
+'''
+        self.goto_anchor = '''
+  <script type="text/javascript">
+      <!--
+      function goToAnchor(anchor) {
+         var loc = document.location.toString().split("#")[0];
+         document.location = loc + "#" + anchor;
+         return false;
+      }
+      //-->
+  </script>
+  <hr>
+        '''    
 
-    def read_spreadsheet(self, spreadsheet=None):
-        '''Read spreadsheet data, storing its contents in a dict '''
-        if spreadsheet is None:
-            spreadsheet = self.spreadsheet
-        if spreadsheet is None:
-            print('You need to specify the path to a spreadsheet')
-            return()
-        print(f'Reading data from {spreadsheet}')
-        workbook = load_workbook(spreadsheet, read_only=True);
-        worksheet = workbook.active
-        self.datadict = {}
-        for row in worksheet.rows:
-            this = []
-            i = 3
-            while row[i].value is not None:
-                td = {'material' : row[i].value,
-                      'name' : '',
-                      'location' : row[2].value,}
-                this.append(td)
-                i += 1
-            self.datadict[row[2].value] = this
-        #pp.pprint(self.datadict)
 
             
-    def to_json(self):
-        '''Save spreadsheet data to a JSON file''' 
-        with open(self.json, 'w') as fp:
-            json.dump(self.datadict, fp, indent=4)
-        print(f'Wrote JSON to {self.json}')
+    def element_with_samples(self, this):
+        '''Generate an element box in the periodic table for an element
+        represented in this data collection.
+
+        '''
+        tmpl = '''
+   <section class="element {type}" id="{key}" onclick="goToAnchor('{name}')">
+     <div class="element-number">{number}</div>
+     <h2 class="element-symbol">{symbol}</h2>
+     <div class="element-name">{name}</div>
+     <!-- <div class="element-weight">{weight}</div> -->
+   </section>
+'''
+        return tmpl.format(**this)
+        
+    def element_without_samples(self, this):
+        '''Generate an element box in the periodic table for an element
+        for which no data exists in this collection.
+
+        '''
+        tmpl = '''
+   <section class="element {type} nolink" id="{key}">
+     <div class="element-number">{number}</div>
+     <h2 class="element-symbol">{symbol}</h2>
+     <div class="element-name">{name}</div>
+     <!-- <div class="element-weight">{weight}</div> -->
+   </section>
+'''
+        return tmpl.format(**this)
 
         
     def make_html(self):
         '''Write the contents of the JSON file to a pretty html file'''
         notfound = []
-        nosamp = '[___]'
         with open('standards.json', 'r') as myfile:
             data=json.loads(myfile.read())
         
@@ -80,67 +104,69 @@ class CommonMaterials():
   <main>
 '''
         page = page + f'''
-<div class="topmatter">
-</div>
-<div id="divfix">
-   <div id="container">
-     <div id="floated">
-       <image src="floor_mat.png" width=90%>
-     </div>
-     Common XAFS materials
-    </div>
-   <p>
-     <span class="instructions">Click on an element to jump to that list of compounds in BMM's
-     collection.</span>
-   </p>
-   <p>
-     Compounds marked with &#10004; are permanently mounted on the reference wheel.
-   </p>
-   <p>
-     Compounds marked with <span style="font-family: \'Brush Script MT\', cursive;">Fl</span>
-     were measured in fluorescence.
-   </p>
-   <p>
-      <span class="missing">{nosamp}</span> means the data was measured 
-      at BMM on a high-quality sample, but the sample is not in BMM's 
-      collection.
-   </p>
-   <p>
-     Edge energies in <span id="inrange">black text</span> are accessible at BMM.
-     Those in <span id="outofrange">grey text</span> are not.
-   </p>
-   <p>
-     For compounds listed as being on the reference wheel, data are
-     ln(I<sub>t</sub>/I<sub>r</sub>).
-   </p>
-   <p>
-     Some L<sub>1</sub> data may not be useful due to a small edge step.
-   </p>
-   <p>
-     <a href="https://github.com/NSLS-II-BMM/bmm-standards">
-        <img src="github-mark.svg" width=20px>
-        GitHub repository
-     </a>
-   </p>
-</div>
+  <div id="divfix">
+     <div id="container">
+       <div id="floated">
+         <image src="floor_mat.png" width=90%>
+       </div>
+       Common XAFS materials
+      </div>
+     <p>
+       <span class="instructions">Click on an element to jump to that list of compounds in BMM's
+       collection.</span>
+     </p>
+     <p>
+       Compounds marked with &#10004; are permanently mounted on the reference wheel.
+     </p>
+     <p>
+       Compounds marked with <span style="font-family: \'Brush Script MT\', cursive;">Fl</span>
+       were measured in fluorescence.
+     </p>
+     <p>
+        <span class="missing">{self.nosamp}</span> means the data was measured 
+        at BMM on a high-quality sample, but the sample is not in BMM's 
+        collection.
+     </p>
+     <p>
+       Edge energies in <span id="inrange">black text</span> are accessible at BMM.
+       Those in <span id="outofrange">grey text</span> are not.
+     </p>
+     <p>
+       For compounds listed as being on the reference wheel, data are
+       ln(I<sub>t</sub>/I<sub>r</sub>).
+     </p>
+     <p>
+       Some L<sub>1</sub> data may not be useful due to a small edge step.
+     </p>
+     <p>
+       <a href="https://github.com/NSLS-II-BMM/bmm-standards">
+          <img src="github-mark.svg" width=20px>
+          GitHub repository
+       </a>
+     </p>
+  </div>
 
+  <div class="ptable">
 '''
 
-        with open('pt.html') as pt:
-            ptable = pt.read()
-        page = page + ptable + '</main>\n'
-        page = page + '''
-        <script type="text/javascript">
-            <!--
-            function goToAnchor(anchor) {
-               var loc = document.location.toString().split("#")[0];
-               document.location = loc + "#" + anchor;
-               return false;
-            }
-            //-->
-        </script>
-        <hr>
-        '''    
+
+        ## generate the element boxes in the periodic table
+        with open('pt.json', 'r') as ptjson:
+            ptdata=json.loads(ptjson.read())
+        for el in ptdata.keys():
+            ptdata[el]["key"] = el
+            if ptdata[el]["link"]:
+                page = page + self.element_with_samples(ptdata[el])
+            else:
+                page = page + self.element_without_samples(ptdata[el])
+
+            
+        ## the color explanation table and the javascript for going to
+        ## an anchor from the periodic table
+        page = page + self.beneath_table
+        page = page + self.goto_anchor
+
+        ## generate a table of samples in this collection for every element
         for z in range(20, 95):
             el = element(z)
             print(el.symbol, end=' ', flush=True)
@@ -153,7 +179,7 @@ class CommonMaterials():
             if xray_edge(el.symbol, 'L3')[0] < 5000:
                 lcolor = 'outofrange'
             if len(data[el.symbol]) > 0:
-                page = page + f''''
+                page = page + f'''
 
     <h2 id="{el.name}">
        {el.symbol}&nbsp;
@@ -165,8 +191,8 @@ class CommonMaterials():
          L<sub>3</sub>:&nbsp;{xray_edge(el.symbol, 'L3')[0]:.0f}&nbsp;eV</span>
       </div>
     </h2>
-      <div class="wrapper">\n'''
-                page = page + '''
+      <div class="wrapper">
+
             <table>
               <tr>
                 <th></th>
@@ -182,11 +208,14 @@ class CommonMaterials():
                 missing = 'present'
                 if 'missing' in this and this['missing'] is True:
                     missing = 'missing'
+                    
                 formula = re.sub(r'(\d+\.\d+|\d+)(?!\+)', r'<sub>\g<1></sub>', this['material'])
                 formula = re.sub(r'((\d+\.\d+|\d+)\+)', r'<sup>\1</sup>', formula) #this['material'])
+
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]
+
                 location = ''
                 if this['location'] != el.symbol:
                     location = this['location'] # 'location: '+
@@ -195,12 +224,11 @@ class CommonMaterials():
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'lanthanide wheel'
                 if location == 'sample not in collection':
-                    location = f'<span class="missing">{nosamp}</span>'
+                    location = f'<span class="missing">{self.nosamp}</span>'
                     
+                edge = 'K'
                 if el.atomic_number > 46:
                     edge = 'L<sub>3</sub>'
-                else:
-                    edge = 'K'
                     
                 if 'datafile' not in this:
                     datafile = ''
@@ -212,6 +240,7 @@ class CommonMaterials():
                     datafile = ""
                 else:
                     datafile = f'{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
+
                 if 'datafile2' not in this:
                     datafile2 = ''
                 elif this['datafile2'] is False:
@@ -222,16 +251,14 @@ class CommonMaterials():
                     datafile2 = ''
                 else:
                     datafile2 = f'<br>L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
-                
+
+                onrefwheel = ''
                 if 'refwheel' in this and this['refwheel'] is True:
                     onrefwheel = '&#10004;'
-                else:
-                    onrefwheel = ''
 
+                fluo = ''
                 if 'fluorescence' in this and this['fluorescence'] is True:
                     fluo = '<span style="font-family: \'Brush Script MT\', cursive;">Fl</span>'
-                else:
-                    fluo = ''
                     
                 ## generate a div for the table explaining each port
                 page = page + f'''
@@ -245,7 +272,7 @@ class CommonMaterials():
                </tr>
 '''
             page = page + '            </table>\n'
-            page = page + '      </div>'
+            page = page + '      </div>\n'
 
         ##########
         # footer #
@@ -283,64 +310,6 @@ class CommonMaterials():
             for f in notfound:
                 print(f'\t{f}')
 
-    def boxify(self, word):
-        '''Convert a word to be spelled by unicode points in the Enclosed
-        Alphanumeric Supplement section.  "Negative Squared Latin Capital Letter X"
-        See https://unicode-table.com/en/#1F173'''
-        boxedword = ''
-        for letter in word:
-            character = f'&#{127247+ord(letter)};'
-            boxedword = boxedword + character
-        return(boxedword)
-    
-    def oneitem(self, znum=26, symbol='Fe', name='Iron', material='FeTiO3', commonname='ilmenite', location='Fe'):
-        '''Generate a table that will occupy one div of the output html file.
-        This table contains the data from a single common material.
-        The div looks something like this:
-
-        +--------------------------+
-        | Symbol         name      |
-        |                          |
-        |     stoichiometry        |
-        |    name of material      |
-        |  location if not here    |
-        +--------------------------+
-
-        '''
-        form = '''
-          <table>
-            <tr>
-              <td rowspan=2><span class="znum">{symbol}</span></td>
-              <td align=right><span class="symbol">{name}</span></td>
-            </tr>
-            <tr><td></td></tr>
-            <tr>
-              <td colspan=3 align=center><span class="{major}">{material}</span></td>
-            </tr>
-            <tr>
-              <td colspan=3 align=center><span class="name">{commonname}</span></td>
-            </tr>
-            <tr>
-              <td colspan=3 align=center><span class="loc">{location}</span></td>
-            </tr>
-          </table>
-'''
-
-        if len(material) < 11:
-            major = 'major'
-        elif len(material) < 20:
-            major = 'longmajor'
-        else:
-            major = 'verylongmajor'
-        material = re.sub(r'(\d+\.\d+|\d+)', r'<sub>\g<1></sub>', material)
-        return(form.format(znum       = znum,
-                           name       = name,
-                           symbol     = symbol,
-                           material   = material,
-                           major      = major,
-                           commonname = commonname,
-                           location   = location,
-        ))
         
 
 
@@ -348,14 +317,9 @@ class CommonMaterials():
 
 
 def main():
-    m=CommonMaterials()
-    #m.spreadsheet = 'Standards.xlsx'
-    m.html        = 'BMM-standards.html'
-    #m.html        = 'test.html'
-    m.singlepage  = False
-    #m.read_spreadsheet()
-    #m.to_json()
-    m.make_html()
+    collection      = CommonMaterials()
+    collection.html = 'BMM-standards.html'
+    collection.make_html()
 
 if __name__ == "__main__":
     main()
