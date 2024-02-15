@@ -63,27 +63,11 @@ class CommonMaterials():
         
     def make_html(self):
         '''Write the contents of the JSON file to a pretty html file'''
+        notfound = []
+        nosamp = '[___]'
         with open('standards.json', 'r') as myfile:
             data=json.loads(myfile.read())
         
-            
-#         ##########
-#         # header #
-#         ##########
-#         if self.singlepage is True:
-#             with open(self.cssfile) as x: css = x.read()
-#             page = f'''
-# <html>
-#   <head>
-#     <title>Common XAFS materials at BMM</title>
-#     <style>
-# {css}
-#     </style>
-#   </head>
-
-#   <body>
-#   <h1>Common XAFS materials at BMM</h1>'''
-#         else:
         page = f'''
 <html>
   <head>
@@ -95,7 +79,7 @@ class CommonMaterials():
   <body>
   <main>
 '''
-        page = page + '''
+        page = page + f'''
 <div class="topmatter">
 </div>
 <div id="divfix">
@@ -117,6 +101,11 @@ class CommonMaterials():
      were measured in fluorescence.
    </p>
    <p>
+      <span class="missing">{nosamp}</span> means the data was measured 
+      at BMM on a high-quality sample, but the sample is not in BMM's 
+      collection.
+   </p>
+   <p>
      Edge energies in <span id="inrange">black text</span> are accessible at BMM.
      Those in <span id="outofrange">grey text</span> are not.
    </p>
@@ -126,10 +115,6 @@ class CommonMaterials():
    </p>
    <p>
      Some L<sub>1</sub> data may not be useful due to a small edge step.
-   </p>
-   <p>
-     Note that some materials were measured at BMM, but the sample is not in the
-     collection at BMM.
    </p>
    <p>
      <a href="https://github.com/NSLS-II-BMM/bmm-standards">
@@ -210,7 +195,7 @@ class CommonMaterials():
                 if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
                     location = 'lanthanide wheel'
                 if location == 'sample not in collection':
-                    location = f'<span class="missing">({location})</span>'
+                    location = f'<span class="missing">{nosamp}</span>'
                     
                 if el.atomic_number > 46:
                     edge = 'L<sub>3</sub>'
@@ -221,6 +206,10 @@ class CommonMaterials():
                     datafile = ''
                 elif this['datafile'] is False:
                     datafile = ''
+                elif not os.path.isfile(f'Data/{el.symbol}/{this["datafile"]}'):
+                    if this["datafile"] != '':
+                        notfound.append(this["datafile"])
+                    datafile = ""
                 else:
                     datafile = f'{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
                 if 'datafile2' not in this:
@@ -228,6 +217,8 @@ class CommonMaterials():
                 elif this['datafile2'] is False:
                     datafile2 = ''
                 elif not os.path.isfile(f'Data/{el.symbol}/{this["datafile2"]}'):
+                    if this["datafile2"] != '':
+                        notfound.append(this["datafile2"])
                     datafile2 = ''
                 else:
                     datafile2 = f'<br>L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
@@ -287,6 +278,10 @@ class CommonMaterials():
         with open(self.html, 'w') as fh:
             fh.write(page)
         print(f'\nWrote html to {self.html}')
+        if len(notfound) > 0:
+            print('\nMissing or misspelled files:')
+            for f in notfound:
+                print(f'\t{f}')
 
     def boxify(self, word):
         '''Convert a word to be spelled by unicode points in the Enclosed

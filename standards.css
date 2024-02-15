@@ -186,7 +186,7 @@ tr.missing {
 }
 .missing {
     color: #994;
-    font-style: italic;
+    font-style: normal;
 }
 
 tr:nth-child(2n) {background: #ddd}

@@ -221,11 +221,11 @@
             "datafile": "Ti-K-Na2Ti3O7.xdi"
         },
         {
-            "material": "Na2Ti2O7",
-            "name": "sodium titanate",
+            "material": "Ni2TiO4",
+            "name": "nickel titanate",
             "location": "sample not in collection",
             "refwheel": false,
-            "datafile": "Ti-K-Na2Ti2O7.xdi"
+            "datafile": "Ti-K-Ni2TiO4.xdi"
         },
         {
             "material": "Ni2TiO4",
@@ -381,26 +381,6 @@
             "datafile": "Cr-K-ChromiumFoil.xdi"
         },
         {
-            "material": "ErCrO3",
-            "name": "Erbium Chromate",
-            "location": "Lanthanide standards wheel",
-            "refwheel": false
-        },
-        {
-            "material": "Cr3(OH)2(OOCCH3)7",
-            "name": "Chromium acetate",
-            "location": "sample not in collection",
-            "refwheel": false,
-            "datafile": "Cr-K-acetate.xdi"
-        },
-        {
-            "material": "Cr2Na2O7",
-            "name": "Sodium dichromate",
-            "location": "sample not in collection",
-            "refwheel": false,
-            "datafile": "Cr-K-Cr2Na2O7.xdi"
-        },
-        {
             "material": "Cr2O3",
             "name": "Chromia, eskolaite, chromium sesquioxide",
             "location": "sample not in collection",
@@ -415,6 +395,27 @@
             "datafile": "Cr-K-CrO3.xdi"
         },
         {
+            "material": "Cr3(OH)2(OOCCH3)7",
+            "name": "Chromium acetate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-acetate.xdi"
+        },
+        {
+            "material": "K2CrO4",
+            "name": "Potassium chromate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-K2CrO4.xdi"
+        },
+        {
+            "material": "Cr2Na2O7",
+            "name": "Sodium dichromate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-Cr2Na2O7.xdi"
+        },
+        {
             "material": "FeCrO4",
             "name": "Chromite",
             "location": "sample not in collection",
@@ -427,7 +428,20 @@
             "location": "sample not in collection",
             "refwheel": false,
             "datafile": "Cr-K-nitrate.xdi"
-        }	
+        },	
+        {
+            "material": "ErCrO3",
+            "name": "Erbium Chromate",
+            "location": "Lanthanide standards wheel",
+            "refwheel": false
+        },
+        {
+            "material": "YCrO3",
+            "name": "Yttrium chromate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-YCrO3.xdi"
+        }
     ],
     "Mn": [
         {
@@ -447,10 +461,9 @@
         {
             "material": "Mn3O4",
             "name": "Manganese tetroxide",
-            "location": "Mn standards wheel",
+            "location": "sample not in collection",
             "refwheel": false,
-            "missing": true,
-            "datafile": false
+            "datafile": "Mn-K-Mn3O4.xdi"
         },
         {
             "material": "Mn2O3",
@@ -485,7 +498,7 @@
             "name": "Olmite",
             "location": "Mn standards wheel",
             "refwheel": false,
-            "datafile": "MnOlmite.xdi"
+            "datafile": "Mn-Olmite.xdi"
         },
         {
             "material": "CaMn3Mn(Si5O15)",
@@ -498,9 +511,10 @@
             "material": "Ca2Fe0.75Mn0.25FeSi5O14(OH)",
             "name": "Babingtonite",
             "location": "Mn standards wheel",
+	    "missing": true,
             "refwheel": false,
             "fluorescence": true,
-            "datafile": "Mn-Babingtonite.xdi"
+            "datafile": ""
         },
         {
             "material": "Ca2MnAl2BSi4O15(OH)",
@@ -632,14 +646,6 @@
             "datafile": "Fe-NiFerrite.xdi"
         },
         {
-            "material": "FeS2",
-            "name": "Pyrite (oxidized?)",
-            "location": "Fe",
-            "refwheel": false,
-            "missing": true,
-            "datafile": false
-        },
-        {
             "material": "\u03b1-Fe2O3",
             "name": "Hematite",
             "location": "Fe standards wheel",
@@ -655,14 +661,6 @@
             "datafile": false
         },
         {
-            "material": "FeS",
-            "name": "Pyrrhotite (oxidized?)",
-            "location": "Fe",
-            "refwheel": false,
-            "missing": true,
-            "datafile": false
-        },
-        {
             "material": "\u03b1-FeOOH",
             "name": "Goethite",
             "location": "Fe standards wheel",
@@ -675,6 +673,22 @@
             "location": "Fe standards wheel",
             "refwheel": false,
             "datafile": "Fe-Lepidocrocite.xdi"
+        },
+        {
+            "material": "FeS2",
+            "name": "Pyrite (oxidized?)",
+            "location": "Fe",
+            "refwheel": false,
+            "missing": true,
+            "datafile": false
+        },
+        {
+            "material": "FeS",
+            "name": "Pyrrhotite (oxidized?) (FeS, Fe7S8)",
+            "location": "Fe",
+            "refwheel": false,
+            "missing": true,
+            "datafile": false
         },
         {
             "material": "FePO4",
@@ -786,7 +800,7 @@
             "name": "Chondrodite",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": "Fe-Chondrite.xdi"
+            "datafile": "Fe-Chondrodite.xdi"
         },
         {
             "material": "(Ca,Na)(Mg,Fe,Ti,Al)(Si,Al)O6",
@@ -835,7 +849,7 @@
             "name": "Andradite",
             "location": "Fe standards wheel",
             "refwheel": false,
-            "datafile": "Fe-Adndradite.xdi"
+            "datafile": "Fe-Andradite.xdi"
         },
         {
             "material": "CaFeSi2O6",
@@ -858,6 +872,34 @@
             "location": "Zn standards wheel",
             "refwheel": false,
             "datafile": "Fe-K-Petedunnite.xdi"
+        },
+        {
+            "material": "CaMnSi2O6",
+            "name": "Bustamite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Fe-K-Bustamite.xdi"
+        },
+        {
+            "material": "MnAl2Si2O6(OH)4",
+            "name": "Carpholite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Fe-K-Carpholite.xdi"
+        },
+        {
+            "material": "MnFe2O4",
+            "name": "Jacobsite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Fe-K-Jacobsite.xdi"
+        },
+        {
+            "material": "(Fe,Mn)WO4",
+            "name": "Wolframite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Fe-K-Wolframite.xdi"
         }
 
     ],
@@ -1082,9 +1124,9 @@
         {
             "material": "As2S3",
             "name": "Orpiment",
-            "location": "As standards wheel",
+            "location": "sample not in collection",
             "refwheel": false,
-            "datafile": false
+            "datafile": "As-K-Orpiment.xdi"
         },
         {
             "material": "C5H11AsO2",
@@ -1133,7 +1175,7 @@
             "name": "Cacodylic acid",
             "location": "As standards wheel",
 	    "refwheel": false,
-            "datafile": "As-K-CacodylicAsAcid.xdi"
+            "datafile": "As-K-CacodylicAcid.xdi"
         }
     ],
     "Se": [
@@ -1209,6 +1251,13 @@
     ],
     "Y": [
         {
+            "material": "Y foil",
+            "name": "Yttrium foil",
+            "refwheel": true,
+            "location": "sample not in collection",
+            "datafile": "Y-K-foil.xdi"
+        },
+        {
             "material": "Y2O3",
             "name": "Yttria, yttrium oxide",
             "refwheel": true,
@@ -1258,6 +1307,27 @@
             "location": "4d metals wheel",
             "refwheel": false,
             "datafile": "Zr-K-Wadeite.xdi"
+        },
+        {
+            "material": "BaZrO3",
+            "name": "Barium zirconate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Zr-K-BaZrO3.xdi"
+        },
+        {
+            "material": "ZrSiO4",
+            "name": "Zircon, zirconium silicate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Zr-K-ZrSiO4.xdi"
+        },
+        {
+            "material": "LiNaZrSi6O15",
+            "name": "Zektzerite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Zr-K-Zektzerite.xdi"
         }
     ],
     "Nb": [
@@ -1483,6 +1553,20 @@
             "refwheel": false,
             "datafile": "La-L3-LanthanumNickelate.xdi",
             "datafile2": "La-L1-LanthanumNickelate.xdi"
+        },
+        {
+            "material": "LaAlO3",
+            "name": "Lanthanum aluminate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "La-L3-LaAlO3.xdi"
+        },
+        {
+            "material": "LaPO4",
+            "name": "Lanthanum phosphate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "La-L3-LaPO4.xdi"
         }
     ],
     "Ce": [
@@ -1559,6 +1643,13 @@
             "location": "Pr",
             "datafile": "Pr-L3-PraseodymiumOxide.xdi",
             "datafile2": "Pr-L1-PraseodymiumOxide.xdi"
+        },
+        {
+            "material": "Pr2O3",
+            "name": "Praseodymium sesquioxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Pr-L3-Pr2O3.xdi"
         },
         {
             "material": "Pr(OH)3",
@@ -1687,8 +1778,7 @@
             "location": "Lanthanide standards wheel",
             "refwheel": false,
             "lanthanidewheel": false,
-            "datafile": "Eu-L3-Eu2O3-m.xdi",
-            "datafile2": "Eu-L1-Eu2O3-m.xdi"
+            "datafile": "Eu-L3-Eu2O3-m.xdi"
         },
         {
             "material": "Eu2Ti2O7",
@@ -1908,6 +1998,20 @@
             "location": "Ta",
             "datafile": "Ta-L3-TantalumOxide.xdi",
             "datafile2": "Ta-L1-TantalumOxide.xdi"
+        },
+        {
+            "material": "Ta metal",
+            "name": "Tantatlum metal",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ta-L3-Ta.xdi"
+        },
+        {
+            "material": "Ta2O3",
+            "name": "Tantatlum sesquioxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Ta-L3-Ta2O3.xdi"
         }
     ],
     "W": [
@@ -1918,6 +2022,13 @@
             "location": "W",
             "datafile": "W-L3-TungstenOxide.xdi",
             "datafile2": "W-L1-TungstenOxide.xdi"
+        },
+        {
+            "material": "W metal",
+            "name": "Tungsten metal",
+            "refwheel": false,
+            "location": "sample not in collection",
+            "datafile": "W-L3-metal.xdi"
         }
     ],
     "Re": [
