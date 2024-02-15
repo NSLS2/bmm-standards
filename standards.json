@@ -378,14 +378,56 @@
             "name": "Cr foil",
             "location": "Cr",
             "refwheel": true,
-            "datafile": false
+            "datafile": "Cr-K-ChromiumFoil.xdi"
         },
         {
             "material": "ErCrO3",
             "name": "Erbium Chromate",
             "location": "Lanthanide standards wheel",
             "refwheel": false
-        }
+        },
+        {
+            "material": "Cr3(OH)2(OOCCH3)7",
+            "name": "Chromium acetate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-acetate.xdi"
+        },
+        {
+            "material": "Cr2Na2O7",
+            "name": "Sodium dichromate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-Cr2Na2O7.xdi"
+        },
+        {
+            "material": "Cr2O3",
+            "name": "Chromia, eskolaite, chromium sesquioxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-Cr2O3.xdi"
+        },
+        {
+            "material": "CrO3",
+            "name": "Chromium trioxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-CrO3.xdi"
+        },
+        {
+            "material": "FeCrO4",
+            "name": "Chromite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-chromite.xdi"
+        },
+        {
+            "material": "Cr(NO3)(H2O)3.9",
+            "name": "Chromium nitrate",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Cr-K-nitrate.xdi"
+        }	
     ],
     "Mn": [
         {
@@ -474,7 +516,84 @@
             "location": "Zn standards wheel",
             "refwheel": false,
             "datafile": "Mn-K-Petedunnite.xdi"
-        }
+        },
+	{
+            "material": "CaMnSi2O6",
+            "name": "Johansonnite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Johannsonite.xdi"
+        },
+        {
+            "material": "Ca2Mn3(SiO4)(Si2O7)(OH)3",
+            "name": "Macfallite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Macfallite.xdi"
+        },
+        {
+            "material": "MnO(OH)",
+            "name": "Manganite, manganese oxyhydroxide",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Manganite.xdi"
+        },
+        {
+            "material": "CaMn2O4",
+            "name": "Marokite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Marokite.xdi"
+        },
+        {
+            "material": "Mn9Al6Si5O20(OH)16",
+            "name": "Pannantite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Pennantite.xdi"
+        },
+        {
+            "material": "Ca2(Al,Mn3+,Fe3+)3(SiO4)(Si2O7)O(OH)",
+            "name": "Piemonite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Piemonite.xdi"
+        },
+        {
+            "material": "Ca2(Mn2+,Mg)(Al,Mn3+,Fe)2(SiO4)(Si2O7)(OH)2.H2O]",
+            "name": "Pumpellyite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Pumpellyite.xdi"
+        },
+        {
+            "material": "MnPO4",
+            "name": "Purpurite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Purpurite.xdi"
+        },
+        {
+            "material": "Mn3Al2(SiO4)3",
+            "name": "Spessartine",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Spessartine.xdi"
+        },
+        {
+            "material": "Mn2SiO4",
+            "name": "Tephroite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-Tephroite.xdi"
+        },
+        {
+            "material": "(Fe,Mn)WO4",
+            "name": "Wolframite",
+            "location": "sample not in collection",
+            "refwheel": false,
+            "datafile": "Mn-K-WolframiteA.xdi"
+        }	
     ],
     "Fe": [
         {

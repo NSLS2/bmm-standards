@@ -128,7 +128,8 @@ class CommonMaterials():
      Some L<sub>1</sub> data may not be useful due to a small edge step.
    </p>
    <p>
-     As of August 2023, collection of data on these compounds is about 80% complete.
+     Note that some materials were measured at BMM, but the sample is not in the
+     collection at BMM.
    </p>
    <p>
      <a href="https://github.com/NSLS-II-BMM/bmm-standards">
@@ -197,7 +198,7 @@ class CommonMaterials():
                 if 'missing' in this and this['missing'] is True:
                     missing = 'missing'
                 formula = re.sub(r'(\d+\.\d+|\d+)(?!\+)', r'<sub>\g<1></sub>', this['material'])
-                #formula = re.sub(r'(\d+\.\d+|\d+)(?=\+)', r'<sup>\g<0></sup>', this['material'])
+                formula = re.sub(r'((\d+\.\d+|\d+)\+)', r'<sup>\1</sup>', formula) #this['material'])
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]
