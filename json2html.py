@@ -22,38 +22,15 @@ class CommonMaterials():
         self.html = 'test.html'
         self.cssfile = 'standards.css'
         self.nosamp = '[___]'
-        self.beneath_table = '''
-  </div>
-  <div class="color-table">
-    <section class="element alkali color-guide" id="cg-alkali">Alkali Metal</section>
-    <section class="element alkaline color-guide" id="cg-alkaline">Alkaline Metal</section>
-    <section class="element transition color-guide" id="cg-transition">Transition Metal</section>
-    <section class="element basic color-guide" id="cg-basic">Basic Metal</section>
-    <section class="element semimetal color-guide" id="cg-semimetal">Semimetal</section>
-    <section class="element nonmetal color-guide" id="cg-nonmetal">Nonmetal</section>
-    <section class="element halogen color-guide" id="cg-halogen">Halogen</section>
-    <section class="element noble color-guide" id="cg-noble">Noble Gas</section>
-    <section class="element lanthanide color-guide" id="cg-lanthanide">Lanthanide</section>
-    <section class="element actinide color-guide" id="cg-actinide">Actinide</section>
-    <section class="element nostandards color-guide" id="cg-nostandards">No Standards</section>
-  </div>
-  
-  </main>
-'''
-        self.goto_anchor = '''
-  <script type="text/javascript">
-      <!--
-      function goToAnchor(anchor) {
-         var loc = document.location.toString().split("#")[0];
-         document.location = loc + "#" + anchor;
-         return false;
-      }
-      //-->
-  </script>
-  <hr>
-        '''    
+        self.beneath_table = self.slurp('tmpl/beneath_table.tmpl')
+        self.goto_anchor = self.slurp('tmpl/goto_anchor.tmpl')
 
 
+    def slurp(self, fname):
+        with open(fname, 'r') as myfile:
+            text=myfile.read()
+        return text
+        
             
     def element_with_samples(self, this):
         '''Generate an element box in the periodic table for an element
@@ -91,63 +68,10 @@ class CommonMaterials():
         notfound = []
         with open('standards.json', 'r') as myfile:
             data=json.loads(myfile.read())
-        
-        page = f'''
-<html>
-  <head>
-    <title>Common XAFS materials at BMM</title>
-    <link rel="stylesheet" href="{self.cssfile}" />
-    <link rel="stylesheet" href="pt.css" />
-  </head>
 
-  <body>
-  <main>
-'''
-        page = page + f'''
-  <div id="divfix">
-     <div id="container">
-       <div id="floated">
-         <image src="floor_mat.png" width=90%>
-       </div>
-       Common XAFS materials
-      </div>
-     <p>
-       <span class="instructions">Click on an element to jump to that list of compounds in BMM's
-       collection.</span>
-     </p>
-     <p>
-       Compounds marked with &#10004; are permanently mounted on the reference wheel.
-     </p>
-     <p>
-       Compounds marked with <span style="font-family: \'Brush Script MT\', cursive;">Fl</span>
-       were measured in fluorescence.
-     </p>
-     <p>
-        <span class="missing">{self.nosamp}</span> means the data was measured 
-        at BMM on a high-quality sample, but the sample is not in BMM's 
-        collection.
-     </p>
-     <p>
-       Edge energies in <span id="inrange">black text</span> are accessible at BMM.
-       Those in <span id="outofrange">grey text</span> are not.
-     </p>
-     <p>
-       For compounds listed as being on the reference wheel, data are
-       ln(I<sub>t</sub>/I<sub>r</sub>).
-     </p>
-     <p>
-       Some L<sub>1</sub> data may not be useful due to a small edge step.
-     </p>
-     <p>
-       <a href="https://github.com/NSLS-II-BMM/bmm-standards">
-          <img src="github-mark.svg" width=20px>
-          GitHub repository
-       </a>
-     </p>
-  </div>
-
-  <div class="ptable">
-'''
+        ## page header and sidebar
+        page = self.slurp('tmpl/head.tmpl').format(cssfile=self.cssfile)
+        page = page + self.slurp('tmpl/sidebar.tmpl').format(nosamp=self.nosamp)
 
 
         ## generate the element boxes in the periodic table
@@ -179,30 +103,17 @@ class CommonMaterials():
             if xray_edge(el.symbol, 'L3')[0] < 5000:
                 lcolor = 'outofrange'
             if len(data[el.symbol]) > 0:
-                page = page + f'''
-
-    <h2 id="{el.name}">
-       {el.symbol}&nbsp;
-       ({z})&nbsp;{el.name}&nbsp;&nbsp;&nbsp;
-       <div id="floatright">
-         <span id="{kcolor}">K:&nbsp;{xray_edge(el.symbol, 'K')[0]:.0f}&nbsp;eV</span> 
-         <span id="{lcolor}">L<sub>1</sub>:&nbsp;{xray_edge(el.symbol, 'L1')[0]:.0f}&nbsp;eV
-         L<sub>2</sub>:&nbsp;{xray_edge(el.symbol, 'L2')[0]:.0f}&nbsp;eV
-         L<sub>3</sub>:&nbsp;{xray_edge(el.symbol, 'L3')[0]:.0f}&nbsp;eV</span>
-      </div>
-    </h2>
-      <div class="wrapper">
-
-            <table>
-              <tr>
-                <th></th>
-                <th width=30%>Material</th>
-                <th width=25%>Common/mineral name</th>
-                <th width=20%>Location</th>
-                <th width=2%>&nbsp;</th>
-                <th width=28%>Data&nbsp;File</th>
-              </tr>
-'''
+                page = page + self.slurp('tmpl/element_table.tmpl').format(name   = el.name,
+                                                                           symbol = el.symbol,
+                                                                           z      = z,
+                                                                           kcolor = kcolor,
+                                                                           lcolor = lcolor,
+                                                                           kedge  = xray_edge(el.symbol, 'K')[0],
+                                                                           l1edge = xray_edge(el.symbol, 'L1')[0],
+                                                                           l2edge = xray_edge(el.symbol, 'L2')[0],
+                                                                           l3edge = xray_edge(el.symbol, 'L3')[0])
+            else:
+                continue        # no samples for thie element
             
             for i, this in enumerate(data[el.symbol]):
                 missing = 'present'
@@ -261,47 +172,22 @@ class CommonMaterials():
                     fluo = '<span style="font-family: \'Brush Script MT\', cursive;">Fl</span>'
                     
                 ## generate a div for the table explaining each port
-                page = page + f'''
-               <tr class={missing}>
-                  <td>{onrefwheel}</td>
-                  <td>{formula}</td>
-                  <td>{name}</td>
-                  <td>{location}</td>
-                  <td>{fluo}</td>
-                  <td>{datafile}{datafile2}</td>
-               </tr>
-'''
+                page = page + self.slurp('tmpl/element_entry.tmpl').format(missing    = missing,
+                                                                           onrefwheel = onrefwheel,
+                                                                           formula    = formula,
+                                                                           name       = name,
+                                                                           location   = location,
+                                                                           fluo       = fluo,
+                                                                           datafile   = datafile,
+                                                                           datafile2  = datafile2)
             page = page + '            </table>\n'
             page = page + '      </div>\n'
 
         ##########
         # footer #
         ##########
-        page = page + '''
-  <p class="copyright ctop">
-    A large number of the samples on this page were provided by Martin Stennett 
-    of the University of Sheffield.  This page would be much less interesting
-    and much less useful without his numerous contributions.
-  </p>
-  <p class="copyright ctop">
-    This web page, any associated software, and its collection of data
-    were developed and measured by a NIST employee. Pursuant to title
-    17 United States Code Section 105, works of NIST employees are not
-    subject to copyright protection in the United States.  Permission
-    in the United States and in foreign countries, to the extent that
-    NIST may hold copyright, to use, copy, modify, create derivative
-    works, and distribute this web page, software, data, and its
-    documentation without fee is hereby granted on a non-exclusive
-    basis, provided that this notice and disclaimer of warranty
-    appears in all copies.
-  </p>
-  <p class="copyright">
-    See the <a href='LICENSE'>license file</a> for details.
-  </p>
-  </body>
-</html>
+        page = page + self.slurp('tmpl/bottom.tmpl')
 
-'''
         with open(self.html, 'w') as fh:
             fh.write(page)
         print(f'\nWrote html to {self.html}')

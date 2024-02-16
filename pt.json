@@ -138,7 +138,7 @@
 	"symbol": "K",
 	"name": "Potasium",
 	"weight": 39.098,
-	"link": true
+	"link": false
     },
     "Ca":{
 	"type": "alkaline",
@@ -418,7 +418,7 @@
 	"symbol": "Xe",
 	"name": "Xenon",
 	"weight": 131.293,
-	"link": true
+	"link": false
     },
     "Cs":{
 	"type": "alkali",
