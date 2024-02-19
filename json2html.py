@@ -21,6 +21,7 @@ class CommonMaterials():
         self.json = 'standards.json'
         self.html = 'test.html'
         self.cssfile = 'standards.css'
+        self.element_data = 'pt.json'
         self.nosamp = '[___]'
         self.beneath_table = self.slurp('tmpl/beneath_table.tmpl')
         self.goto_anchor = self.slurp('tmpl/goto_anchor.tmpl')
@@ -30,37 +31,6 @@ class CommonMaterials():
         with open(fname, 'r') as myfile:
             text=myfile.read()
         return text
-        
-            
-    def element_with_samples(self, this):
-        '''Generate an element box in the periodic table for an element
-        represented in this data collection.
-
-        '''
-        tmpl = '''
-   <section class="element {type}" id="{key}" onclick="goToAnchor('{name}')">
-     <div class="element-number">{number}</div>
-     <h2 class="element-symbol">{symbol}</h2>
-     <div class="element-name">{name}</div>
-     <!-- <div class="element-weight">{weight}</div> -->
-   </section>
-'''
-        return tmpl.format(**this)
-        
-    def element_without_samples(self, this):
-        '''Generate an element box in the periodic table for an element
-        for which no data exists in this collection.
-
-        '''
-        tmpl = '''
-   <section class="element {type} nolink" id="{key}">
-     <div class="element-number">{number}</div>
-     <h2 class="element-symbol">{symbol}</h2>
-     <div class="element-name">{name}</div>
-     <!-- <div class="element-weight">{weight}</div> -->
-   </section>
-'''
-        return tmpl.format(**this)
 
         
     def make_html(self):
@@ -74,18 +44,18 @@ class CommonMaterials():
         page = page + self.slurp('tmpl/sidebar.tmpl').format(nosamp=self.nosamp)
 
 
-        ## generate the element boxes in the periodic table
-        with open('pt.json', 'r') as ptjson:
+        ## generate each element box in the periodic table
+        with open(self.element_data, 'r') as ptjson:
             ptdata=json.loads(ptjson.read())
         for el in ptdata.keys():
-            ptdata[el]["key"] = el
+            ptdata[el]["key"] = el.lower()
             if ptdata[el]["link"]:
-                page = page + self.element_with_samples(ptdata[el])
+                page = page + self.slurp('tmpl/with_samples.tmpl').format(**ptdata[el])
             else:
-                page = page + self.element_without_samples(ptdata[el])
+                page = page + self.slurp('tmpl/without_samples.tmpl').format(**ptdata[el])
 
             
-        ## the color explanation table and the javascript for going to
+        ## the color explanation table and the javascript for jumping to
         ## an anchor from the periodic table
         page = page + self.beneath_table
         page = page + self.goto_anchor
@@ -102,6 +72,8 @@ class CommonMaterials():
                 kcolor, lcolor = 'inrange', 'outofrange'
             if xray_edge(el.symbol, 'L3')[0] < 5000:
                 lcolor = 'outofrange'
+
+            ## start the table for this element
             if len(data[el.symbol]) > 0:
                 page = page + self.slurp('tmpl/element_table.tmpl').format(name   = el.name,
                                                                            symbol = el.symbol,
@@ -113,8 +85,10 @@ class CommonMaterials():
                                                                            l2edge = xray_edge(el.symbol, 'L2')[0],
                                                                            l3edge = xray_edge(el.symbol, 'L3')[0])
             else:
-                continue        # no samples for thie element
-            
+                continue        # this element has no samples
+
+            ## for each element, generate a table of samples from standards.json, parse and manipulate
+            ## each poorly specified entry in that json file
             for i, this in enumerate(data[el.symbol]):
                 missing = 'present'
                 if 'missing' in this and this['missing'] is True:
@@ -126,15 +100,16 @@ class CommonMaterials():
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]
-
+                    
                 location = ''
-                if this['location'] != el.symbol:
-                    location = this['location'] # 'location: '+
                 if 'refwheel' in this and this['refwheel'] is True:
                     location = 'reference wheel'
-                if 'lanthanidewheel' in this and this['lanthanidewheel'] is True:
-                    location = 'lanthanide wheel'
-                if location == 'sample not in collection':
+                elif this['location'] == el.symbol:
+                    location = '<span class="cabinet">check sample cabinet</span>'
+                else:
+                    location = this['location']
+                    
+                if this['incollection'] is False:
                     location = f'<span class="missing">{self.nosamp}</span>'
                     
                 edge = 'K'
@@ -171,7 +146,7 @@ class CommonMaterials():
                 if 'fluorescence' in this and this['fluorescence'] is True:
                     fluo = '<span style="font-family: \'Brush Script MT\', cursive;">Fl</span>'
                     
-                ## generate a div for the table explaining each port
+                ## make the table entry for this sample
                 page = page + self.slurp('tmpl/element_entry.tmpl').format(missing    = missing,
                                                                            onrefwheel = onrefwheel,
                                                                            formula    = formula,

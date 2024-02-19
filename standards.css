@@ -188,6 +188,10 @@ tr.missing {
     color: #994;
     font-style: normal;
 }
+.cabinet {
+    color: #b66;
+    font-style: normal;
+}
 
 tr:nth-child(2n) {background: #ddd}
 tr:nth-child(2n-1) {background: rgba(160, 160, 255, 0.25)}
