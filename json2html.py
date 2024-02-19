@@ -40,8 +40,8 @@ class CommonMaterials():
             data=json.loads(myfile.read())
 
         ## page header and sidebar
-        page = self.slurp('tmpl/head.tmpl').format(cssfile=self.cssfile)
-        page = page + self.slurp('tmpl/sidebar.tmpl').format(nosamp=self.nosamp)
+        page  = self.slurp('tmpl/head.tmpl').format(cssfile=self.cssfile)
+        page += self.slurp('tmpl/sidebar.tmpl').format(nosamp=self.nosamp)
 
 
         ## generate each element box in the periodic table
@@ -50,15 +50,15 @@ class CommonMaterials():
         for el in ptdata.keys():
             ptdata[el]["key"] = el.lower()
             if ptdata[el]["link"]:
-                page = page + self.slurp('tmpl/with_samples.tmpl').format(**ptdata[el])
+                page += self.slurp('tmpl/with_samples.tmpl').format(**ptdata[el])
             else:
-                page = page + self.slurp('tmpl/without_samples.tmpl').format(**ptdata[el])
+                page += self.slurp('tmpl/without_samples.tmpl').format(**ptdata[el])
 
             
         ## the color explanation table and the javascript for jumping to
         ## an anchor from the periodic table
-        page = page + self.beneath_table
-        page = page + self.goto_anchor
+        page += self.beneath_table
+        page += self.goto_anchor
 
         ## generate a table of samples in this collection for every element
         for z in range(20, 95):
@@ -75,15 +75,15 @@ class CommonMaterials():
 
             ## start the table for this element
             if len(data[el.symbol]) > 0:
-                page = page + self.slurp('tmpl/element_table.tmpl').format(name   = el.name,
-                                                                           symbol = el.symbol,
-                                                                           z      = z,
-                                                                           kcolor = kcolor,
-                                                                           lcolor = lcolor,
-                                                                           kedge  = xray_edge(el.symbol, 'K')[0],
-                                                                           l1edge = xray_edge(el.symbol, 'L1')[0],
-                                                                           l2edge = xray_edge(el.symbol, 'L2')[0],
-                                                                           l3edge = xray_edge(el.symbol, 'L3')[0])
+                page += self.slurp('tmpl/element_table.tmpl').format(name   = el.name,
+                                                                     symbol = el.symbol,
+                                                                     z      = z,
+                                                                     kcolor = kcolor,
+                                                                     lcolor = lcolor,
+                                                                     kedge  = xray_edge(el.symbol, 'K')[0],
+                                                                     l1edge = xray_edge(el.symbol, 'L1')[0],
+                                                                     l2edge = xray_edge(el.symbol, 'L2')[0],
+                                                                     l3edge = xray_edge(el.symbol, 'L3')[0])
             else:
                 continue        # this element has no samples
 
@@ -93,17 +93,20 @@ class CommonMaterials():
                 missing = 'present'
                 if 'missing' in this and this['missing'] is True:
                     missing = 'missing'
-                    
-                formula = re.sub(r'(\d+\.\d+|\d+)(?!\+)', r'<sub>\g<1></sub>', this['material'])
-                formula = re.sub(r'((\d+\.\d+|\d+)\+)', r'<sup>\1</sup>', formula) #this['material'])
+
+                ## subscripts for chemical formulas
+                formula = re.sub(r'(\d+\.\d+|\d+)(?!\+)', r'<sub>\1</sub>', this['material'])
+                ## superscripts for charge state
+                formula = re.sub(r'((\d+\.\d+|\d+)\+)', r'<sup>\1</sup>', formula)
 
                 name = this['name']
                 if len(name) > 0:
                     name = name[0].upper() + name[1:]
                     
-                location = ''
+                onrefwheel, location = '', ''
                 if 'refwheel' in this and this['refwheel'] is True:
                     location = 'reference wheel'
+                    onrefwheel = '&#10004;'
                 elif this['location'] == el.symbol:
                     location = '<span class="cabinet">check sample cabinet</span>'
                 else:
@@ -138,30 +141,26 @@ class CommonMaterials():
                 else:
                     datafile2 = f'<br>L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
 
-                onrefwheel = ''
-                if 'refwheel' in this and this['refwheel'] is True:
-                    onrefwheel = '&#10004;'
-
                 fluo = ''
                 if 'fluorescence' in this and this['fluorescence'] is True:
                     fluo = '<span style="font-family: \'Brush Script MT\', cursive;">Fl</span>'
                     
                 ## make the table entry for this sample
-                page = page + self.slurp('tmpl/element_entry.tmpl').format(missing    = missing,
-                                                                           onrefwheel = onrefwheel,
-                                                                           formula    = formula,
-                                                                           name       = name,
-                                                                           location   = location,
-                                                                           fluo       = fluo,
-                                                                           datafile   = datafile,
-                                                                           datafile2  = datafile2)
-            page = page + '            </table>\n'
-            page = page + '      </div>\n'
+                page += self.slurp('tmpl/element_entry.tmpl').format(missing    = missing,
+                                                                     onrefwheel = onrefwheel,
+                                                                     formula    = formula,
+                                                                     name       = name,
+                                                                     location   = location,
+                                                                     fluo       = fluo,
+                                                                     datafile   = datafile,
+                                                                     datafile2  = datafile2)
+            page += '            </table>\n'
+            page += '      </div>\n'
 
         ##########
         # footer #
         ##########
-        page = page + self.slurp('tmpl/bottom.tmpl')
+        page += self.slurp('tmpl/bottom.tmpl')
 
         with open(self.html, 'w') as fh:
             fh.write(page)

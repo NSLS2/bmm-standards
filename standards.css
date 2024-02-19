@@ -114,6 +114,11 @@ p {
     border-right: 0.125rem solid rgba(0, 0, 0, 0.5);
     overflow-x: scroll;
 }
+.sidebarhr {
+    width: 80%;
+    text-align:left;
+    margin-left:0
+}
 
 #container{
     width: 100%;

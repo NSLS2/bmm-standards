@@ -1,5 +1,5 @@
 {
-    "explanation": [
+    "explanation and examples": [
         {
             "material": "the stoichiometric formula, following the IUCr definition of a chemical formula.",
             "name": "mineral, common, or IUPAC name of the compound",
@@ -19,7 +19,18 @@
             "refwheel": false,
 	    "missing": false,
             "fluorescence": false,
-            "datafile": "K-ABO3.xdi"
+            "datafile": "A-K-ABO3.xdi"
+        },
+        {
+            "material": "DdBO3",
+            "name": "Fourdeemetal B-oxide",
+            "location": "Xx standards wheel",
+	    "incollection": true,
+            "refwheel": false,
+	    "missing": false,
+            "fluorescence": false,
+            "datafile": "Dd-L3-DdBO3.xdi",
+            "datafile2": "Dd-L1-DdBO3.xdi"
         }
     ],
     "Ca": [
