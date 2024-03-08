@@ -536,6 +536,14 @@
 	    "incollection": false,
             "refwheel": false,
             "datafile": "Cr-K-YCrO3.xdi"
+        },
+        {
+            "material": "LaCrO3",
+            "name": "Lanthanum chromate",
+            "location": "",
+	    "incollection": true,
+            "refwheel": false,
+            "datafile": false
         }
     ],
     "Mn": [
@@ -725,7 +733,15 @@
 	    "incollection": false,
             "refwheel": false,
             "datafile": "Mn-K-WolframiteA.xdi"
-        }	
+        },
+        {
+            "material": "LaMnO3",
+            "name": "Lanthanum manganate",
+            "location": "Mn standards wheel",
+	    "incollection": true,
+            "refwheel": false,
+            "datafile": false
+        }
     ],
     "Fe": [
         {
@@ -1059,8 +1075,15 @@
 	    "incollection": false,
             "refwheel": false,
             "datafile": "Fe-K-Wolframite.xdi"
+        },
+        {
+            "material": "LaFeO3",
+            "name": "Lanthanum ferrite",
+            "location": "Fe standards wheel",
+	    "incollection": true,
+            "refwheel": false,
+            "datafile": false
         }
-
     ],
     "Co": [
         {
@@ -1103,6 +1126,14 @@
 	    "incollection": true,
             "refwheel": false,
             "datafile": "Co-K-CobaltAluminate.xdi"
+        },
+        {
+            "material": "LaCoO3",
+            "name": "Lanthanum colbaltate",
+            "location": "Co standards wheel",
+	    "incollection": true,
+            "refwheel": false,
+            "datafile": false
         }
     ],
     "Ni": [
