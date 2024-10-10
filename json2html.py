@@ -128,8 +128,11 @@ class CommonMaterials():
                         notfound.append(this["datafile"])
                     datafile = ""
                 else:
-                    datafile = f'{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
-
+                    datafile  = f'{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
+                    datafile += f'&nbsp;<a href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{this["datafile"]}">'
+                    datafile += '<img src="xas.svg" width="18">'
+                    datafile += '</a>'
+                    
                 if 'datafile2' not in this:
                     datafile2 = ''
                 elif this['datafile2'] is False:
@@ -140,7 +143,21 @@ class CommonMaterials():
                     datafile2 = ''
                 else:
                     datafile2 = f'<br>L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
-
+                    datafile2 += f'&nbsp;<a href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{this["datafile2"]}">'
+                    datafile2 += '<img src="xas.svg" width="18">'
+                    datafile2 += '</a>'
+                # if 'datafile' in this and this["datafile"] is not False:
+                #     target = this["datafile"]
+                #     if z < 55:
+                #         plot = f'<a class="noul" href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{target}"><section class="element plot">K</section></a>'
+                #     else:
+                #         plot = f'<a class="noul" href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{target}"><section class="element plot">L3</section></a>'
+                #         if datafile2 != '':
+                #             target2 = this["datafile2"]
+                #             plot += f'<a class="noul" href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{target2}"><section class="element plot">L1</section></a>'
+                # else:
+                #     plot = '&nbsp'
+                    
                 fluo = ''
                 if 'fluorescence' in this and this['fluorescence'] is True:
                     fluo = '<span style="font-family: \'Brush Script MT\', cursive;">Fl</span>'
@@ -151,6 +168,7 @@ class CommonMaterials():
                                                                      formula    = formula,
                                                                      name       = name,
                                                                      location   = location,
+                                                                     #plot       = plot,
                                                                      fluo       = fluo,
                                                                      datafile   = datafile,
                                                                      datafile2  = datafile2)

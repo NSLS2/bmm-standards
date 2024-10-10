@@ -124,7 +124,17 @@ main .color-table {
 .element.actinide {
 	background: #c9b2d4;
 }
+.element.plot {
+	color: rgba(0, 0, 0);
+	text-align: center;
+	background: #e8d3b2;
+	border:  1px solid rgba(0, 0, 0, 0.5);
+}
+.noul {
+    text-decoration: none;
+}
 .element.nostandards {
+        
 	background: #d0cbc6;
 	cursor: default;
 }
