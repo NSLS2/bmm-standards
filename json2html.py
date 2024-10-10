@@ -115,9 +115,10 @@ class CommonMaterials():
                 if this['incollection'] is False:
                     location = f'<span class="missing">{self.nosamp}</span>'
                     
-                edge = 'K'
+                ed = edge = 'K'
                 if el.atomic_number > 46:
                     edge = 'L<sub>3</sub>'
+                    ed = 'L3'
                     
                 if 'datafile' not in this:
                     datafile = ''
@@ -128,10 +129,10 @@ class CommonMaterials():
                         notfound.append(this["datafile"])
                     datafile = ""
                 else:
-                    datafile  = f'{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
-                    datafile += f'&nbsp;<a href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{this["datafile"]}">'
-                    datafile += '<img src="xas.svg" width="18">'
+                    datafile  = f'<a href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{this["datafile"]}">'
+                    datafile += f'<img src="xas.svg" width="18" title="Plot {el.symbol} {ed} edge">'
                     datafile += '</a>'
+                    datafile += f'&nbsp;{edge} : <a href="Data/{el.symbol}/{this["datafile"]}">{this["datafile"]}</a>'
                     
                 if 'datafile2' not in this:
                     datafile2 = ''
@@ -142,10 +143,10 @@ class CommonMaterials():
                         notfound.append(this["datafile2"])
                     datafile2 = ''
                 else:
-                    datafile2 = f'<br>L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
-                    datafile2 += f'&nbsp;<a href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{this["datafile2"]}">'
-                    datafile2 += '<img src="xas.svg" width="18">'
+                    datafile2  = f'<br><a href="https://nsls-ii.github.io/webxdiviewer/#/xdi/{el.symbol}/{this["datafile2"]}">'
+                    datafile2 += f'<img src="xas.svg" width="18" title="Plot {el.symbol} L1 edge">'
                     datafile2 += '</a>'
+                    datafile2 += f'&nbsp;L<sub>1</sub> : <a href="Data/{el.symbol}/{this["datafile2"]}">{this["datafile2"]}</a>'
                 # if 'datafile' in this and this["datafile"] is not False:
                 #     target = this["datafile"]
                 #     if z < 55:
