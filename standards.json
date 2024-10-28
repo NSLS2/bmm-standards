@@ -1490,14 +1490,14 @@
             "material": "Y foil",
             "name": "Yttrium foil",
             "refwheel": true,
-            "location": "",
-	    "incollection": false,
+            "location": "Y",
+	    "incollection": true,
             "datafile": "Y-K-foil.xdi"
         },
         {
             "material": "Y2O3",
             "name": "Yttria, yttrium oxide",
-            "refwheel": true,
+            "refwheel": false,
             "location": "4d metals wheel",
 	    "incollection": true,
             "datafile": "Y-K-YttriumOxide.xdi"
