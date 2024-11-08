@@ -1684,7 +1684,7 @@
             "location": "Ru",
 	    "incollection": true,
             "refwheel": true,
-            "datafile": false
+            "datafile": "Ru-K-RuO2.xdi"
         },
         {
             "material": "PtRu",
