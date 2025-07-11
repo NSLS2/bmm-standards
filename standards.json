@@ -1431,6 +1431,38 @@
             "location": "Br",
 	    "incollection": true,
             "datafile": "Br-K-BromophenolBlue.xdi"
+        },
+        {
+            "material": "KBr",
+            "name": "Potassium bromide",
+            "refwheel": false,
+            "location": "Br standards wheel",
+	    "incollection": true,
+            "datafile": "Br-K-KBr.xdi"
+        },
+        {
+            "material": "NaBr",
+            "name": "Sodium bromide",
+            "refwheel": false,
+            "location": "Br standards wheel",
+	    "incollection": true,
+            "datafile": "Br-K-NaBr.xdi"
+        },
+        {
+            "material": "NaBrO3",
+            "name": "Sodium bromate",
+            "refwheel": false,
+            "location": "Br standards wheel",
+	    "incollection": true,
+            "datafile": "Br-K-NaBrO3.xdi"
+        },
+        {
+            "material": "CaBr2",
+            "name": "Calcium bromide",
+            "refwheel": false,
+            "location": "Br standards wheel",
+	    "incollection": true,
+            "datafile": "Br-K-CaBr2.xdi"
         }
     ],
     "Rb": [
@@ -1674,6 +1706,14 @@
             "location": "Sr standards wheel",
 	    "incollection": true,
             "refwheel": false
+        },
+        {
+            "material": "Na2MoO4",
+            "name": "Sodium molybdate",
+            "location": "Sr standards wheel",
+	    "incollection": true,
+            "refwheel": false,
+            "datafile": "Mo-K-Na2MoO4.xdi"
         }
     ],
     "Tc": [],
