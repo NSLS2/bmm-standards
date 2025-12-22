@@ -2053,12 +2053,28 @@
             "datafile": "Nd-L3-Nd2TiO5.xdi",
             "datafile2": "Nd-L1-Nd2TiO5.xdi",
             "refwheel": false
+        },
+        {
+            "material": "NdF3",
+            "name": "neodymium fluoride",
+            "location": "Lanthanide standards wheel",
+	    "incollection": true,
+            "datafile": "Nd-L3-NdF3.xdi",
+            "refwheel": false
+        },
+        {
+            "material": "NdPO4",
+            "name": "neodymium phosphate",
+            "location": "Lanthanide standards wheel",
+	    "incollection": true,
+            "datafile": "Nd-L3-NdPO4.xdi",
+            "refwheel": false
         }
     ],
     "Pm": [],
     "Sm": [
         {
-            "material": "Sm2O3",
+            "material": "Sm2O3",j
             "name": "cubic Samarium oxide",
             "refwheel": true,
             "location": "Sm",
