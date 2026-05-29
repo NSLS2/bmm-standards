@@ -65,6 +65,28 @@ Many of the physical samples in this collection were provided by Dr. Martin Sten
 the University of Sheffield.  Many other users of BMM have made contributions to this library
 over the years of BMM's operation.
 
+---------------------------
+Building the periodic table
+---------------------------
+
+The simplest way to build the web page is to use a python virtual
+environment.
+
+IN the main folder, do
+
+    python3 -m venv ./my-venv
+	
+Then install the dependencies locally by doing:
+
+    ./my-venv/bin/pip install mendeleev
+    ./my-venv/bin/pip install xraylarch
+	
+The build by doing:
+
+    ./my-venv/bin/python ./json2html.py 
+
+
+
 ---------------
 Version History
 ---------------
