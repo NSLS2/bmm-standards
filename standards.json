@@ -2500,6 +2500,15 @@
             "refwheel": false,
 	    "datafile": "Pt-L3-PotassiumHexaChloroPlatinate.xdi",
             "datafile2": "Pt-L1-PotassiumHexaChloroPlatinate.xdi"
+        },
+        {
+            "material": "Pt(C5H7O2)2",
+            "name": "Potassium acetylacetate",
+            "location": "5d metals wheel",
+	    "incollection": true,
+            "refwheel": false,
+	    "datafile": "Pt-L3-PlatinumAcetylacetate.xdi",
+            "datafile2": "Pt-L1-PlatinumAcetylacetate.xdi"
 
         }
     ],
